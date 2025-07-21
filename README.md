@@ -1,8 +1,36 @@
-# OpenList_zh-TW_L10n
+# OpenList 繁體中文本地化專案
+
 ## 前言
-[Openlist](https://github.com/OpenListTeam/OpenList) 作為一款[Alist](https://github.com/AlistGo/alist)的替代品<br>
-目前最大的遺憾莫過於尚未具備完整的完整i18n<br>
-雖然官方已明確表示這是未來的規劃事項，代表之後基本上會有完整i18n<br>
-不過我已經等不急啦!😎
-## 協助此專案
-`v4.0.8` 以前使用`Google Gemini 2.5 pro` 翻譯，可能會有錯誤，若您發現錯誤也可以更改
+
+[OpenList](https://github.com/OpenListTeam/OpenList) 是一款強大且開源的檔案列表程式，支援多種儲存空間，是 [Alist](https://github.com/AlistGo/alist) 的一個社群驅動替代品。 
+
+目前 OpenList 的多國語言支援（i18n）尚在開發中<br>
+雖然官方已將其納入未來規劃，但我們相信社群的力量可以加速實現完整的繁體中文介面。
+
+為了讓更多台灣使用者能無障礙地使用這款優秀的工具<br>
+我們發起了這個繁體中文本地化專案，並希望能邀請您一同參與！
+
+## 如何協助我們？
+
+我們使用自建的線上翻譯平台 [Weblate](https://weblate.org/) 來進行協作翻譯。<br>
+Weblate 提供了方便的介面，讓您可以輕鬆地貢獻您的語言長才。
+
+**參與步驟：**
+
+1.  **前往我們的 Weblate 專案：** [點擊此處前往 Weblate 專案頁面](https://weblate.hhdoubleh.us.to)
+2.  **註冊帳號：** 為了啟用翻譯功能，您需要先註冊一個 Weblate 帳號。
+    * 註冊即表示您同意我方收集您的使用者名稱、電子郵件地址等必要資訊
+    * 我方承諾會保護您的個人資訊，絕不主動外洩
+3.  **開始翻譯！** 登入後，您就可以看到專案的翻譯進度，並開始進行翻譯或校對。
+
+> **關於目前的翻譯：**
+> `v4.0.8` (含)以前的版本使用 `Google Gemini 2.5 pro` 進行初步翻譯<br>
+> 我們非常歡迎您協助修正，或提出更通順、更符合台灣使用者習慣的翻譯建議。
+
+## 聯絡我們
+
+如果您對於 Weblate 的使用有任何疑問，或是對專案有任何建議，歡迎隨時透過以下方式與我們聯繫：
+
+*   **Email:** admin@hhdoubleh.us.to
+
+感謝您的閱讀與支持，期待您的加入！
