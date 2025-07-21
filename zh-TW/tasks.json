@@ -1,0 +1,65 @@
+{
+  "offline_download": "下載檔案到本機裝置",
+  "offline_download_transfer": "將下載的檔案傳輸到相應的儲存",
+  "upload": "上傳檔案到對應的儲存",
+  "copy": "將檔案從一個儲存複製到另一個儲存",
+  "decompress": "下載並解壓縮",
+  "decompress_upload": "將提取出的檔案上傳到目標儲存",
+  "done": "已完成",
+  "undone": "執行中...",
+  "clear_succeeded": "刪除已成功",
+  "retry": "重試",
+  "retry_failed": "重試失敗項",
+  "state": {
+    "0": "等待中...",
+    "1": "執行中...",
+    "2": "成功",
+    "3": "正在取消···",
+    "4": "已取消",
+    "5": "錯誤",
+    "6": "失敗中…",
+    "7": "失敗",
+    "8": "等待重試",
+    "9": "重試前置操作中"
+  },
+  "retry_selected": "重試已選擇",
+  "cancel_selected": "取消選中的",
+  "delete_selected": "刪除選中的",
+  "filter": "篩選器",
+  "expand": "展開",
+  "fold": "摺疊...",
+  "expand_all": "全部展開",
+  "fold_all": "摺疊所有",
+  "attr": {
+    "name": "名稱",
+    "creator": "建立者",
+    "state": "狀態",
+    "progress": "進度",
+    "speed": "速度",
+    "operation": "操作",
+    "copy": {
+      "src": "來源路徑",
+      "dst": "目標路徑"
+    },
+    "upload": {
+      "path": "路徑"
+    },
+    "offline_download": {
+      "url": "連結位址",
+      "path": "目標路徑",
+      "transfer_src": "來源路徑",
+      "transfer_src_local": "來源路徑(本機)",
+      "transfer_dst": "目標路徑"
+    },
+    "decompress": {
+      "src": "來源路徑",
+      "dst": "目標路徑",
+      "inner": "內部路徑",
+      "password": "解壓縮密碼"
+    },
+    "time_elapsed": "用時",
+    "status": "狀態",
+    "err": "錯誤"
+  },
+  "show_only_mine": "只顯示我的任務"
+}

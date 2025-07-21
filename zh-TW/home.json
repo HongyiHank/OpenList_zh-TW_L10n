@@ -1,0 +1,181 @@
+{
+  "obj": {
+    "name": "名稱",
+    "size": "大小",
+    "modified": "修改時間"
+  },
+  "preview": {
+    "download": "下載",
+    "failed_load_img": "載入圖像失敗",
+    "open_with": "使用... 開啟",
+    "play_with": "使用...播放",
+    "install": "安裝",
+    "installing": "正在安裝",
+    "tr-install": "TrollStore",
+    "tr-installing": "TrollStore 正在安裝",
+    "open_in_new_window": "在新視窗中開啟",
+    "auto_next": "自動下一個"
+  },
+  "layouts": {
+    "list": "列表視圖",
+    "grid": "網格視圖",
+    "image": "圖片視圖"
+  },
+  "no_images": "目前資料夾中無圖像",
+  "load_more": "載入更多",
+  "no_more": "沒有更多了",
+  "input_password": "請輸入密碼",
+  "toolbar": {
+    "more": "更多",
+    "refresh": "刷新",
+    "toggle_theme": "切換主題",
+    "switch_lang": "切換語言",
+    "toggle_markdown_toc": "是否顯示大綱",
+    "toggle_checkbox": "開關核取方塊",
+    "rename": "重新命名",
+    "input_new_name": "輸入一個新名稱",
+    "move": "移動",
+    "copy": "複製",
+    "choose_dst_folder": "選擇目標資料夾",
+    "delete": "刪除",
+    "delete-tips": "確定要刪除所選物件嗎?",
+    "decompress": "解壓縮",
+    "decompress-pass": "解壓縮密碼：",
+    "decompress-cache-full": "快取完整檔案",
+    "decompress-put-into-new": "解壓縮到新子資料夾",
+    "extract": "提取至...",
+    "archive": {
+      "input_password": "請輸入解壓縮密碼",
+      "incorrect_password": "密碼錯誤",
+      "extract_header": "提取 {{path}} 至..."
+    },
+    "copy_link": "複製連結",
+    "preview_page": "預覽頁面",
+    "down_link": "下載連結",
+    "encode_down_link": "編碼下載連結",
+    "mkdir": "新增資料夾",
+    "input_dir_name": "輸入資料夾名稱",
+    "new_file": "新增檔案",
+    "input_filename": "輸入檔案名",
+    "cancel_select": "取消選擇",
+    "offline_download": "離線下載",
+    "offline_download-tips": "每行一條連結",
+    "delete_policy": {
+      "delete_on_upload_succeed": "上傳成功後刪除",
+      "delete_on_upload_failed": "上傳失敗時刪除",
+      "delete_never": "從不刪除",
+      "delete_always": "總是刪除",
+      "upload_download_stream": "邊下載邊上傳"
+    },
+    "download": "下載",
+    "batch_download": "批次下載",
+    "package_download": "打包下載",
+    "package_download_disabled": "打包下載已禁用",
+    "send_aria2": "傳送到 Aria2",
+    "aria2_not_set": "請設定 aria2 rpc url",
+    "send_aria2_success": "成功傳送到 aria2",
+    "pre_package_download-tips": "在瀏覽器中使用streamsaver而不是伺服器來進行包下載需要相應的儲存支援cors，而不支援的儲存將失敗。",
+    "package_download-tips": "正在下載，請稍候不要關閉頁面",
+    "playlist_download": "播放清單下載",
+    "upload": "上傳",
+    "local_settings": "本機設定",
+    "recursive_move": "聚合移動",
+    "recursive_move_directory-tips": "您確定要將目前資料夾及其子資料夾中的所有檔案移動到指定的資料夾嗎？",
+    "remove_empty_directory": "移除空的子目錄",
+    "remove_empty_directory-tips": "您確定要刪除所有空子資料夾嗎？",
+    "batch_rename": "批次重新命名",
+    "regex_rename": "正規表示法重新命名",
+    "sequential_renaming": "順序重新命名",
+    "regex_rename_preview": "變更的檔案",
+    "regex_rename_preview_old_name": "舊名稱",
+    "regex_rename_preview_new_name": "新名稱",
+    "regular_rename": "正規表示法檔案重新命名。 在第一行輸入來源檔案名正規表示法，並在第二行輸入新檔案名正規表示法。",
+    "sequential_renaming_desc": "新檔案名將有一個數值起始值附加到它， 並且它將透過向起始值新增 1 來按順序顯示。 在第一行輸入新的檔案名，並在第二行輸入起始值。"
+  },
+  "upload": {
+    "add_as_task": "新增為任務",
+    "try_rapid": "嘗試秒傳",
+    "upload-tips": "拖曳檔案到此處以上傳，或點擊：",
+    "release": "鬆開以上傳",
+    "no_files_drag": "沒有檔案被拖入。",
+    "upload_files": "選擇檔案",
+    "upload_folder": "選擇資料夾",
+    "pending": "等待中...",
+    "uploading": "上傳中",
+    "backending": "正在背景上傳",
+    "success": "成功",
+    "error": "錯誤",
+    "back": "返回上傳",
+    "clear_done": "清空完成"
+  },
+  "local_settings": {
+    "aria2_rpc_url": "Aria2 RPC 連結",
+    "aria2_rpc_secret": "Aria2 RPC 金鑰",
+    "aria2_dir": "Aria2 下載目錄",
+    "show_folder_in_image_view": "在圖像視圖中顯示資料夾",
+    "show_folder_in_image_view_options": {
+      "top": "上方",
+      "bottom": "下方",
+      "none": "無"
+    },
+    "global_default_layout": "全域預設佈局",
+    "global_default_layout_options": {
+      "list": "列表視圖",
+      "grid": "網格視圖",
+      "image": "圖片視圖"
+    },
+    "position_of_header_navbar": "標題列和導覽列的位置",
+    "position_of_header_navbar_options": {
+      "static": "普通",
+      "sticky": "吸附到頁面頂部",
+      "only_navbar_sticky": "僅吸附導覽列"
+    },
+    "show_sidebar": "顯示側邊欄",
+    "show_sidebar_options": {
+      "none": "無",
+      "visible": "顯示"
+    },
+    "list_item_filename_overflow": "列表項目檔案名過長",
+    "list_item_filename_overflow_options": {
+      "ellipsis": "省略號",
+      "scrollable": "可滾動",
+      "multi_line": "多行顯示"
+    },
+    "open_item_on_checkbox": "在核取方塊上開啟選項",
+    "open_item_on_checkbox_options": {
+      "direct": "直接開啟",
+      "dblclick": "雙擊",
+      "disable_while_checked": "選中時禁用"
+    }
+  },
+  "package_download": {
+    "current_status": "目前狀態",
+    "initializing": "正在初始化",
+    "fetching_struct": "正在獲取資料夾結構",
+    "fetching_struct_failed": "獲取資料夾結構失敗",
+    "downloading": "下載檔案中，不要關閉或刷新頁面",
+    "failed": "打包下載失敗",
+    "success": "下載完成"
+  },
+  "footer": {
+    "powered_by": "由 OpenList 驅動",
+    "manage": "管理"
+  },
+  "search": {
+    "search": "搜尋",
+    "no_result": "暫無結果",
+    "scopes": {
+      "all": "全部",
+      "folder": "資料夾",
+      "file": "檔案"
+    }
+  },
+  "fetching_settings_failed": "獲取設定失敗： ",
+  "get_current_user_failed": "獲取目前使用者失敗： ",
+  "Loading storage, please wait": "請稍候，正在載入儲存",
+  "conflict_policy": {
+    "cancel_if_exists": "如果檔案存在則取消",
+    "overwrite_existing": "覆蓋現有檔案",
+    "skip_existing": "跳過現有檔案"
+  }
+}

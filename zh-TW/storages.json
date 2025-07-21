@@ -1,0 +1,47 @@
+{
+  "common": {
+    "mount_path": "掛載路徑",
+    "mount_path-tips": "要掛載到的路徑，它是唯一的，不能重複",
+    "driver": "驅動",
+    "order": "序號",
+    "order-tips": "用於排序",
+    "status": "狀態",
+    "remark": "備註",
+    "cache_expiration": "快取過期時間",
+    "cache_expiration-tips": "此儲存的快取過期時間(分鐘)",
+    "down_proxy_url": "下載代理URL",
+    "web_proxy": "Web 代理",
+    "webdav_policy": "WebDAV 策略",
+    "proxy_range": "代理range",
+    "proxy_range-tips": "需要啟用代理",
+    "webdav_policys": {
+      "302_redirect": "302 重定向",
+      "use_proxy_url": "使用代理位址",
+      "native_proxy": "本機代理"
+    },
+    "order_by": "排序",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "modified": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "extract_folder": "提取資料夾",
+    "extract_folders": {
+      "front": "提取到最前",
+      "back": "提取到最後"
+    },
+    "enable_sign": "啟用簽章",
+    "disable_index": "禁用索引"
+  },
+  "other": {
+    "start_load_success": "開始載入",
+    "load_all": "全部重新載入",
+    "filter_by_driver": "按驅動篩選",
+    "table_layout": "表格佈局"
+  }
+}
