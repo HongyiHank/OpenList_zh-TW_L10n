@@ -1,0 +1,155 @@
+name: Update Language Files
+
+on:
+  schedule:
+    # 每天檢查一次 (UTC 時間)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # 允許手動觸發
+
+jobs:
+  update-lang:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Get latest release version with retry
+      id: get_version
+      run: |
+        max_retries=3
+        retry_count=0
+        retry_delay=30  # 基礎延遲時間（秒）
+        
+        while [ $retry_count -lt $max_retries ]; do
+          echo "嘗試獲取最新版本 (第 $((retry_count + 1)) 次)"
+          
+          latest_version=$(curl -s https://api.github.com/repos/OpenListTeam/OpenList-Frontend/releases/latest | jq -r '.tag_name')
+          
+          if [ "$latest_version" != "null" ] && [ -n "$latest_version" ]; then
+            echo "獲取到版本: $latest_version"
+            echo "version=$latest_version" >> $GITHUB_OUTPUT
+            break
+          else
+            echo "版本為 null 或空值，重試中..."
+            retry_count=$((retry_count + 1))
+            if [ $retry_count -lt $max_retries ]; then
+              sleep_time=$((retry_count * retry_delay))
+              echo "等待 $sleep_time 秒後重試..."
+              sleep $sleep_time
+            fi
+          fi
+        done
+        
+        if [ $retry_count -eq $max_retries ]; then
+          echo "無法獲取有效版本，退出"
+          exit 1
+        fi
+    
+    - name: Check current version
+      id: check_version
+      run: |
+        latest_version="${{ steps.get_version.outputs.version }}"
+        
+        if [ -f "version.txt" ]; then
+          current_version=$(cat version.txt)
+          echo "當前版本: $current_version"
+          echo "最新版本: $latest_version"
+          
+          if [ "$current_version" = "$latest_version" ]; then
+            echo "版本已是最新，跳過更新"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "需要更新版本"
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "version.txt 不存在，需要下載"
+          echo "skip=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Download and extract latest release
+      if: steps.check_version.outputs.skip == 'false'
+      run: |
+        latest_version="${{ steps.get_version.outputs.version }}"
+        echo "下載版本 $latest_version 的源碼"
+        
+        # 下載 source code zip
+        curl -L -o source.zip "https://github.com/OpenListTeam/OpenList-Frontend/archive/refs/tags/$latest_version.zip"
+        
+        # 解壓縮
+        unzip source.zip
+        
+        # 確認解壓後的資料夾名稱
+        extracted_folder="OpenList-Frontend-${latest_version#v}"
+        echo "解壓縮資料夾: $extracted_folder"
+        
+        # 檢查資料夾是否存在
+        if [ ! -d "$extracted_folder" ]; then
+          echo "找不到解壓縮資料夾 $extracted_folder"
+          ls -la
+          exit 1
+        fi
+        
+        # 檢查 lang 資料夾是否存在
+        lang_path="$extracted_folder/src/lang"
+        if [ ! -d "$lang_path" ]; then
+          echo "找不到 lang 資料夾: $lang_path"
+          exit 1
+        fi
+        
+        # 檢查 en 資料夾是否存在
+        en_path="$lang_path/en"
+        if [ ! -d "$en_path" ]; then
+          echo "找不到 en 資料夾: $en_path"
+          exit 1
+        fi
+        
+        echo "extracted_folder=$extracted_folder" >> $GITHUB_ENV
+    
+    - name: Copy en folder to repository root
+      if: steps.check_version.outputs.skip == 'false'
+      run: |
+        # 刪除現有的 en 資料夾（如果存在）
+        if [ -d "en" ]; then
+          rm -rf en
+        fi
+        
+        # 複製 en 資料夾到儲存庫根目錄
+        cp -r "$extracted_folder/src/lang/en" ./
+        
+        echo "已複製 en 資料夾到儲存庫根目錄"
+    
+    - name: Update version.txt
+      if: steps.check_version.outputs.skip == 'false'
+      run: |
+        latest_version="${{ steps.get_version.outputs.version }}"
+        echo "$latest_version" > version.txt
+        echo "已更新 version.txt 為 $latest_version"
+    
+    - name: Commit and push changes
+      if: steps.check_version.outputs.skip == 'false'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        git add en/ version.txt
+        
+        if git diff --staged --quiet; then
+          echo "沒有變更需要提交"
+        else
+          latest_version="${{ steps.get_version.outputs.version }}"
+          git commit -m "Update language files to version $latest_version"
+          git push
+          echo "已推送變更到儲存庫"
+        fi
+    
+    - name: Clean up
+      if: always()
+      run: |
+        # 清理下載的檔案
+        rm -f source.zip
+        rm -rf OpenList-Frontend-*
