@@ -1,0 +1,163 @@
+name: 同步語言檔案
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: '是否強制重新下載並覆蓋 (true/false)'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  GH_REPO: OpenListTeam/OpenList-Frontend
+  VERSION_FILE: "version.txt"
+
+jobs:
+  sync-languages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # 超時限制
+    
+    steps:
+    - name: 1. Checkout 儲存庫
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: 2. 獲取最新版本
+      id: get_version
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        set -euo pipefail
+        
+        echo "獲取最新版本..."
+        for i in {1..3}; do
+          latest_version=$(timeout 30s gh release view --repo $GH_REPO --json tagName -q .tagName 2>/dev/null || true)
+          if [ -n "$latest_version" ]; then
+            break
+          fi
+          echo "嘗試 $i/3 失敗，等待後重試..."
+          sleep 5
+        done
+        
+        if [ -z "$latest_version" ]; then
+          echo "::error::無法獲取最新版本號。"
+          exit 1
+        fi
+        
+        echo "成功獲取到版本: $latest_version"
+        echo "version=$latest_version" >> $GITHUB_OUTPUT
+
+    - name: 3. 檢查當前版本
+      id: check_version
+      run: |
+        LATEST_VERSION="${{ steps.get_version.outputs.version }}"
+        FORCE_RUN="${{ github.event.inputs.force_run }}"
+
+        if [ "$FORCE_RUN" == "true" ]; then
+          echo "::notice::偵測到強制執行，將進行更新。"
+          echo "skip=false" >> $GITHUB_OUTPUT
+        elif [ -f "$VERSION_FILE" ] && [ "$(cat $VERSION_FILE)" == "$LATEST_VERSION" ]; then
+          echo "::notice::版本已是最新 ($LATEST_VERSION)，無須執行。"
+          echo "skip=true" >> $GITHUB_OUTPUT
+        else
+          current_version=$(cat $VERSION_FILE 2>/dev/null || echo '不存在')
+          echo "::notice::版本需要從 '$current_version' 更新至 '$LATEST_VERSION'。"
+          echo "skip=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: 4. 下載並更新語言檔案
+      if: steps.check_version.outputs.skip == 'false'
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        set -euo pipefail
+        
+        LATEST_VERSION="${{ steps.get_version.outputs.version }}"
+        TEMP_DIR=$(mktemp -d)
+        trap "rm -rf $TEMP_DIR" EXIT
+        
+        echo "--- 開始下載版本 $LATEST_VERSION 的檔案 ---"
+        
+        # 下載並處理 zh-CN
+        echo "::group::下載並處理 zh-CN"
+        gh release download "$LATEST_VERSION" --repo $GH_REPO --pattern "i18n.tar.gz" -O "$TEMP_DIR/i18n.tar.gz"
+        
+        if [ ! -s "$TEMP_DIR/i18n.tar.gz" ]; then
+          echo "::error::i18n.tar.gz 下載失敗"
+          exit 1
+        fi
+        
+        tar -xzf "$TEMP_DIR/i18n.tar.gz" -C "$TEMP_DIR"
+        if [ ! -d "$TEMP_DIR/zh-CN" ]; then
+          echo "::error::解壓縮後找不到 zh-CN 資料夾"
+          exit 1
+        fi
+        
+        rm -rf zh-CN && mv "$TEMP_DIR/zh-CN" ./zh-CN
+        echo "✅ 成功更新 zh-CN 資料夾"
+        echo "::endgroup::"
+        
+        # 下載並處理 en
+        echo "::group::下載並處理 en"
+        curl -L --fail --retry 3 --retry-delay 5 -o "$TEMP_DIR/source.zip" \
+          "https://github.com/$GH_REPO/archive/refs/tags/$LATEST_VERSION.zip"
+        
+        if [ ! -s "$TEMP_DIR/source.zip" ]; then
+          echo "::error::source.zip 下載失敗"
+          exit 1
+        fi
+        
+        unzip -q "$TEMP_DIR/source.zip" "*/src/lang/en/*" -d "$TEMP_DIR"
+        extracted_en_path=$(find "$TEMP_DIR" -path "*/src/lang/en" -type d)
+        
+        if [ -z "$extracted_en_path" ]; then
+          echo "::error::在 source.zip 中找不到 en 資料夾"
+          exit 1
+        fi
+        
+        rm -rf en && mv "$extracted_en_path" ./en
+        echo "✅ 成功更新 en 資料夾"
+        echo "::endgroup::"
+
+    - name: 5. 提交並推送變更
+      if: steps.check_version.outputs.skip == 'false'
+      run: |
+        LATEST_VERSION="${{ steps.get_version.outputs.version }}"
+        
+        # 寫入新的版本檔案
+        echo "$LATEST_VERSION" > $VERSION_FILE
+        
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # 將所有變更加入暫存區
+        git add zh-CN/ en/ "$VERSION_FILE"
+
+        # 檢查是否有檔案變更需要提交
+        if git diff --staged --quiet; then
+          echo "::notice::沒有檔案變更需要提交。"
+        else
+          echo "偵測到檔案變更，正在提交..."
+          git commit -m "ci: 同步語言檔至版本 $LATEST_VERSION"
+          
+          # 使用 fetch + rebase 以減少衝突
+          echo "正在從遠端拉取變更..."
+          git fetch origin
+          git rebase origin/${{ github.ref_name }}
+          
+          echo "正在推送變更..."
+          git push
+          echo "::notice::已成功推送所有語言檔案變更到儲存庫。"
+        fi
