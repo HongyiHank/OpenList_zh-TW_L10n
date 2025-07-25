@@ -38,6 +38,12 @@
     "enable_sign": "Enable sign",
     "disable_index": "Disable index"
   },
+  "table_fields": {
+    "status": {
+      "work": "Work",
+      "disabled": "Disabled"
+    }
+  },
   "other": {
     "start_load_success": "Start loading",
     "load_all": "Reload All",

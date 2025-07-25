@@ -14,7 +14,31 @@
     "tr-install": "TrollStore",
     "tr-installing": "TrollStore 正在安装",
     "open_in_new_window": "在新窗口中打开",
-    "auto_next": "自动下一个"
+    "auto_next": "自动下一个",
+    "pdf": {
+      "document_outline": "文档大纲",
+      "no_outline": "此文档没有可用的大纲",
+      "loading": "加载中……",
+      "prev_page": "上一页",
+      "next_page": "下一页",
+      "toggle_sidebar": "切换侧边栏",
+      "close_sidebar": "关闭侧边栏",
+      "toggle_pen": "切换笔",
+      "zoom_presets": "缩放预设",
+      "zoom_levels": "缩放级别",
+      "zoom_auto": "自动",
+      "zoom_actual": "实际大小",
+      "zoom_fit": "适合页面",
+      "zoom_width": "页面宽度",
+      "zoom_50": "50%",
+      "zoom_75": "75%",
+      "zoom_100": "100%",
+      "zoom_125": "125%",
+      "zoom_150": "150%",
+      "zoom_200": "200%",
+      "zoom_in": "放大",
+      "zoom_out": "缩小"
+    }
   },
   "layouts": {
     "list": "列表视图",

@@ -23,8 +23,8 @@
   },
   "115 Open": {
     "access_token": "访问令牌",
-    "limit_rate,string": "限制速率",
-    "limit_rate,string-tips": "限制所有 api 请求率 ([limit]r/1s)",
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 api 请求率 ([limit]r/1s)",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -54,12 +54,12 @@
       "android": "安卓",
       "ios": "IOS",
       "qandroid": "Qandroid",
-      "tv": "Tv",
+      "tv": "TV",
       "web": "网页",
-      "wechatmini": "Wechatmini"
+      "wechatmini": "微信小程序"
     },
     "qrcode_token": "二维码令牌",
-    "qrcode_token-tips": "需要 QR 代码令牌和 cookie 中的一个",
+    "qrcode_token-tips": "需要 二维码令牌和 Cookie 中的一个",
     "receive_code": "提取码",
     "receive_code-tips": "115 分享链接提取码",
     "root_folder_id": "根文件夹ID",
@@ -120,7 +120,7 @@
     "username": "用户名"
   },
   "189CloudPC": {
-    "family_id": "Family id",
+    "family_id": "家庭ID",
     "family_transfer": "家庭转移",
     "no_use_ocr": "不使用OCR",
     "order_by": "排序",
@@ -207,6 +207,11 @@
     "root_folder_id": "根文件夹ID"
   },
   "AliyundriveOpen": {
+    "alipan_type": "阿里云盘类型",
+    "alipan_types": {
+      "alipanTV": "阿里云盘 TV",
+      "default": "默认"
+    },
     "api_url_address": "API 地址",
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",
@@ -596,7 +601,8 @@
     "share_id": "分享ID",
     "share_id-tips": "最后一个/共享链接后的部分",
     "share_pwd": "分享密码",
-    "share_pwd-tips": "分享链接的密码"
+    "share_pwd-tips": "分享链接的密码",
+    "show_root_folder": "显示根文件夹"
   },
   "Local": {
     "mkdir_perm": "创建文件夹权限",
@@ -791,6 +797,11 @@
   },
   "QuarkTV": {
     "device_id": "设备id",
+    "link_method": "链接方法",
+    "link_methods": {
+      "download": "下载",
+      "streaming": "流式"
+    },
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
     "refresh_token": "刷新令牌",
@@ -850,8 +861,6 @@
     "filterFileTypes": "过滤文件类型",
     "filterFileTypes-tips": "支持 Strm 文件的后缀名",
     "paths": "路径",
-    "signPath": "签名路径",
-    "signPath-tips": "在 Strm 文件中签名路径",
     "siteUrl": "站点 URL",
     "siteUrl-tips": "Strm 文件的前缀 URL"
   },
@@ -1068,6 +1077,11 @@
   },
   "UCTV": {
     "device_id": "设备id",
+    "link_method": "链接方法",
+    "link_methods": {
+      "download": "下载",
+      "streaming": "流式"
+    },
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
     "refresh_token": "刷新令牌",
@@ -1248,9 +1262,9 @@
   },
   "drivers": {
     "115 Cloud": "115 网盘",
-    "115 Open": "115 开放平台",
-    "115 Share": "115 云盘分享",
-    "123 Open": "123 Open",
+    "115 Open": "115 网盘开放平台",
+    "115 Share": "115 网盘分享",
+    "123 Open": "123云盘开放平台",
     "123Pan": "123云盘",
     "123PanLink": "123云盘直链",
     "123PanShare": "123云盘分享",
@@ -1280,7 +1294,7 @@
     "GitHub Releases": "GitHub 发行",
     "GoogleDrive": "谷歌云盘",
     "GooglePhoto": "谷歌相册",
-    "HalalCloud": "HhalCloud",
+    "HalalCloud": "HalalCloud",
     "ILanZou": "蓝奏云优享版",
     "IPFS API": "IPFS API",
     "KodBox": "可道云",
@@ -1294,7 +1308,7 @@
     "NeteaseMusic": "网易云音乐",
     "Onedrive": "OneDrive",
     "Onedrive Sharelink": "Onedrive 分享链接",
-    "OnedriveAPP": "OnedriveAPP",
+    "OnedriveAPP": "Onedrive APP",
     "OpenList": "OpenList",
     "PikPak": "PikPak",
     "PikPakShare": "PikPak分享",
@@ -1309,17 +1323,17 @@
     "Teambition": "Teambition网盘",
     "Terabox": "Terabox",
     "Thunder": "迅雷",
-    "ThunderBrowser": "Thunder浏览器",
-    "ThunderBrowserExpert": "Thunder浏览器专家",
+    "ThunderBrowser": "迅雷浏览器",
+    "ThunderBrowserExpert": "迅雷浏览器专家版",
     "ThunderExpert": "迅雷专家版",
     "ThunderX": "迅雷X",
     "ThunderXExpert": "迅雷X专家版",
-    "UC": "UC",
-    "UCTV": "UC TV",
+    "UC": "UC网盘",
+    "UCTV": "UC网盘 TV",
     "USS": "又拍云存储",
     "UrlTree": "地址树",
     "Virtual": "虚拟存储",
-    "WebDav": "WebDav",
+    "WebDav": "WebDAV",
     "WeiYun": "腾讯微云",
     "WoPan": "联通云盘",
     "YandexDisk": "Yandex网盘"

@@ -3,6 +3,7 @@
   "offline_download_transfer": "将下载的文件传输到相应的存储",
   "upload": "上传文件到对应的存储",
   "copy": "将文件从一个存储复制到另一个存储",
+  "move": "将文件从一个存储移动到另一个存储",
   "decompress": "下载并解压缩",
   "decompress_upload": "将提取出的文件上传到目标存储",
   "done": "已完成",

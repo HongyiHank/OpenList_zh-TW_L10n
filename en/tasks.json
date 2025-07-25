@@ -3,6 +3,7 @@
   "offline_download_transfer": "Transfer downloaded file to corresponding storage",
   "upload": "Upload file to corresponding storage",
   "copy": "Copy file from a storage to another storage",
+  "move": "Move file from a storage to another storage",
   "decompress": "Download and decompress an archive file",
   "decompress_upload": "Upload extracted file into target storage",
   "done": "Completed",

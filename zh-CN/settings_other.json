@@ -1,7 +1,7 @@
 {
   "aria2": "Aria2",
   "aria2_version": "Aria2 版本：",
-  "set_aria2": "设置 aria2",
+  "set_aria2": "设置 Aria2",
   "copy_token": "复制令牌",
   "reset_token": "重置令牌",
   "reset_token_success": "重置令牌成功",
@@ -12,6 +12,8 @@
   "set_transmission": "设置Transmission",
   "115": "115",
   "set_115": "设置 115",
+  "115_open": "115 开放平台",
+  "set_115_open": "设置 115 开放平台",
   "pikpak": "PikPak",
   "set_pikpak": "设置 PikPak",
   "thunder": "迅雷",

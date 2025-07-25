@@ -23,8 +23,8 @@
   },
   "115 Open": {
     "access_token": "Access token",
-    "limit_rate,string": "Limit rate,string",
-    "limit_rate,string-tips": "limit all api request rate ([limit]r/1s)",
+    "limit_rate": "Limit rate",
+    "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
     "order_by": "Order by",
     "order_bys": {
       "file_name": "File name",
@@ -207,6 +207,11 @@
     "root_folder_id": "Root folder id"
   },
   "AliyundriveOpen": {
+    "alipan_type": "Alipan type",
+    "alipan_types": {
+      "alipanTV": "AlipanTV",
+      "default": "Default"
+    },
     "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
@@ -596,7 +601,8 @@
     "share_id": "Share id",
     "share_id-tips": "The part after the last / in the shared link",
     "share_pwd": "Share pwd",
-    "share_pwd-tips": "The password of the shared link"
+    "share_pwd-tips": "The password of the shared link",
+    "show_root_folder": "Show root folder"
   },
   "Local": {
     "mkdir_perm": "Mkdir perm",
@@ -791,6 +797,11 @@
   },
   "QuarkTV": {
     "device_id": "Device id",
+    "link_method": "Link method",
+    "link_methods": {
+      "download": "Download",
+      "streaming": "Streaming"
+    },
     "query_token": "Query token",
     "query_token-tips": "don't edit'",
     "refresh_token": "Refresh token",
@@ -850,8 +861,6 @@
     "filterFileTypes": "FilterFileTypes",
     "filterFileTypes-tips": "Supports suffix name of strm file",
     "paths": "Paths",
-    "signPath": "SignPath",
-    "signPath-tips": "sign the path in the strm file",
     "siteUrl": "SiteUrl",
     "siteUrl-tips": "The prefix URL of the strm file"
   },
@@ -1068,6 +1077,11 @@
   },
   "UCTV": {
     "device_id": "Device id",
+    "link_method": "Link method",
+    "link_methods": {
+      "download": "Download",
+      "streaming": "Streaming"
+    },
     "query_token": "Query token",
     "query_token-tips": "don't edit'",
     "refresh_token": "Refresh token",

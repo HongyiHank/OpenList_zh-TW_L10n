@@ -38,6 +38,12 @@
     "enable_sign": "启用签名",
     "disable_index": "禁用索引"
   },
+  "table_fields": {
+    "status": {
+      "work": "工作",
+      "disabled": "已禁用"
+    }
+  },
   "other": {
     "start_load_success": "开始加载",
     "load_all": "全部重新加载",

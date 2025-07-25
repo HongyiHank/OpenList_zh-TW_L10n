@@ -34,7 +34,7 @@
   },
   "home_icon": "首页图标",
   "iframe_previews": "Iframe 预览",
-  "ignore_direct_link_params": "忽略直接链接参数",
+  "ignore_direct_link_params": "忽略直链参数",
   "ignore_paths": "忽略路径",
   "ignore_paths-tips": "每行一条路径",
   "image_types": "图片类型",
