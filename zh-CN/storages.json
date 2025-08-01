@@ -10,6 +10,8 @@
     "cache_expiration": "缓存过期时间",
     "cache_expiration-tips": "此存储的缓存过期时间(分钟)",
     "down_proxy_url": "下载代理URL",
+    "disable_proxy_sign": "禁用代理签名",
+    "disable_proxy_sign-tips": "禁用下载代理URL的签名",
     "web_proxy": "Web 代理",
     "webdav_policy": "WebDAV 策略",
     "proxy_range": "代理range",

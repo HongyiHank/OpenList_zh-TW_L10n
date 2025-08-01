@@ -2,7 +2,15 @@
   "obj": {
     "name": "Name",
     "size": "Size",
-    "modified": "Modified"
+    "modified": "Modified",
+    "count": {
+      "count": "{{folders}} folders, {{files}} files in total",
+      "count_folders": "{{folders}} folders in total",
+      "count_files": "{{files}} files in total",
+      "selected": "{{folders}} folders, {{files}} files selected",
+      "selected_folders": "{{folders}} folders selected",
+      "selected_files": "{{files}} files selected"
+    }
   },
   "preview": {
     "download": "Download",
@@ -154,8 +162,14 @@
       "sticky": "Stick to top of page",
       "only_navbar_sticky": "Only nav bar sticky"
     },
+    "grid_item_size": "Grid item size",
     "show_sidebar": "Show sidebar",
     "show_sidebar_options": {
+      "none": "None",
+      "visible": "Visible"
+    },
+    "show_count_msg": "Show file count message",
+    "show_count_msg_options": {
       "none": "None",
       "visible": "Visible"
     },

@@ -2,7 +2,15 @@
   "obj": {
     "name": "名称",
     "size": "大小",
-    "modified": "修改时间"
+    "modified": "修改时间",
+    "count": {
+      "count": "共有 {{folders}} 个文件夹，{{files}} 个文件",
+      "count_folders": "共有 {{folders}} 个文件夹",
+      "count_files": "共有 {{files}} 个文件",
+      "selected": "已选中 {{folders}} 个文件夹，{{files}} 个文件",
+      "selected_folders": "已选中 {{folders}} 个文件夹",
+      "selected_files": "已选中 {{files}} 个文件"
+    }
   },
   "preview": {
     "download": "下载",
@@ -154,6 +162,7 @@
       "sticky": "吸附到页面顶部",
       "only_navbar_sticky": "仅吸附导航栏"
     },
+    "grid_item_size": "网格视图图片尺寸",
     "show_sidebar": "显示侧边栏",
     "show_sidebar_options": {
       "none": "无",
