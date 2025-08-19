@@ -35,5 +35,7 @@
   "receive": "接收",
   "received_msgs": "收到的消息",
   "add_storage-tips": "您可能需要在新打开的选项卡中填写一些信息。",
-  "messenger-tips": "您可能需要在这个标签页中按提示填写一些信息。"
+  "messenger-tips": "您可能需要在这个标签页中按提示填写一些信息。",
+  "load_default_setting": "加载默认设置",
+  "load_default_setting_success": "加载成功，未保存"
 }

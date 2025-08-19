@@ -2,7 +2,7 @@
   "login_to": "登录到",
   "username-tips": "输入您的用户名",
   "password-tips": "输入您的密码",
-  "otp-tips": "输入您的 OTP 代码",
+  "otp-tips": "输入您的 OTP 验证码",
   "remember": "记住账号",
   "forget": "忘记密码？",
   "forget_url": "https://doc.oplist.org/faq/howto#%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E",

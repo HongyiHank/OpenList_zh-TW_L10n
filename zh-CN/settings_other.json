@@ -9,7 +9,7 @@
   "set_qbit": "设置 qBittorrent",
   "qbittorrent": "qBittorrent",
   "transmission": "Transmission",
-  "set_transmission": "设置Transmission",
+  "set_transmission": "设置 Transmission",
   "115": "115",
   "set_115": "设置 115",
   "115_open": "115 开放平台",
@@ -19,5 +19,6 @@
   "thunder": "迅雷",
   "set_thunder": "设置迅雷",
   "thunder_browser": "迅雷浏览器",
-  "set_thunder_browser": "设置迅雷浏览器"
+  "set_thunder_browser": "设置迅雷浏览器",
+  "set_thunderX": "设置迅雷 X"
 }

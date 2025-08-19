@@ -76,6 +76,8 @@
     "root_folder_id": "Root folder id"
   },
   "123Pan": {
+    "UploadThread": "UploadThread",
+    "UploadThread-tips": "the threads of upload",
     "password": "Password",
     "root_folder_id": "Root folder id",
     "username": "Username"
@@ -439,6 +441,7 @@
     "share_ids": "Share ids"
   },
   "Dropbox": {
+    "RootNamespaceId": "RootNamespaceId",
     "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
@@ -605,6 +608,8 @@
     "show_root_folder": "Show root folder"
   },
   "Local": {
+    "directory_size": "Directory size",
+    "directory_size-tips": "This might impact host performance",
     "mkdir_perm": "Mkdir perm",
     "recycle_bin_path": "Recycle bin path",
     "recycle_bin_path-tips": "path to recycle bin, delete permanently if empty or keep 'delete permanently'",
@@ -856,10 +861,14 @@
     "username": "Username"
   },
   "Strm": {
+    "downloadFileTypes": "DownloadFileTypes",
+    "downloadFileTypes-tips": "Files need to download with strm (usally subtitles)",
     "encodePath": "EncodePath",
     "encodePath-tips": "encode the path in the strm file",
     "filterFileTypes": "FilterFileTypes",
     "filterFileTypes-tips": "Supports suffix name of strm file",
+    "localModel": "LocalModel",
+    "localModel-tips": "enable local mode",
     "paths": "Paths",
     "siteUrl": "SiteUrl",
     "siteUrl-tips": "The prefix URL of the strm file"

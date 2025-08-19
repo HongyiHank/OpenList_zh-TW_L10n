@@ -8,20 +8,20 @@
     "status": "状态",
     "remark": "备注",
     "cache_expiration": "缓存过期时间",
-    "cache_expiration-tips": "此存储的缓存过期时间(分钟)",
-    "down_proxy_url": "下载代理URL",
+    "cache_expiration-tips": "此存储的缓存过期时间（分钟）",
+    "down_proxy_url": "下载代理 URL",
     "disable_proxy_sign": "禁用代理签名",
-    "disable_proxy_sign-tips": "禁用下载代理URL的签名",
+    "disable_proxy_sign-tips": "禁用下载代理 URL 的签名",
     "web_proxy": "Web 代理",
     "webdav_policy": "WebDAV 策略",
-    "proxy_range": "代理range",
+    "proxy_range": "代理 Range",
     "proxy_range-tips": "需要启用代理",
     "webdav_policys": {
       "302_redirect": "302 重定向",
       "use_proxy_url": "使用代理地址",
       "native_proxy": "本地代理"
     },
-    "order_by": "排序",
+    "order_by": "排序依据",
     "order_bys": {
       "name": "名称",
       "size": "大小",
@@ -32,17 +32,17 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "extract_folder": "提取文件夹",
+    "extract_folder": "文件夹排序方式",
     "extract_folders": {
-      "front": "提取到最前",
-      "back": "提取到最后"
+      "front": "文件夹置顶",
+      "back": "文件夹置底"
     },
     "enable_sign": "启用签名",
     "disable_index": "禁用索引"
   },
   "table_fields": {
     "status": {
-      "work": "工作",
+      "work": "正常",
       "disabled": "已禁用"
     }
   },
