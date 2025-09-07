@@ -92,6 +92,11 @@
     "list": "List",
     "responsive": "Responsive"
   },
+  "share_archive_preview": "Share archive preview",
+  "share_force_proxy": "Share force proxy",
+  "share_icon": "Share icon",
+  "share_preview": "Share preview",
+  "share_summary_content": "Share summary content",
   "sign_all": "Sign all",
   "site_title": "Site title",
   "sso_application_name": "Sso application name",

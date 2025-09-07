@@ -70,6 +70,12 @@
     "AccessToken": "AccessToken",
     "ClientID": "ClientID",
     "ClientSecret": "ClientSecret",
+    "DirectLink": "DirectLink",
+    "DirectLink-tips": "use direct link when download file",
+    "DirectLinkPrivateKey": "DirectLinkPrivateKey",
+    "DirectLinkPrivateKey-tips": "private key for direct link, if URL authentication is enabled",
+    "DirectLinkValidDuration": "DirectLinkValidDuration",
+    "DirectLinkValidDuration-tips": "minutes, if URL authentication is enabled",
     "RefreshToken": "RefreshToken",
     "UploadThread": "UploadThread",
     "UploadThread-tips": "the threads of upload",
@@ -402,6 +408,17 @@
     "thumbnail": "Thumbnail",
     "thumbnail-tips": "enable thumbnail which pre-generated under .thumbnails folder"
   },
+  "Degoo": {
+    "access_token": "Access token",
+    "access_token-tips": "Access token for Degoo API, obtained automatically",
+    "password": "Password",
+    "password-tips": "Your Degoo account password",
+    "refresh_token": "Refresh token",
+    "refresh_token-tips": "Refresh token for automatic token renewal, obtained automatically",
+    "root_folder_id": "Root folder id",
+    "username": "Username",
+    "username-tips": "Your Degoo account email"
+  },
   "Doge": {
     "access_key_id": "Access key id",
     "add_filename_to_disposition": "Add filename to disposition",
@@ -729,6 +746,13 @@
     "url": "Url",
     "username": "Username"
   },
+  "OpenListShare": {
+    "forward_archive_requests": "Forward archive requests",
+    "pwd": "Pwd",
+    "root_folder_path": "Root folder path",
+    "sid": "Sid",
+    "url": "Url"
+  },
   "PikPak": {
     "captcha_token": "Captcha token",
     "device_id": "Device id",
@@ -895,6 +919,18 @@
     },
     "root_folder_id": "Root folder id",
     "use_s3_upload_method": "Use s3 upload method"
+  },
+  "Teldrive": {
+    "chunk_size": "Chunk size",
+    "chunk_size-tips": "Chunk size in MiB",
+    "cookie": "Cookie",
+    "cookie-tips": "access_token=xxx",
+    "root_folder_path": "Root folder path",
+    "upload_concurrency": "Upload concurrency",
+    "upload_concurrency-tips": "Concurrency upload requests",
+    "url": "Url",
+    "use_share_link": "Use share link",
+    "use_share_link-tips": "Create share link when getting link to support 302. If disabled, you need to enable web proxy."
   },
   "Terabox": {
     "cookie": "Cookie",
@@ -1212,6 +1248,7 @@
     "Cloudreve": {},
     "Cloudreve V4": {},
     "Crypt": {},
+    "Degoo": {},
     "Doge": {},
     "Doubao": {},
     "DoubaoShare": {},
@@ -1241,6 +1278,7 @@
     "Onedrive Sharelink": {},
     "OnedriveAPP": {},
     "OpenList": {},
+    "OpenListShare": {},
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
@@ -1252,6 +1290,7 @@
     "Seafile": {},
     "Strm": {},
     "Teambition": {},
+    "Teldrive": {},
     "Terabox": {},
     "Thunder": {},
     "ThunderBrowser": {},
@@ -1292,6 +1331,7 @@
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
     "Crypt": "Crypt",
+    "Degoo": "Degoo",
     "Doge": "Doge",
     "Doubao": "Doubao",
     "DoubaoShare": "DoubaoShare",
@@ -1319,6 +1359,7 @@
     "Onedrive Sharelink": "Onedrive Sharelink",
     "OnedriveAPP": "OnedriveAPP",
     "OpenList": "OpenList",
+    "OpenListShare": "OpenListShare",
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
@@ -1330,6 +1371,7 @@
     "Seafile": "Seafile",
     "Strm": "Strm",
     "Teambition": "Teambition",
+    "Teldrive": "Teldrive",
     "Terabox": "Terabox",
     "Thunder": "Thunder",
     "ThunderBrowser": "ThunderBrowser",

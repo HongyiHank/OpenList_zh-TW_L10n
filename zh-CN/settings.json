@@ -68,7 +68,7 @@
     "load_more": "加载更多",
     "pagination": "分页"
   },
-  "preview_archives_by_default": "默认情况下预览档案",
+  "preview_archives_by_default": "默认情况下预览压缩包",
   "privacy_regs": "隐私内容正则表达式",
   "proxy_ignore_headers": "代理忽略头部",
   "proxy_types": "代理类型",
@@ -92,6 +92,11 @@
     "list": "列表",
     "responsive": "响应式"
   },
+  "share_archive_preview": "分享压缩包预览",
+  "share_force_proxy": "分享强制代理",
+  "share_icon": "分享图标",
+  "share_preview": "分享预览",
+  "share_summary_content": "分享摘要内容",
   "sign_all": "签名所有",
   "site_title": "网站标题",
   "sso_application_name": "单点登录应用名称",

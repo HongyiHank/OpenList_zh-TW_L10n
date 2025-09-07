@@ -13,7 +13,8 @@
     "ftp_read": "FTP 读取",
     "ftp_manage": "FTP 管理",
     "read_archives": "读取压缩文件",
-    "decompress": "解压"
+    "decompress": "解压",
+    "share": "分享"
   },
   "username": "用户名",
   "password": "密码",

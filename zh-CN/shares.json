@@ -1,0 +1,38 @@
+{
+  "expires": "过期时间",
+  "id": "ID",
+  "accessed": "访问次数",
+  "max_accessed": "最大访问次数",
+  "pwd": "分享码",
+  "files": "分享路径",
+  "files_etc": " 与其它 {{more}} 个",
+  "creator": "创建者",
+  "status": "状态",
+  "status_list": {
+    "disabled": "已禁用",
+    "invalid": "已失效",
+    "work": "正常",
+    "denied": "无权限"
+  },
+  "remark": "备注",
+  "readme": "说明",
+  "header": "顶部说明",
+  "order_by": "排序依据",
+  "order_bys": {
+    "name": "名称",
+    "size": "大小",
+    "modified": "修改时间"
+  },
+  "order_direction": "排序方式",
+  "order_directions": {
+    "asc": "升序",
+    "desc": "降序"
+  },
+  "extract_folder": "文件夹排序方式",
+  "extract_folders": {
+    "front": "文件夹置顶",
+    "back": "文件夹置底"
+  },
+  "input_password": "请输入分享码",
+  "copy_msg": "复制链接"
+}

@@ -1,0 +1,38 @@
+{
+  "expires": "Expire time",
+  "id": "ID",
+  "accessed": "Access count",
+  "max_accessed": "Max access count",
+  "pwd": "Share code",
+  "files": "Share Paths",
+  "files_etc": " and {{more}} more",
+  "creator": "Creator",
+  "status": "Status",
+  "status_list": {
+    "disabled": "Disabled",
+    "invalid": "Invalid",
+    "work": "Work",
+    "denied": "No permission"
+  },
+  "remark": "Remark",
+  "readme": "Custom readme",
+  "header": "Custom header",
+  "order_by": "Order by",
+  "order_bys": {
+    "name": "Name",
+    "size": "Size",
+    "modified": "Modified"
+  },
+  "order_direction": "Order direction",
+  "order_directions": {
+    "asc": "Ascending",
+    "desc": "Descending"
+  },
+  "extract_folder": "Extract folder",
+  "extract_folders": {
+    "front": "Extract to front",
+    "back": "Extract to back"
+  },
+  "input_password": "Please input share code",
+  "copy_msg": "Copy link"
+}
