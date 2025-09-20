@@ -6,6 +6,8 @@
   "pwd": "分享码",
   "files": "分享路径",
   "files_etc": " 与其它 {{more}} 个",
+  "files_placeholder": "输入文件或文件夹路径，每行一个",
+  "add_path": "添加路径",
   "creator": "创建者",
   "status": "状态",
   "status_list": {

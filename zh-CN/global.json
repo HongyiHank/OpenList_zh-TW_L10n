@@ -28,5 +28,6 @@
   "close": "关闭",
   "no_support_now": "暂不支持",
   "empty_input": "请输入",
-  "name": "名称"
+  "name": "名称",
+  "go_to_storages": "转到存储"
 }

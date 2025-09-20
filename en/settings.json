@@ -27,6 +27,7 @@
   "ftp_tls_private_key_path": "Ftp tls private key path",
   "ftp_tls_public_cert_path": "Ftp tls public cert path",
   "hide_files": "Hide files",
+  "hide_storage_details": "Hide storage details",
   "home_container": "Home container",
   "home_containers": {
     "hope_container": "Hope container",

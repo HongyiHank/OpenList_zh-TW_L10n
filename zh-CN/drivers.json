@@ -130,6 +130,11 @@
   "189CloudPC": {
     "family_id": "家庭 ID",
     "family_transfer": "家庭传输",
+    "login_type": "登录类型",
+    "login_types": {
+      "password": "密码",
+      "qrcode": "二维码"
+    },
     "no_use_ocr": "不使用 OCR",
     "order_by": "排序依据",
     "order_bys": {
@@ -144,6 +149,8 @@
     },
     "password": "密码",
     "rapid_upload": "秒传",
+    "refresh_token": "刷新令牌",
+    "refresh_token-tips": "要切换帐户，请清除此字段",
     "root_folder_id": "根文件夹 ID",
     "type": "类型",
     "types": {
@@ -194,6 +201,7 @@
     "paths": "路径",
     "protect_same_name": "保护同名",
     "protect_same_name-tips": "保护同名的文件不被删除或重命名",
+    "provider_pass_through": "Provider pass through",
     "writable": "可写"
   },
   "Aliyundrive": {
@@ -334,6 +342,15 @@
     },
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
+  },
+  "CNB Releases": {
+    "default_branch": "默认分支",
+    "default_branch-tips": "新发行版的默认分支",
+    "repo": "仓库",
+    "root_folder_path": "根文件夹路径",
+    "token": "令牌",
+    "use_tag_name": "使用 Tag 名称",
+    "use_tag_name-tips": "使用原始的 Tag 名称而不是 Release 名称"
   },
   "ChaoXingGroupDrive": {
     "bbsid": "BBSID",
@@ -684,7 +701,7 @@
     "phone": "手机号码",
     "root_folder_id": "根文件夹 ID",
     "sms_code": "短信验证码",
-    "sms_code-tips": "输入“send”发送短信",
+    "sms_code-tips": "输入“send”发送短信 ",
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
   },
@@ -1244,6 +1261,7 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
+    "CNB Releases": {},
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
@@ -1327,6 +1345,7 @@
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
     "BaiduPhoto": "一刻相册",
+    "CNB Releases": "CNB 发行版",
     "ChaoXingGroupDrive": "超星小组盘",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
