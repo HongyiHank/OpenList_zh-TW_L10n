@@ -118,7 +118,9 @@
       "personal_new": "新的个人盘"
     },
     "use_large_thumbnail": "使用大缩略图",
-    "use_large_thumbnail-tips": "启用图片使用大缩略图"
+    "use_large_thumbnail-tips": "启用图片使用大缩略图",
+    "user_domain_id": "User domain id",
+    "user_domain_id-tips": "ud_id in Cookie, fill in to show disk usage"
   },
   "189Cloud": {
     "cookie": "Cookie",
@@ -193,6 +195,7 @@
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
   },
   "Alias": {
+    "details_pass_through": "后端驱动详细信息穿透",
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
     "download_part_size": "下载分片大小",
@@ -201,7 +204,7 @@
     "paths": "路径",
     "protect_same_name": "保护同名",
     "protect_same_name-tips": "保护同名的文件不被删除或重命名",
-    "provider_pass_through": "Provider pass through",
+    "provider_pass_through": "后端驱动类型穿透",
     "writable": "可写"
   },
   "Aliyundrive": {
@@ -358,6 +361,22 @@
     "password": "密码",
     "root_folder_id": "根文件夹 ID",
     "user_name": "用户名"
+  },
+  "Chunk": {
+    "chunk_large_file_only": "Chunk large file only",
+    "chunk_large_file_only-tips": "chunk only if file size > part_size",
+    "chunk_prefix": "Chunk prefix",
+    "chunk_prefix-tips": "the prefix of chunk folder",
+    "custom_ext": "自定义扩展名",
+    "num_list_workers": "Num list workers",
+    "part_size": "分块大小",
+    "part_size-tips": "单位：字节",
+    "remote_path": "远程存储路径",
+    "show_hidden": "显示隐藏",
+    "show_hidden-tips": "显示隐藏目录和文件",
+    "store_hash": "存储哈希值",
+    "thumbnail": "缩略图",
+    "thumbnail-tips": "启用在.thumbnail文件夹中预生成的缩略图"
   },
   "Cloudreve": {
     "address": "地址",
@@ -559,6 +578,7 @@
     "chunk_size-tips": "上传分块大小 (单位：MB)",
     "client_id": "客户端 ID",
     "client_secret": "客户端密钥",
+    "disable_disk_usage": "Disable disk usage",
     "order_by": "排序依据",
     "order_by-tips": "例如：folder, name, modifiedTime",
     "order_direction": "排序方式",
@@ -658,6 +678,29 @@
     "video_thumb_pos": "视频缩略图",
     "video_thumb_pos-tips": "视频缩略图的位置。如果该值是一个数字（整数点浮点），它代表几秒钟的时间。如果值以“%”结尾，则代表视频持续时间的百分比。"
   },
+  "MediaFire": {
+    "chunk_size": "Chunk size",
+    "cookie": "Cookie",
+    "cookie-tips": "Required for navigation",
+    "limit_rate": "Limit rate",
+    "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
+    "order_by": "Order by",
+    "order_bys": {
+      "name": "Name",
+      "size": "Size",
+      "time": "Time"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
+    "root_folder_path": "Root folder path",
+    "session_token": "Session token",
+    "session_token-tips": "Required for MediaFire API",
+    "upload_threads": "Upload threads",
+    "upload_threads-tips": "concurrent upload threads"
+  },
   "MediaTrack": {
     "access_token": "访问令牌",
     "order_by": "排序依据",
@@ -717,6 +760,7 @@
     "client_secret": "客户端密钥",
     "custom_host": "自定义主机",
     "custom_host-tips": "自定义加速下载链接",
+    "disable_disk_usage": "Disable disk usage",
     "is_sharepoint": "是否 SharePoint",
     "redirect_uri": "重定向 URI",
     "refresh_token": "刷新令牌",
@@ -742,6 +786,7 @@
     "client_secret": "客户端密钥",
     "custom_host": "自定义主机",
     "custom_host-tips": "自定义加速下载链接",
+    "disable_disk_usage": "Disable disk usage",
     "email": "邮箱",
     "region": "地区",
     "regions": {
@@ -847,6 +892,16 @@
     "link_methods": {
       "download": "下载",
       "streaming": "流式"
+    },
+    "order_by": "排序依据",
+    "order_bys": {
+      "file_name": "文件名称",
+      "updated_at": "修改时间"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
     },
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
@@ -1144,6 +1199,16 @@
       "download": "下载",
       "streaming": "流式"
     },
+    "order_by": "排序依据",
+    "order_bys": {
+      "file_name": "文件名称",
+      "updated_at": "修改时间"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
     "refresh_token": "刷新令牌",
@@ -1263,6 +1328,7 @@
     "BaiduPhoto": {},
     "CNB Releases": {},
     "ChaoXingGroupDrive": {},
+    "Chunk": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
     "Crypt": {},
@@ -1285,6 +1351,7 @@
     "Lanzou": {},
     "LenovoNasShare": {},
     "Local": {},
+    "MediaFire": {},
     "MediaTrack": {},
     "Mega_nz": {},
     "Misskey": {},
@@ -1347,6 +1414,7 @@
     "BaiduPhoto": "一刻相册",
     "CNB Releases": "CNB 发行版",
     "ChaoXingGroupDrive": "超星小组盘",
+    "Chunk": "分块",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
     "Crypt": "Crypt",
@@ -1369,6 +1437,7 @@
     "Lanzou": "蓝奏云",
     "LenovoNasShare": "联想家庭储存链接分享",
     "Local": "本机存储",
+    "MediaFire": "MediaFire",
     "MediaTrack": "分秒帧",
     "Mega_nz": "Mega 网盘",
     "Misskey": "Misskey",

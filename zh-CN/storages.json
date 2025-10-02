@@ -5,6 +5,7 @@
     "driver": "驱动",
     "order": "序号",
     "order-tips": "用于排序",
+    "usage": "使用情况",
     "status": "状态",
     "remark": "备注",
     "cache_expiration": "缓存过期时间",

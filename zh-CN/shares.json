@@ -36,5 +36,6 @@
     "back": "文件夹置底"
   },
   "input_password": "请输入分享码",
-  "copy_msg": "复制链接"
+  "copy_msg": "复制链接",
+  "no_permission_tip": "创建分享需要启用“分享”权限。"
 }

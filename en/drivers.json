@@ -118,7 +118,9 @@
       "personal_new": "Personal new"
     },
     "use_large_thumbnail": "Use large thumbnail",
-    "use_large_thumbnail-tips": "Enable to use large thumbnail for images"
+    "use_large_thumbnail-tips": "Enable to use large thumbnail for images",
+    "user_domain_id": "User domain id",
+    "user_domain_id-tips": "ud_id in Cookie, fill in to show disk usage"
   },
   "189Cloud": {
     "cookie": "Cookie",
@@ -193,6 +195,7 @@
     "upload_thread-tips": "1\u003c=thread\u003c=32"
   },
   "Alias": {
+    "details_pass_through": "Details pass through",
     "download_concurrency": "Download concurrency",
     "download_concurrency-tips": "Need to enable proxy",
     "download_part_size": "Download part size",
@@ -358,6 +361,17 @@
     "password": "Password",
     "root_folder_id": "Root folder id",
     "user_name": "User name"
+  },
+  "Chunk": {
+    "custom_ext": "Custom ext",
+    "part_size": "Part size",
+    "part_size-tips": "bytes",
+    "remote_path": "Remote path",
+    "show_hidden": "Show hidden",
+    "show_hidden-tips": "show hidden directories and files",
+    "store_hash": "Store hash",
+    "thumbnail": "Thumbnail",
+    "thumbnail-tips": "enable thumbnail which pre-generated under .thumbnails folder"
   },
   "Cloudreve": {
     "address": "Address",
@@ -559,6 +573,7 @@
     "chunk_size-tips": "chunk size while uploading (unit: MB)",
     "client_id": "Client id",
     "client_secret": "Client secret",
+    "disable_disk_usage": "Disable disk usage",
     "order_by": "Order by",
     "order_by-tips": "such as: folder,name,modifiedTime",
     "order_direction": "Order direction",
@@ -717,6 +732,7 @@
     "client_secret": "Client secret",
     "custom_host": "Custom host",
     "custom_host-tips": "Custom host for onedrive download link",
+    "disable_disk_usage": "Disable disk usage",
     "is_sharepoint": "Is sharepoint",
     "redirect_uri": "Redirect uri",
     "refresh_token": "Refresh token",
@@ -742,6 +758,7 @@
     "client_secret": "Client secret",
     "custom_host": "Custom host",
     "custom_host-tips": "Custom host for onedrive download link",
+    "disable_disk_usage": "Disable disk usage",
     "email": "Email",
     "region": "Region",
     "regions": {
@@ -847,6 +864,16 @@
     "link_methods": {
       "download": "Download",
       "streaming": "Streaming"
+    },
+    "order_by": "Order by",
+    "order_bys": {
+      "file_name": "File name",
+      "updated_at": "Updated at"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
     },
     "query_token": "Query token",
     "query_token-tips": "don't edit'",
@@ -1144,6 +1171,16 @@
       "download": "Download",
       "streaming": "Streaming"
     },
+    "order_by": "Order by",
+    "order_bys": {
+      "file_name": "File name",
+      "updated_at": "Updated at"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
     "query_token": "Query token",
     "query_token-tips": "don't edit'",
     "refresh_token": "Refresh token",
@@ -1263,6 +1300,7 @@
     "BaiduPhoto": {},
     "CNB Releases": {},
     "ChaoXingGroupDrive": {},
+    "Chunk": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
     "Crypt": {},
@@ -1347,6 +1385,7 @@
     "BaiduPhoto": "BaiduPhoto",
     "CNB Releases": "CNB Releases",
     "ChaoXingGroupDrive": "ChaoXingGroupDrive",
+    "Chunk": "Chunk",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
     "Crypt": "Crypt",
