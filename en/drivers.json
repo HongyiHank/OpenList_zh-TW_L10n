@@ -363,7 +363,12 @@
     "user_name": "User name"
   },
   "Chunk": {
+    "chunk_large_file_only": "Chunk large file only",
+    "chunk_large_file_only-tips": "chunk only if file size \u003e part_size",
+    "chunk_prefix": "Chunk prefix",
+    "chunk_prefix-tips": "the prefix of chunk folder",
     "custom_ext": "Custom ext",
+    "num_list_workers": "Num list workers",
     "part_size": "Part size",
     "part_size-tips": "bytes",
     "remote_path": "Remote path",
@@ -602,6 +607,18 @@
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1 \u003c= thread \u003c= 32"
   },
+  "HalalCloudOpen": {
+    "client_id": "Client id",
+    "client_secret": "Client secret",
+    "host": "Host",
+    "refresh_token": "Refresh token",
+    "refresh_token-tips": "If using a personal API approach, the RefreshToken is not required.",
+    "root_folder_path": "Root folder path",
+    "timeout": "Timeout",
+    "timeout-tips": "timeout in seconds",
+    "upload_thread": "Upload thread",
+    "upload_thread-tips": "1 \u003c= thread \u003c= 32"
+  },
   "ILanZou": {
     "ip": "Ip",
     "password": "Password",
@@ -672,6 +689,29 @@
     "thumbnail-tips": "enable thumbnail",
     "video_thumb_pos": "Video thumb pos",
     "video_thumb_pos-tips": "The position of the video thumbnail. If the value is a number (integer ot floating point), it represents the time in seconds. If the value ends with '%', it represents the percentage of the video duration."
+  },
+  "MediaFire": {
+    "chunk_size": "Chunk size",
+    "cookie": "Cookie",
+    "cookie-tips": "Required for navigation",
+    "limit_rate": "Limit rate",
+    "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
+    "order_by": "Order by",
+    "order_bys": {
+      "name": "Name",
+      "size": "Size",
+      "time": "Time"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
+    "root_folder_path": "Root folder path",
+    "session_token": "Session token",
+    "session_token-tips": "Required for MediaFire API",
+    "upload_threads": "Upload threads",
+    "upload_threads-tips": "concurrent upload threads"
   },
   "MediaTrack": {
     "access_token": "Access token",
@@ -1317,12 +1357,14 @@
     "GoogleDrive": {},
     "GooglePhoto": {},
     "HalalCloud": {},
+    "HalalCloudOpen": {},
     "ILanZou": {},
     "IPFS API": {},
     "KodBox": {},
     "Lanzou": {},
     "LenovoNasShare": {},
     "Local": {},
+    "MediaFire": {},
     "MediaTrack": {},
     "Mega_nz": {},
     "Misskey": {},
@@ -1402,12 +1444,14 @@
     "GoogleDrive": "GoogleDrive",
     "GooglePhoto": "GooglePhoto",
     "HalalCloud": "HalalCloud",
+    "HalalCloudOpen": "HalalCloudOpen",
     "ILanZou": "ILanZou",
     "IPFS API": "IPFS API",
     "KodBox": "KodBox",
     "Lanzou": "Lanzou",
     "LenovoNasShare": "LenovoNasShare",
     "Local": "Local",
+    "MediaFire": "MediaFire",
     "MediaTrack": "MediaTrack",
     "Mega_nz": "Mega nz",
     "Misskey": "Misskey",
