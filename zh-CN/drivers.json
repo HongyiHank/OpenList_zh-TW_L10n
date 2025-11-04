@@ -813,6 +813,7 @@
   "OpenList": {
     "forward_archive_requests": "转发压缩文件请求",
     "meta_password": "元信息密码",
+    "pass_ip_to_upsteam": "Pass ip to upsteam",
     "pass_ua_to_upsteam": "传递 UA 至上游",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
@@ -854,6 +855,15 @@
     "share_id": "分享 ID",
     "share_pwd": "分享密码",
     "use_transcoding_address": "使用转码地址"
+  },
+  "ProtonDrive": {
+    "chunk_size": "Chunk size",
+    "email": "Email",
+    "password": "Password",
+    "root_folder_id": "Root folder id",
+    "two_fa_code": "Two fa code",
+    "use_reusable_login": "Use reusable login",
+    "use_reusable_login-tips": "使用可重用的登录凭据代替用户名/密码登录"
   },
   "Quark": {
     "cookie": "Cookie",
@@ -1379,6 +1389,7 @@
     "OpenListShare": {},
     "PikPak": {},
     "PikPakShare": {},
+    "ProtonDrive": {},
     "Quark": {},
     "QuarkOpen": {},
     "QuarkTV": {},
@@ -1464,6 +1475,7 @@
     "OpenListShare": "OpenList 分享",
     "PikPak": "PikPak",
     "PikPakShare": "PikPak 分享",
+    "ProtonDrive": "ProtonDrive",
     "Quark": "夸克",
     "QuarkOpen": "夸克网盘 Open",
     "QuarkTV": "Quark TV",

@@ -813,6 +813,7 @@
   "OpenList": {
     "forward_archive_requests": "Forward archive requests",
     "meta_password": "Meta password",
+    "pass_ip_to_upsteam": "Pass ip to upsteam",
     "pass_ua_to_upsteam": "Pass ua to upsteam",
     "password": "Password",
     "root_folder_path": "Root folder path",
@@ -854,6 +855,15 @@
     "share_id": "Share id",
     "share_pwd": "Share pwd",
     "use_transcoding_address": "Use transcoding address"
+  },
+  "ProtonDrive": {
+    "chunk_size": "Chunk size",
+    "email": "Email",
+    "password": "Password",
+    "root_folder_id": "Root folder id",
+    "two_fa_code": "Two fa code",
+    "use_reusable_login": "Use reusable login",
+    "use_reusable_login-tips": "Use reusable login credentials instead of username/password"
   },
   "Quark": {
     "cookie": "Cookie",
@@ -1379,6 +1389,7 @@
     "OpenListShare": {},
     "PikPak": {},
     "PikPakShare": {},
+    "ProtonDrive": {},
     "Quark": {},
     "QuarkOpen": {},
     "QuarkTV": {},
@@ -1464,6 +1475,7 @@
     "OpenListShare": "OpenListShare",
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
+    "ProtonDrive": "ProtonDrive",
     "Quark": "Quark",
     "QuarkOpen": "QuarkOpen",
     "QuarkTV": "QuarkTV",
