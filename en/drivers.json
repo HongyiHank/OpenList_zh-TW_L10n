@@ -85,6 +85,8 @@
     "UploadThread": "UploadThread",
     "UploadThread-tips": "the threads of upload",
     "password": "Password",
+    "platform": "Platform",
+    "platform-tips": "the platform header value, sent with API requests",
     "root_folder_id": "Root folder id",
     "username": "Username"
   },
@@ -331,6 +333,8 @@
     "upload_api": "Upload api",
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1\u003c=thread\u003c=32",
+    "use_dynamic_upload_api": "Use dynamic upload api",
+    "use_dynamic_upload_api-tips": "dynamically get upload api domain, when enabled, the 'Upload API' setting will be used as a fallback if failed to get",
     "use_online_api": "Use online api"
   },
   "BaiduPhoto": {
@@ -569,6 +573,8 @@
     "show_all_version-tips": "show all versions",
     "show_readme": "Show readme",
     "show_readme-tips": "show README、LICENSE file",
+    "show_source_code": "Show source code",
+    "show_source_code-tips": "show Source code (zip/tar.gz)",
     "token": "Token",
     "token-tips": "GitHub token, if you want to access private repositories or increase the rate limit"
   },
@@ -773,6 +779,8 @@
     "custom_host": "Custom host",
     "custom_host-tips": "Custom host for onedrive download link",
     "disable_disk_usage": "Disable disk usage",
+    "enable_direct_upload": "Enable direct upload",
+    "enable_direct_upload-tips": "Enable direct upload from client to OneDrive",
     "is_sharepoint": "Is sharepoint",
     "redirect_uri": "Redirect uri",
     "refresh_token": "Refresh token",
@@ -800,6 +808,8 @@
     "custom_host-tips": "Custom host for onedrive download link",
     "disable_disk_usage": "Disable disk usage",
     "email": "Email",
+    "enable_direct_upload": "Enable direct upload",
+    "enable_direct_upload-tips": "Enable direct upload from client to OneDrive",
     "region": "Region",
     "regions": {
       "cn": "Cn",
@@ -979,17 +989,21 @@
     "username": "Username"
   },
   "Strm": {
+    "SaveStrmLocalPath": "SaveStrmLocalPath",
+    "SaveStrmLocalPath-tips": "save strm file local path",
+    "SaveStrmToLocal": "SaveStrmToLocal",
+    "SaveStrmToLocal-tips": "save strm file locally",
     "downloadFileTypes": "DownloadFileTypes",
     "downloadFileTypes-tips": "Files need to download with strm (usally subtitles)",
     "encodePath": "EncodePath",
     "encodePath-tips": "encode the path in the strm file",
     "filterFileTypes": "FilterFileTypes",
     "filterFileTypes-tips": "Supports suffix name of strm file",
-    "localModel": "LocalModel",
-    "localModel-tips": "enable local mode",
     "paths": "Paths",
     "siteUrl": "SiteUrl",
-    "siteUrl-tips": "The prefix URL of the strm file"
+    "siteUrl-tips": "The prefix URL of the strm file",
+    "withoutUrl": "WithoutUrl",
+    "withoutUrl-tips": "strm file content without URL prefix"
   },
   "Teambition": {
     "cookie": "Cookie",
@@ -1053,6 +1067,8 @@
     "device_id": "Device id",
     "password": "Password",
     "root_folder_id": "Root folder id",
+    "space": "Space",
+    "space-tips": "device id for remote device",
     "username": "Username"
   },
   "ThunderBrowser": {
@@ -1147,6 +1163,8 @@
       "algorithms": "Algorithms",
       "captcha_sign": "Captcha sign"
     },
+    "space": "Space",
+    "space-tips": "device id for remote device",
     "timestamp": "Timestamp",
     "timestamp-tips": "sign type is captcha_sign,this is required",
     "use_video_url": "Use video url",

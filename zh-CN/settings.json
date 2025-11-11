@@ -1,5 +1,5 @@
 {
-  "allow_indexed": "Allow indexed",
+  "allow_indexed": "允许索引",
   "allow_mounted": "允许挂载",
   "announcement": "站点公告",
   "aria2_secret": "Aria2 密钥",

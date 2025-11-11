@@ -33,9 +33,9 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "extract_folder": "文件夹排序方式",
+    "extract_folder": "文件夹顺序",
     "extract_folders": {
-      "front": "文件夹置顶",
+      "front": " 文件夹置顶",
       "back": "文件夹置底"
     },
     "enable_sign": "启用签名",
@@ -43,7 +43,7 @@
   },
   "table_fields": {
     "status": {
-      "work": "正常",
+      "work": "工作中",
       "disabled": "已禁用"
     }
   },

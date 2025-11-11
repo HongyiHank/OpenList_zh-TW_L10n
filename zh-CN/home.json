@@ -123,7 +123,9 @@
     "regex_rename_preview_old_name": "旧名称",
     "regex_rename_preview_new_name": "新名称",
     "regular_rename": "正则表达式文件重命名。 在第一行输入源文件名正则表达式，并在第二行输入新文件名正则表达式。",
-    "sequential_renaming_desc": "新文件名将在开头附加一个起始数字，并通过在该起始值基础上逐次加 1 来顺序显示。请在首行输入新文件名，并在第二行输入起始数字。"
+    "sequential_renaming_desc": "新文件名将在开头附加一个起始数字，并通过在该起始值基础上逐次加 1 来顺序显示。请在首行输入新文件名，并在第二行输入起始数字。",
+    "find_replace": "查找并替换",
+    "find_replace_desc": "查找并替换"
   },
   "upload": {
     "add_as_task": "添加为任务",

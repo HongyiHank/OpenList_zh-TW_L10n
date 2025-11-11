@@ -85,6 +85,8 @@
     "UploadThread": "上传线程",
     "UploadThread-tips": "上传线程的数量",
     "password": "密码",
+    "platform": "平台",
+    "platform-tips": "平台头，与 API 请求一起发送",
     "root_folder_id": "根文件夹 ID",
     "username": "用户名"
   },
@@ -331,6 +333,8 @@
     "upload_api": "上传 API",
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32",
+    "use_dynamic_upload_api": "使用动态的上传API",
+    "use_dynamic_upload_api-tips": "动态获取上传API域名，启用后 “上传API”设置将作为备用",
     "use_online_api": "使用在线 API"
   },
   "BaiduPhoto": {
@@ -569,6 +573,8 @@
     "show_all_version-tips": "显示所有版本",
     "show_readme": "显示自述文件",
     "show_readme-tips": "显示 README、LICENSE 文件",
+    "show_source_code": "展示Source Code",
+    "show_source_code-tips": "展示Source Code(zip/tar.gz)",
     "token": "令牌",
     "token-tips": "GitHub 令牌，如果您想要访问私有仓库或提高费率限制"
   },
@@ -608,16 +614,16 @@
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
   },
   "HalalCloudOpen": {
-    "client_id": "Client id",
-    "client_secret": "Client secret",
-    "host": "Host",
-    "refresh_token": "Refresh token",
-    "refresh_token-tips": "If using a personal API approach, the RefreshToken is not required.",
-    "root_folder_path": "Root folder path",
-    "timeout": "Timeout",
-    "timeout-tips": "timeout in seconds",
-    "upload_thread": "Upload thread",
-    "upload_thread-tips": "1 <= thread <= 32"
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
+    "host": "主机",
+    "refresh_token": "刷新令牌",
+    "refresh_token-tips": "如果使用个人API方式，则不需要刷新令牌。",
+    "root_folder_path": "根文件夹路径",
+    "timeout": "超时时间",
+    "timeout-tips": "以秒为单位的超时时间",
+    "upload_thread": "上传线程",
+    "upload_thread-tips": "1 ≤ 线程数 ≤ 32"
   },
   "ILanZou": {
     "ip": "IP",
@@ -773,6 +779,8 @@
     "custom_host": "自定义主机",
     "custom_host-tips": "自定义加速下载链接",
     "disable_disk_usage": "禁用剩余空间显示",
+    "enable_direct_upload": "启用前端直传",
+    "enable_direct_upload-tips": "允许不经OpenList直接上传到OneDrive",
     "is_sharepoint": "是否 SharePoint",
     "redirect_uri": "重定向 URI",
     "refresh_token": "刷新令牌",
@@ -800,6 +808,8 @@
     "custom_host-tips": "自定义加速下载链接",
     "disable_disk_usage": "禁用剩余空间显示",
     "email": "邮箱",
+    "enable_direct_upload": "启用前端直传",
+    "enable_direct_upload-tips": "允许不经OpenList直接上传到OneDrive",
     "region": "地区",
     "regions": {
       "cn": "世纪互联",
@@ -813,7 +823,7 @@
   "OpenList": {
     "forward_archive_requests": "转发压缩文件请求",
     "meta_password": "元信息密码",
-    "pass_ip_to_upsteam": "Pass ip to upsteam",
+    "pass_ip_to_upsteam": "传递 IP 至上游",
     "pass_ua_to_upsteam": "传递 UA 至上游",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
@@ -857,12 +867,12 @@
     "use_transcoding_address": "使用转码地址"
   },
   "ProtonDrive": {
-    "chunk_size": "Chunk size",
-    "email": "Email",
-    "password": "Password",
-    "root_folder_id": "Root folder id",
-    "two_fa_code": "Two fa code",
-    "use_reusable_login": "Use reusable login",
+    "chunk_size": "分片大小",
+    "email": "邮箱",
+    "password": "密码",
+    "root_folder_id": "根文件夹 ID",
+    "two_fa_code": "2FA验证码",
+    "use_reusable_login": "使用可重用登录",
     "use_reusable_login-tips": "使用可重用的登录凭据代替用户名/密码登录"
   },
   "Quark": {
@@ -979,17 +989,21 @@
     "username": "用户名"
   },
   "Strm": {
+    "SaveStrmLocalPath": "保存Strm本地路径",
+    "SaveStrmLocalPath-tips": "保存Strm文件本地路径",
+    "SaveStrmToLocal": "保存Strm到本地",
+    "SaveStrmToLocal-tips": "本地保存Strm文件",
     "downloadFileTypes": "下载文件类型",
     "downloadFileTypes-tips": "需要使用 Strm 流下载的文件（通常是字幕）",
     "encodePath": "编码路径",
     "encodePath-tips": "在 Strm 文件中编码路径",
     "filterFileTypes": "过滤文件类型",
     "filterFileTypes-tips": "支持 Strm 文件的后缀名",
-    "localModel": "本地模式",
-    "localModel-tips": "启用本地模式",
     "paths": "路径",
     "siteUrl": "站点 URL",
-    "siteUrl-tips": "Strm 文件的前缀 URL"
+    "siteUrl-tips": "Strm 文件的前缀 URL",
+    "withoutUrl": "除去URL",
+    "withoutUrl-tips": "去除Strm文件中的URL前缀"
   },
   "Teambition": {
     "cookie": "Cookie",
@@ -1053,6 +1067,8 @@
     "device_id": "设备 ID",
     "password": "密码",
     "root_folder_id": "根文件夹 ID",
+    "space": "空间",
+    "space-tips": "远程设备的设备ID",
     "username": "用户名"
   },
   "ThunderBrowser": {
@@ -1147,6 +1163,8 @@
       "algorithms": "算法",
       "captcha_sign": "验证码签名"
     },
+    "space": "空间",
+    "space-tips": "远程设备的设备ID",
     "timestamp": "时间戳",
     "timestamp-tips": "签名类型是验证码签名，此为必填项",
     "use_video_url": "使用视频 URL",
