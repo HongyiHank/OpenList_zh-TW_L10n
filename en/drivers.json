@@ -333,6 +333,8 @@
     "upload_api": "Upload api",
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1\u003c=thread\u003c=32",
+    "upload_timeout": "Upload timeout",
+    "upload_timeout-tips": "per-slice upload timeout in seconds",
     "use_dynamic_upload_api": "Use dynamic upload api",
     "use_dynamic_upload_api-tips": "dynamically get upload api domain, when enabled, the 'Upload API' setting will be used as a fallback if failed to get",
     "use_online_api": "Use online api"
@@ -465,7 +467,9 @@
     "add_filename_to_disposition-tips": "Add filename to Content-Disposition header.",
     "bucket": "Bucket",
     "custom_host": "Custom host",
+    "direct_upload_host": "Direct upload host",
     "enable_custom_host_presign": "Enable custom host presign",
+    "enable_direct_upload": "Enable direct upload",
     "endpoint": "Endpoint",
     "force_path_style": "Force path style",
     "list_object_version": "List object version",
@@ -489,6 +493,8 @@
       "get_download_info": "Get download info",
       "get_file_url": "Get file url"
     },
+    "limit_rate": "Limit rate",
+    "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
     "root_folder_id": "Root folder id",
     "upload_thread": "Upload thread"
   },
@@ -946,7 +952,9 @@
     "add_filename_to_disposition-tips": "Add filename to Content-Disposition header.",
     "bucket": "Bucket",
     "custom_host": "Custom host",
+    "direct_upload_host": "Direct upload host",
     "enable_custom_host_presign": "Enable custom host presign",
+    "enable_direct_upload": "Enable direct upload",
     "endpoint": "Endpoint",
     "force_path_style": "Force path style",
     "list_object_version": "List object version",
@@ -989,6 +997,8 @@
     "username": "Username"
   },
   "Strm": {
+    "PathPrefix": "PathPrefix",
+    "PathPrefix-tips": "Path prefix",
     "SaveStrmLocalPath": "SaveStrmLocalPath",
     "SaveStrmLocalPath-tips": "save strm file local path",
     "SaveStrmToLocal": "SaveStrmToLocal",

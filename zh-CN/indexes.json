@@ -1,4 +1,5 @@
 {
+  "index_header": "搜索索引设置",
   "search_index": "搜索索引",
   "current": "当前索引",
   "build": "构建索引",
@@ -11,5 +12,12 @@
   "unknown": "未知",
   "stop": "停止",
   "clear": "清除",
-  "error": "错误"
+  "error": "错误",
+  "scan_header": "手动扫描",
+  "task_status": "任务状态",
+  "running": "运行中",
+  "idle": "待命",
+  "path_to_scan": "扫描路径",
+  "rate_limit": "限制速率",
+  "start": "开始"
 }

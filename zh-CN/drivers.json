@@ -333,6 +333,8 @@
     "upload_api": "上传 API",
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32",
+    "upload_timeout": "上传超时",
+    "upload_timeout-tips": "每切片上传超时的秒数",
     "use_dynamic_upload_api": "使用动态的上传API",
     "use_dynamic_upload_api-tips": "动态获取上传API域名，启用后 “上传API”设置将作为备用",
     "use_online_api": "使用在线 API"
@@ -465,7 +467,9 @@
     "add_filename_to_disposition-tips": "添加 Filename 到 Content-Disposition 头中。",
     "bucket": "存储桶",
     "custom_host": "自定义主机",
+    "direct_upload_host": "直传主机",
     "enable_custom_host_presign": "启用自定义主机签名",
+    "enable_direct_upload": "启用前端直传",
     "endpoint": "端点",
     "force_path_style": "强制路径样式",
     "list_object_version": "列出对象版本",
@@ -489,6 +493,8 @@
       "get_download_info": "获取下载信息",
       "get_file_url": "获取文件链接"
     },
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 请求率（[limit]r/1s）",
     "root_folder_id": "根文件夹 ID",
     "upload_thread": "上传线程"
   },
@@ -946,7 +952,9 @@
     "add_filename_to_disposition-tips": "添加 Filename 到 Content-Disposition 头中。",
     "bucket": "存储桶",
     "custom_host": "自定义主机",
+    "direct_upload_host": "直传主机",
     "enable_custom_host_presign": "启用自定义主机预签名",
+    "enable_direct_upload": "启用前端直传",
     "endpoint": "端点",
     "force_path_style": "强制路径样式",
     "list_object_version": "列出对象版本",
@@ -989,6 +997,8 @@
     "username": "用户名"
   },
   "Strm": {
+    "PathPrefix": "路径前缀",
+    "PathPrefix-tips": "路径前缀",
     "SaveStrmLocalPath": "保存Strm本地路径",
     "SaveStrmLocalPath-tips": "保存Strm文件本地路径",
     "SaveStrmToLocal": "保存Strm到本地",
