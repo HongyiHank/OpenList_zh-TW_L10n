@@ -22,6 +22,7 @@
   "role": "角色",
   "permission": "权限",
   "disabled": "停用",
+  "allow_ldap": "允许通过 LDAP 登录",
   "available": "已启用",
   "update_profile": "更新个人资料",
   "update_profile_success": "配置更新成功，请重新登录。",

@@ -19,13 +19,13 @@
   "remark": "Remark",
   "readme": "Description",
   "header": "Header Description",
-  "order_by": "Order by",
+  "order_by": "Order By",
   "order_bys": {
     "name": "Name",
     "size": "Size",
     "modified": "Modified"
   },
-  "order_direction": "Order direction",
+  "order_direction": "Order Direction",
   "order_directions": {
     "asc": "Ascending",
     "desc": "Descending"
@@ -35,7 +35,7 @@
     "front": "Folders on Top",
     "back": "Folders at Bottom"
   },
-  "input_password": "Please enter share code",
+  "input_password": "Please enter Share Code",
   "copy_msg": "Copy link",
   "no_permission_tip": "To create a share, you need \"Share\" permission."
 }

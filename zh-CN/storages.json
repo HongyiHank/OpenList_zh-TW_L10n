@@ -10,6 +10,8 @@
     "remark": "备注",
     "cache_expiration": "缓存过期时间",
     "cache_expiration-tips": "此存储的缓存过期时间（分钟）",
+    "custom_cache_policies": "自定义缓存策略",
+    "custom_cache_policies-tips": "路径及其以分钟计的缓存时间",
     "down_proxy_url": "下载代理 URL",
     "disable_proxy_sign": "禁用代理签名",
     "disable_proxy_sign-tips": "禁用下载代理 URL 的签名",

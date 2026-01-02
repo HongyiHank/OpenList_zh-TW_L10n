@@ -25,7 +25,7 @@
     "size": "大小",
     "modified": "修改时间"
   },
-  "order_direction": "排序方式",
+  "order_direction": "排序方向",
   "order_directions": {
     "asc": "升序",
     "desc": "降序"

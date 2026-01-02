@@ -22,6 +22,7 @@
   "role": "Role",
   "permission": "Permission",
   "disabled": "Disabled",
+  "allow_ldap": "Allow LDAP login",
   "available": "Available",
   "update_profile": "Update Profile",
   "update_profile_success": "Profile updated successfully, please log in again.",

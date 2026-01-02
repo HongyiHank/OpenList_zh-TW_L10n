@@ -37,6 +37,8 @@
       "asc": "升序",
       "desc": "降序"
     },
+    "page_size": "页面大小",
+    "page_size-tips": "调用 115open GetFiles API 时传递的 limit 值",
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹 ID"
   },
@@ -109,6 +111,9 @@
     "cloud_id": "Cloud ID",
     "custom_upload_part_size": "自定义上传分片大小",
     "custom_upload_part_size-tips": "0 为自动设置",
+    "mail_cookies": "邮箱 Cookie",
+    "mail_cookies-tips": "mail.139.com 的 Cookie，用于登录认证。",
+    "password": "密码",
     "report_real_size": "报告真实大小",
     "report_real_size-tips": "启用在上传时报告真实文件大小",
     "root_folder_id": "根文件夹 ID",
@@ -122,7 +127,8 @@
     "use_large_thumbnail": "使用大缩略图",
     "use_large_thumbnail-tips": "启用图片使用大缩略图",
     "user_domain_id": "用户域 ID",
-    "user_domain_id-tips": "Cookie中的ud_id项，需要查看空间使用情况则填写"
+    "user_domain_id-tips": "Cookie中的ud_id项，需要查看空间使用情况则填写",
+    "username": "用户名"
   },
   "189Cloud": {
     "cookie": "Cookie",
@@ -196,18 +202,55 @@
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
   },
+  "AList V3": {
+    "forward_archive_requests": "转发压缩文件请求",
+    "meta_password": "元信息密码",
+    "pass_ip_to_upsteam": "传递 IP 至上游",
+    "pass_ua_to_upsteam": "传递 UA 至上游",
+    "password": "密码",
+    "root_folder_path": "根文件夹路径",
+    "token": "令牌",
+    "url": "链接",
+    "username": "用户名"
+  },
   "Alias": {
     "details_pass_through": "后端驱动详细信息穿透",
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
     "download_part_size": "下载分片大小",
     "download_part_size-tips": "需要启用代理。单位：KB",
-    "parallel_write": "并行写入",
+    "file_consistency_check": "文件一致性校验",
     "paths": "路径",
-    "protect_same_name": "保护同名",
-    "protect_same_name-tips": "保护同名的文件不被删除或重命名",
     "provider_pass_through": "后端驱动类型穿透",
-    "writable": "可写"
+    "put_conflict_policy": "上传冲突策略",
+    "put_conflict_policy-tips": "影响驱动上传到、复制到、移动到、解压到冲突路径的方式。",
+    "put_conflict_policys": {
+      "all": "上传到所有有效路径",
+      "all_strict": "只允许全冲突路径",
+      "deterministic": "只允许不冲突路径",
+      "deterministic_or_all": "允许不冲突路径和全冲突路径",
+      "disabled": "禁用",
+      "first": "上传到首个有效路径",
+      "quota": "按容量加权随机负载均衡",
+      "quota_strict": "严格按容量加权随机负载均衡",
+      "random": "随机负载均衡"
+    },
+    "read_conflict_policy": "读取冲突策略",
+    "read_conflict_policys": {
+      "all": "按分片负载均衡",
+      "first": "读取首个有效路径",
+      "random": "按文件负载均衡"
+    },
+    "write_conflict_policy": "写入冲突策略",
+    "write_conflict_policy-tips": "影响驱动重命名、删除同名文件或文件夹，在同名文件夹下创建文件夹的方式。",
+    "write_conflict_policys": {
+      "all": "写入所有有效路径",
+      "all_strict": "仅允许全冲突路径",
+      "deterministic": "仅允许不冲突路径",
+      "deterministic_or_all": "允许不冲突路径和全冲突路径",
+      "disabled": "禁用",
+      "first": "写入首个有效路径"
+    }
   },
   "Aliyundrive": {
     "internal_upload": "内部上传",
@@ -299,6 +342,7 @@
     "container_name-tips": "Azure 存储容器名称（需在 Azure 门户中创建，路径：数据存储 > 容器）。https://learn.microsoft.com/azure/storage/blobs/blob-containers-portal",
     "endpoint": "端点",
     "endpoint-tips": "例如：https://accountname.blob.core.windows.net/。Azure 存储的完整端点 URL，包括唯一的存储帐户名称（3~24 个数字和小写字母）。",
+    "root_folder_path": "根文件夹路径",
     "sign_url_expire": "签名链接有效期",
     "sign_url_expire-tips": "SAS URLs 的到期时间，以小时为单位。"
   },
@@ -356,7 +400,7 @@
     "default_branch": "默认分支",
     "default_branch-tips": "新发行版的默认分支",
     "repo": "仓库",
-    "root_folder_path": "根文件夹路径",
+    "root_folder_id": "根文件夹 ID",
     "token": "令牌",
     "use_tag_name": "使用 Tag 名称",
     "use_tag_name-tips": "使用原始的 Tag 名称而不是 Release 名称"
@@ -369,12 +413,12 @@
     "user_name": "用户名"
   },
   "Chunk": {
-    "chunk_large_file_only": "仅分块大文件",
+    "chunk_large_file_only": "仅对大文件分块",
     "chunk_large_file_only-tips": "当文件大小小于分片大小时以原始形式上传文件",
     "chunk_prefix": "分块前缀",
     "chunk_prefix-tips": "分块文件夹的前缀",
     "custom_ext": "自定义扩展名",
-    "num_list_workers": "列表 Workers 数量",
+    "num_list_workers": "列举分块文件夹线程数",
     "part_size": "分块大小",
     "part_size-tips": "单位：字节",
     "remote_path": "远程存储路径",
@@ -574,7 +618,7 @@
     "gh_proxy-tips": "GitHub 代理，如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
     "repo_structure": "仓库结构",
     "repo_structure-tips": "结构：[path：]org/repo",
-    "root_folder_id": "根文件夹 ID",
+    "root_folder_path": "根文件夹路径",
     "show_all_version": "显示所有版本",
     "show_all_version-tips": "显示所有版本",
     "show_readme": "显示自述文件",
@@ -705,7 +749,7 @@
   "MediaFire": {
     "chunk_size": "分片大小",
     "cookie": "Cookie",
-    "cookie-tips": "导航需要使用",
+    "cookie-tips": "必填",
     "limit_rate": "限制速率",
     "limit_rate-tips": "限制所有 API 请求速率（[limit]r/1s）",
     "order_by": "排序依据",
@@ -721,7 +765,7 @@
     },
     "root_folder_path": "根文件夹路径",
     "session_token": "会话令牌",
-    "session_token-tips": "MediaFire API 需要",
+    "session_token-tips": "选填，可从 Cookie 中自动获取",
     "upload_threads": "上传线程",
     "upload_threads-tips": "上传并发请求"
   },
@@ -997,8 +1041,17 @@
     "username": "用户名"
   },
   "Strm": {
+    "KeepLocalDownloadFile": "保留本地下载文件",
+    "KeepLocalDownloadFile-tips": "保留本地下载文件",
     "PathPrefix": "路径前缀",
     "PathPrefix-tips": "路径前缀",
+    "SaveLocalMode": "本地保存模式",
+    "SaveLocalMode-tips": "保存Strm到本地目录的方式",
+    "SaveLocalModes": {
+      "insert": "新增",
+      "sync": "同步",
+      "update": "更新"
+    },
     "SaveStrmLocalPath": "保存Strm本地路径",
     "SaveStrmLocalPath-tips": "保存Strm文件本地路径",
     "SaveStrmToLocal": "保存Strm到本地",
@@ -1012,6 +1065,7 @@
     "paths": "路径",
     "siteUrl": "站点 URL",
     "siteUrl-tips": "Strm 文件的前缀 URL",
+    "withSign": "携带签名",
     "withoutUrl": "除去URL",
     "withoutUrl-tips": "去除Strm文件中的URL前缀"
   },
@@ -1287,6 +1341,15 @@
     "num_folder": "文件夹数量",
     "root_folder_path": "根文件夹路径"
   },
+  "WPS": {
+    "cookie": "Cookie",
+    "mode": "类型",
+    "modes": {
+      "Business": "商业版",
+      "Personal": "个人版"
+    },
+    "root_folder_path": "根文件夹路径"
+  },
   "WebDav": {
     "address": "地址",
     "password": "密码",
@@ -1367,6 +1430,7 @@
     },
     "189CloudPC": {},
     "189CloudTV": {},
+    "AList V3": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中移除。\n我们建议使用官方支持的阿里云盘 Open。"
@@ -1440,6 +1504,7 @@
     "USS": {},
     "UrlTree": {},
     "Virtual": {},
+    "WPS": {},
     "WebDav": {},
     "WeiYun": {},
     "WoPan": {},
@@ -1457,6 +1522,7 @@
     "189Cloud": "天翼云盘",
     "189CloudPC": "天翼云盘客户端",
     "189CloudTV": "天翼云盘 TV",
+    "AList V3": "AList v3",
     "Alias": "别名",
     "Aliyundrive": "阿里云盘",
     "AliyundriveOpen": "阿里云盘（Oauth2）",
@@ -1526,6 +1592,7 @@
     "USS": "又拍云存储",
     "UrlTree": "地址树",
     "Virtual": "虚拟存储",
+    "WPS": "WPS 云文档",
     "WebDav": "WebDAV",
     "WeiYun": "腾讯微云",
     "WoPan": "联通云盘",
