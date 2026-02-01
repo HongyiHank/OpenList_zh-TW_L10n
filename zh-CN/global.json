@@ -12,7 +12,7 @@
   "choose": "选择",
   "confirm": "确认",
   "cancel": "取消",
-  "delete_confirm": "确认要删除 [{{name}}] 吗？",
+  "delete_confirm": "确定要删除【{{name}}】吗？",
   "operations": "操作",
   "yes": "是",
   "no": "否",
@@ -29,7 +29,7 @@
   "no_support_now": "暂不支持",
   "empty_input": "请输入",
   "invalid_filename_chars": "文件名不能包含: / \\ ? < > * : | \"",
-  "invalid_regex": "无效的正则表达式",
+  "invalid_regex": "正则表达式无效",
   "name": "名称",
   "go_to_storages": "转到存储"
 }

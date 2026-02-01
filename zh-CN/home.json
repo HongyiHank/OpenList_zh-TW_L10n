@@ -31,7 +31,7 @@
   },
   "no_images": "当前文件夹中没有图片",
   "load_more": "加载更多",
-  "no_more": "没有更多了",
+  "no_more": "没有更多内容",
   "input_password": "请输入密码",
   "toolbar": {
     "more": "更多",
@@ -41,7 +41,7 @@
     "toggle_markdown_toc": "是否显示大纲",
     "toggle_checkbox": "开关复选框",
     "rename": "重命名",
-    "input_new_name": "输入一个新名称",
+    "input_new_name": "输入新名称",
     "move": "移动",
     "copy": "复制",
     "choose_dst_folder": "选择目标文件夹",
@@ -95,7 +95,7 @@
     "batch_rename": "批量重命名",
     "regex_rename": "正则表达式重命名",
     "sequential_renaming": "顺序重命名",
-    "regex_rename_preview": "更改的文件",
+    "regex_rename_preview": "更改后文件",
     "regex_rename_preview_old_name": "旧名称",
     "regex_rename_preview_new_name": "新名称",
     "regular_rename": "正则表达式文件重命名。 在第一行输入源文件名正则表达式，并在第二行输入新文件名正则表达式。",
@@ -107,16 +107,16 @@
   "upload": {
     "add_as_task": "添加为任务",
     "try_rapid": "尝试秒传",
-    "upload-tips": "拖动文件到此处以上传，或点击：",
-    "release": "松开以上传",
-    "no_files_drag": "没有文件被拖入。",
+    "upload-tips": "拖动文件到此处可上传，或点击：",
+    "release": "松开可上传",
+    "no_files_drag": "没有拖入文件。",
     "upload_files": "选择文件",
     "upload_folder": "选择文件夹",
     "pending": "等待中",
     "uploading": "上传中",
-    "backending": "正在后台上传",
+    "backending": "后台上传中",
     "success": "成功",
-    "error": "错误",
+    "error": "出错",
     "back": "返回上传",
     "clear_done": "清空完成"
   },
@@ -124,7 +124,7 @@
     "aria2_rpc_url": "Aria2 RPC 链接",
     "aria2_rpc_secret": "Aria2 RPC 密钥",
     "aria2_dir": "Aria2 下载目录",
-    "show_folder_in_image_view": "在图片视图中显示文件夹",
+    "show_folder_in_image_view": "显示文件夹为图片视图",
     "show_folder_in_image_view_options": {
       "top": "上方",
       "bottom": "下方",
@@ -138,11 +138,11 @@
     },
     "position_of_header_navbar": "标题栏和导航栏的位置",
     "position_of_header_navbar_options": {
-      "static": "普通",
+      "static": "常规",
       "sticky": "吸附到页面顶部",
       "only_navbar_sticky": "仅吸附导航栏"
     },
-    "grid_item_size": "网格视图图片尺寸",
+    "grid_item_size": "网格视图项目尺寸",
     "show_sidebar": "显示侧边栏",
     "show_sidebar_options": {
       "none": "隐藏",
@@ -164,6 +164,11 @@
       "direct": "直接打开",
       "dblclick": "双击",
       "disable_while_checked": "选中时禁用"
+    },
+    "show_gallery_thumbnails": "显示图库缩略图",
+    "show_gallery_thumbnails_options": {
+      "none": "隐藏",
+      "visible": "显示"
     }
   },
   "package_download": {
@@ -171,7 +176,7 @@
     "initializing": "正在初始化",
     "fetching_struct": "正在获取文件夹结构",
     "fetching_struct_failed": "获取文件夹结构失败",
-    "downloading": "下载文件中，不要关闭或刷新页面",
+    "downloading": "正在下载文件，不要关闭或刷新页面",
     "failed": "打包下载失败",
     "success": "下载完成"
   },
@@ -189,7 +194,7 @@
     }
   },
   "fetching_settings_failed": "获取设置失败： ",
-  "get_current_user_failed": "获取当前用户失败： ",
+  "get_current_user_failed": "获取当前用户失败：",
   "Loading storage, please wait": "正在加载储存，请稍候",
   "conflict_policy": {
     "cancel_if_exists": "如果文件存在则取消",

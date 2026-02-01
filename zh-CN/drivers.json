@@ -1,7 +1,7 @@
 {
   "115 Cloud": {
     "cookie": "Cookie",
-    "cookie-tips": "需要二维码令牌和 Cookie 中的一个",
+    "cookie-tips": "需要二维码令牌和 Cookie 其中之一",
     "limit_rate": "限制速率",
     "limit_rate-tips": "限制所有 API 请求率（[limit]r/1s）",
     "page_size": "分页大小",
@@ -18,7 +18,7 @@
       "wechatmini": "微信小程序"
     },
     "qrcode_token": "二维码令牌",
-    "qrcode_token-tips": "需要二维码令牌和 Cookie 中的一个",
+    "qrcode_token-tips": "需要二维码令牌和 Cookie 其中之一",
     "root_folder_id": "根文件夹 ID"
   },
   "115 Open": {
@@ -37,14 +37,14 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "page_size": "页面大小",
+    "page_size": "分页大小",
     "page_size-tips": "调用 115open GetFiles API 时传递的 limit 值",
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹 ID"
   },
   "115 Share": {
     "cookie": "Cookie",
-    "cookie-tips": "需要二维码令牌和 Cookie 中的一个",
+    "cookie-tips": "需要二维码令牌和 Cookie 其中之一",
     "limit_rate": "限制速率",
     "limit_rate-tips": "限制所有 API 请求速率（1r/[limit_rate]s）",
     "page_size": "分页大小",
@@ -61,7 +61,7 @@
       "wechatmini": "微信小程序"
     },
     "qrcode_token": "二维码令牌",
-    "qrcode_token-tips": "需要二维码令牌和 Cookie 中的一个",
+    "qrcode_token-tips": "需要二维码令牌和 Cookie 其中之一",
     "receive_code": "提取码",
     "receive_code-tips": "115 分享链接提取码",
     "root_folder_id": "根文件夹 ID",
@@ -75,20 +75,20 @@
     "DirectLink": "使用直链",
     "DirectLink-tips": "下载文件时使用直链",
     "DirectLinkPrivateKey": "直链鉴权密钥",
-    "DirectLinkPrivateKey-tips": "直链鉴权密钥，如果启用了 URL 鉴权",
+    "DirectLinkPrivateKey-tips": "直链的鉴权密钥（如果启用了网页鉴权）",
     "DirectLinkValidDuration": "直链鉴权有效期",
-    "DirectLinkValidDuration-tips": "分钟，如果启用了 URL 鉴权",
+    "DirectLinkValidDuration-tips": "分钟数（如果启用了网页鉴权）",
     "RefreshToken": "刷新令牌",
-    "UploadThread": "上传线程",
-    "UploadThread-tips": "上传使用的线程数",
+    "UploadThread": "上传线程数",
+    "UploadThread-tips": "上传使用的线程数量",
     "root_folder_id": "根文件夹 ID"
   },
   "123Pan": {
-    "UploadThread": "上传线程",
-    "UploadThread-tips": "上传线程的数量",
+    "UploadThread": "上传线程数",
+    "UploadThread-tips": "上传使用的线程数量",
     "password": "密码",
     "platform": "平台",
-    "platform-tips": "平台头，与 API 请求一起发送",
+    "platform-tips": "平台头部值（与 API 请求一起发送）",
     "root_folder_id": "根文件夹 ID",
     "username": "用户名"
   },
@@ -98,21 +98,21 @@
     "private_key": "私钥",
     "uid": "UID",
     "valid_duration": "有效时长",
-    "valid_duration-tips": "分钟"
+    "valid_duration-tips": "分钟数"
   },
   "123PanShare": {
     "accesstoken": "访问令牌",
     "root_folder_id": "根文件夹 ID",
-    "sharekey": "分享 Key",
+    "sharekey": "分享密钥",
     "sharepassword": "分享密码"
   },
   "139Yun": {
-    "authorization": "Authorization",
+    "authorization": "授权",
     "cloud_id": "Cloud ID",
     "custom_upload_part_size": "自定义上传分片大小",
     "custom_upload_part_size-tips": "0 为自动设置",
     "mail_cookies": "邮箱 Cookie",
-    "mail_cookies-tips": "mail.139.com 的 Cookie，用于登录认证。",
+    "mail_cookies-tips": "mail.139.com 的 Cookie（用于登录认证）。",
     "password": "密码",
     "report_real_size": "报告真实大小",
     "report_real_size-tips": "启用在上传时报告真实文件大小",
@@ -160,7 +160,7 @@
     "password": "密码",
     "rapid_upload": "秒传",
     "refresh_token": "刷新令牌",
-    "refresh_token-tips": "要切换帐户，请清除此字段",
+    "refresh_token-tips": "如要切换帐户，请清除此字段",
     "root_folder_id": "根文件夹 ID",
     "type": "类型",
     "types": {
@@ -226,8 +226,8 @@
     "put_conflict_policy-tips": "影响驱动上传到、复制到、移动到、解压到冲突路径的方式。",
     "put_conflict_policys": {
       "all": "上传到所有有效路径",
-      "all_strict": "只允许全冲突路径",
-      "deterministic": "只允许不冲突路径",
+      "all_strict": "仅允许全冲突路径",
+      "deterministic": "仅允许不冲突路径",
       "deterministic_or_all": "允许不冲突路径和全冲突路径",
       "disabled": "禁用",
       "first": "上传到首个有效路径",
@@ -334,6 +334,16 @@
     "root_folder_id": "根文件夹 ID",
     "share_id": "分享 ID",
     "share_pwd": "分享密码"
+  },
+  "AutoIndex": {
+    "ignore_file_names": "忽略文件名",
+    "item_xpath": "条目 XPath",
+    "modified_time_format": "修改日期格式",
+    "modified_time_format-tips": "必须为时间点Mon Jan 2 15:04:05 -0700 MST 2006的某种表示形式",
+    "modified_xpath": "修改时间 XPath",
+    "name_xpath": "文件名 XPath",
+    "size_xpath": "文件大小 XPath",
+    "url": "URL"
   },
   "Azure Blob Storage": {
     "access_key": "访问密钥",
@@ -599,7 +609,7 @@
     "copy_commit_message": "复制操作提交消息",
     "delete_commit_message": "删除操作提交消息",
     "gh_proxy": "Gh 代理",
-    "gh_proxy-tips": "GitHub 代理，例如https://ghproxy.net/raw.githubusercontent.com 或 https://gh-proxy.com/raw.githubusercontent.com",
+    "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/raw.githubusercontent.com 或 https://gh-proxy.com/raw.githubusercontent.com",
     "gpg_key_passphrase": "GPG 密钥密码",
     "gpg_private_key": "GPG 私钥",
     "mkdir_commit_message": "创建文件夹操作提交消息",
@@ -615,7 +625,7 @@
   },
   "GitHub Releases": {
     "gh_proxy": "Gh 代理",
-    "gh_proxy-tips": "GitHub 代理，如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
+    "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
     "repo_structure": "仓库结构",
     "repo_structure-tips": "结构：[path：]org/repo",
     "root_folder_path": "根文件夹路径",
@@ -783,6 +793,8 @@
   },
   "Mega_nz": {
     "email": "邮箱",
+    "move_to_trash": "移至回收站",
+    "move_to_trash-tips": "删除文件时移至回收站",
     "password": "密码",
     "two_fa_code": "双因素身份验证码",
     "two_fa_code-tips": "双因素身份验证码由 6 位数字组成，仅填写双因素身份验证码将不支持重载驱动程序",
@@ -1102,7 +1114,7 @@
     "upload_concurrency-tips": "上传并发请求",
     "url": "URL",
     "use_share_link": "使用分享链接",
-    "use_share_link-tips": "获取链接时创建共享链接以支持 302。如果禁用，您需要启用 Web 代理。"
+    "use_share_link-tips": "获取链接时创建共享链接以支持 302 。如果禁用，您就需要启用 Web 代理。"
   },
   "Terabox": {
     "cookie": "Cookie",
@@ -1437,6 +1449,7 @@
     },
     "AliyundriveOpen": {},
     "AliyundriveShare": {},
+    "AutoIndex": {},
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
@@ -1527,6 +1540,7 @@
     "Aliyundrive": "阿里云盘",
     "AliyundriveOpen": "阿里云盘（Oauth2）",
     "AliyundriveShare": "阿里云盘分享",
+    "AutoIndex": "AutoIndex",
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
     "BaiduPhoto": "一刻相册",

@@ -18,8 +18,8 @@
     "copy": "复制",
     "move": "移动",
     "decompress": "解压",
-    "backup-restore": "备份 & 恢复",
-    "home": "主页",
+    "backup-restore": "备份和还原",
+    "home": "首页",
     "indexes": "索引",
     "sso": "单点登录",
     "docs": "文档",
@@ -30,13 +30,13 @@
     "traffic": "传输"
   },
   "title": "OpenList 管理",
-  "not_admin": "您不是管理员用户，请使用管理员帐户登录。",
+  "not_admin": "您不是管理员用户，请使用管理员账户登录。",
   "logout_success": "登出成功",
   "send": "发送",
   "receive": "接收",
   "received_msgs": "收到的消息",
-  "add_storage-tips": "您可能需要在新打开的选项卡中填写一些信息。",
-  "messenger-tips": "您可能需要在这个标签页中按提示填写一些信息。",
+  "add_storage-tips": "您可能需要在新打开的选项页中填写一些信息。",
+  "messenger-tips": "您可能需要在此选项页中按提示填写一些信息。",
   "load_default_setting": "加载默认设置",
-  "load_default_setting_success": "加载成功，未保存"
+  "load_default_setting_success": "加载成功，但尚未保存"
 }
