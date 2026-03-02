@@ -1,0 +1,1615 @@
+{
+  "115 Cloud": {
+    "cookie": "Cookie",
+    "cookie-tips": "需要二維碼令牌和 Cookie 其中之一",
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 請求率（[limit]r/1s）",
+    "page_size": "分頁大小",
+    "page_size-tips": "115 驅動程式的列表 API 的每頁大小",
+    "qrcode_source": "二維碼源",
+    "qrcode_source-tips": "選擇二維碼裝置，預設 Linux",
+    "qrcode_sources": {
+      "alipaymini": "支付寶小程式",
+      "android": "安卓",
+      "ios": "iOS",
+      "qandroid": "QAndroid",
+      "tv": "TV",
+      "web": "網頁",
+      "wechatmini": "微信小程式"
+    },
+    "qrcode_token": "二維碼令牌",
+    "qrcode_token-tips": "需要二維碼令牌和 Cookie 其中之一",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "115 Open": {
+    "access_token": "訪問令牌",
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 請求率（[limit]r/1s）",
+    "order_by": "排序依據",
+    "order_bys": {
+      "file_name": "檔名稱",
+      "file_size": "檔案大小",
+      "file_type": "檔案型別",
+      "user_utime": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "page_size": "分頁大小",
+    "page_size-tips": "呼叫 115open GetFiles API 時傳遞的 limit 值",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "115 Share": {
+    "cookie": "Cookie",
+    "cookie-tips": "需要二維碼令牌和 Cookie 其中之一",
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 請求速率（1r/[limit_rate]s）",
+    "page_size": "分頁大小",
+    "page_size-tips": "115 驅動程式的列表 API 的每頁大小",
+    "qrcode_source": "二維碼源",
+    "qrcode_source-tips": "選擇二維碼裝置，預設 Linux",
+    "qrcode_sources": {
+      "alipaymini": "支付寶小程式",
+      "android": "安卓",
+      "ios": "iOS",
+      "qandroid": "QAndroid",
+      "tv": "TV",
+      "web": "網頁",
+      "wechatmini": "微信小程式"
+    },
+    "qrcode_token": "二維碼令牌",
+    "qrcode_token-tips": "需要二維碼令牌和 Cookie 其中之一",
+    "receive_code": "提取碼",
+    "receive_code-tips": "115 分享連結提取碼",
+    "root_folder_id": "根資料夾 ID",
+    "share_code": "分享碼",
+    "share_code-tips": "分享連結的分享碼"
+  },
+  "123 Open": {
+    "AccessToken": "訪問令牌",
+    "ClientID": "客戶端 ID",
+    "ClientSecret": "客戶端金鑰",
+    "DirectLink": "使用直鏈",
+    "DirectLink-tips": "下載檔案時使用直鏈",
+    "DirectLinkPrivateKey": "直鏈鑑權金鑰",
+    "DirectLinkPrivateKey-tips": "直鏈的鑑權金鑰（如果啟用了網頁鑑權）",
+    "DirectLinkValidDuration": "直鏈鑑權有效期",
+    "DirectLinkValidDuration-tips": "分鐘數（如果啟用了網頁鑑權）",
+    "RefreshToken": "重新整理令牌",
+    "UploadThread": "上傳執行緒數",
+    "UploadThread-tips": "上傳使用的執行緒數量",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "123Pan": {
+    "UploadThread": "上傳執行緒數",
+    "UploadThread-tips": "上傳使用的執行緒數量",
+    "password": "密碼",
+    "platform": "平臺",
+    "platform-tips": "平臺頭部值（與 API 請求一起傳送）",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱"
+  },
+  "123PanLink": {
+    "origin_urls": "原始連結",
+    "origin_urls-tips": "結構：\nFolderName:\n  [FileSize:][Modified:]URL",
+    "private_key": "私鑰",
+    "uid": "UID",
+    "valid_duration": "有效時長",
+    "valid_duration-tips": "分鐘數"
+  },
+  "123PanShare": {
+    "accesstoken": "訪問令牌",
+    "root_folder_id": "根資料夾 ID",
+    "sharekey": "分享金鑰",
+    "sharepassword": "分享密碼"
+  },
+  "139Yun": {
+    "authorization": "授權",
+    "cloud_id": "Cloud ID",
+    "custom_upload_part_size": "自定義上傳分片大小",
+    "custom_upload_part_size-tips": "0 為自動設定",
+    "mail_cookies": "郵箱 Cookie",
+    "mail_cookies-tips": "mail.139.com 的 Cookie（用於登入認證）。",
+    "password": "密碼",
+    "report_real_size": "報告真實大小",
+    "report_real_size-tips": "啟用在上傳時報告真實檔案大小",
+    "root_folder_id": "根資料夾 ID",
+    "type": "型別",
+    "types": {
+      "family": "家庭雲",
+      "group": "共享群",
+      "personal": "個人雲",
+      "personal_new": "新的個人盤"
+    },
+    "use_large_thumbnail": "使用大縮圖",
+    "use_large_thumbnail-tips": "啟用圖片使用大縮圖",
+    "user_domain_id": "使用者域 ID",
+    "user_domain_id-tips": "Cookie中的ud_id項，需要檢視空間使用情況則填寫",
+    "username": "使用者名稱"
+  },
+  "189Cloud": {
+    "cookie": "Cookie",
+    "cookie-tips": "如需輸入驗證碼，請填寫 Cookie。",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱"
+  },
+  "189CloudPC": {
+    "family_id": "家庭 ID",
+    "family_transfer": "家庭傳輸",
+    "login_type": "登入型別",
+    "login_types": {
+      "password": "密碼",
+      "qrcode": "二維碼"
+    },
+    "no_use_ocr": "不使用 OCR",
+    "order_by": "排序依據",
+    "order_bys": {
+      "filename": "檔名稱",
+      "filesize": "檔案大小",
+      "lastOpTime": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "password": "密碼",
+    "rapid_upload": "秒傳",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "如要切換帳戶，請清除此欄位",
+    "root_folder_id": "根資料夾 ID",
+    "type": "型別",
+    "types": {
+      "family": "家庭雲",
+      "personal": "個人雲"
+    },
+    "upload_method": "上傳方式",
+    "upload_methods": {
+      "old": "舊版",
+      "rapid": "秒傳",
+      "stream": "流式"
+    },
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32",
+    "username": "使用者名稱",
+    "validate_code": "驗證碼"
+  },
+  "189CloudTV": {
+    "access_token": "訪問令牌",
+    "family_id": "家庭 ID",
+    "order_by": "排序依據",
+    "order_bys": {
+      "filename": "檔名稱",
+      "filesize": "檔案大小",
+      "lastOpTime": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "rapid_upload": "秒傳",
+    "root_folder_id": "根資料夾 ID",
+    "type": "型別",
+    "types": {
+      "family": "家庭雲",
+      "personal": "個人雲"
+    },
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32"
+  },
+  "AList V3": {
+    "forward_archive_requests": "轉發壓縮檔案請求",
+    "meta_password": "元資訊密碼",
+    "pass_ip_to_upsteam": "傳遞 IP 至上游",
+    "pass_ua_to_upsteam": "傳遞 UA 至上游",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "token": "令牌",
+    "url": "連結",
+    "username": "使用者名稱"
+  },
+  "Alias": {
+    "details_pass_through": "後端驅動詳細資訊穿透",
+    "download_concurrency": "下載併發",
+    "download_concurrency-tips": "需要啟用代理",
+    "download_part_size": "下載分片大小",
+    "download_part_size-tips": "需要啟用代理。單位：KB",
+    "file_consistency_check": "檔案一致性校驗",
+    "paths": "路徑",
+    "provider_pass_through": "後端驅動型別穿透",
+    "put_conflict_policy": "上傳衝突策略",
+    "put_conflict_policy-tips": "影響驅動上傳到、複製到、移動到、解壓到衝突路徑的方式。",
+    "put_conflict_policys": {
+      "all": "上傳到所有有效路徑",
+      "all_strict": "僅允許全衝突路徑",
+      "deterministic": "僅允許不衝突路徑",
+      "deterministic_or_all": "允許不衝突路徑和全衝突路徑",
+      "disabled": "停用",
+      "first": "上傳到首個有效路徑",
+      "quota": "按容量加權隨機負載均衡",
+      "quota_strict": "嚴格按容量加權隨機負載均衡",
+      "random": "隨機負載均衡"
+    },
+    "read_conflict_policy": "讀取衝突策略",
+    "read_conflict_policys": {
+      "all": "按分片負載均衡",
+      "first": "讀取首個有效路徑",
+      "random": "按檔案負載均衡"
+    },
+    "write_conflict_policy": "寫入衝突策略",
+    "write_conflict_policy-tips": "影響驅動重新命名、刪除同名檔案或資料夾，在同名資料夾下建立資料夾的方式。",
+    "write_conflict_policys": {
+      "all": "寫入所有有效路徑",
+      "all_strict": "僅允許全衝突路徑",
+      "deterministic": "僅允許不衝突路徑",
+      "deterministic_or_all": "允許不衝突路徑和全衝突路徑",
+      "disabled": "停用",
+      "first": "寫入首個有效路徑"
+    }
+  },
+  "Aliyundrive": {
+    "internal_upload": "內部上傳",
+    "order_by": "排序依據",
+    "order_bys": {
+      "created_at": "建立時間",
+      "name": "名稱",
+      "size": "大小",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "ASC": "升序",
+      "DESC": "降序"
+    },
+    "rapid_upload": "秒傳",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "AliyundriveOpen": {
+    "alipan_type": "阿里雲盤型別",
+    "alipan_types": {
+      "alipanTV": "阿里雲盤 TV",
+      "default": "預設"
+    },
+    "api_url_address": "API 地址",
+    "client_id": "客戶端 ID",
+    "client_id-tips": "如果你沒有，請留空",
+    "client_secret": "客戶端金鑰",
+    "client_secret-tips": "如果你沒有，請留空",
+    "drive_type": "雲盤型別",
+    "drive_types": {
+      "backup": "備份盤",
+      "default": "預設",
+      "resource": "資源"
+    },
+    "internal_upload": "內部上傳",
+    "internal_upload-tips": "如果您在使用位於北京的阿里雲伺服器，您可以開啟它來提高上傳速度",
+    "livp_download_format": "Livp 下載格式",
+    "livp_download_formats": {
+      "jpeg": "Jpeg",
+      "mov": "Mov"
+    },
+    "order_by": "排序依據",
+    "order_bys": {
+      "created_at": "建立時間",
+      "name": "名稱",
+      "size": "大小",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "ASC": "升序",
+      "DESC": "降序"
+    },
+    "rapid_upload": "秒傳",
+    "rapid_upload-tips": "如果您啟用此選項，檔案將先上傳到伺服器，所以進度將不正確",
+    "refresh_token": "重新整理令牌",
+    "remove_way": "移除方式",
+    "remove_ways": {
+      "delete": "永久刪除",
+      "trash": "放入回收站"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "use_online_api": "使用線上 API"
+  },
+  "AliyundriveShare": {
+    "order_by": "排序依據",
+    "order_bys": {
+      "created_at": "建立時間",
+      "name": "名稱",
+      "size": "大小",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "ASC": "升序",
+      "DESC": "降序"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "share_id": "分享 ID",
+    "share_pwd": "分享密碼"
+  },
+  "AutoIndex": {
+    "ignore_file_names": "忽略檔名",
+    "item_xpath": "條目 XPath",
+    "modified_time_format": "修改日期格式",
+    "modified_time_format-tips": "必須為時間點Mon Jan 2 15:04:05 -0700 MST 2006的某種表示形式",
+    "modified_xpath": "修改時間 XPath",
+    "name_xpath": "檔名 XPath",
+    "size_xpath": "檔案大小 XPath",
+    "url": "URL"
+  },
+  "Azure Blob Storage": {
+    "access_key": "訪問金鑰",
+    "access_key-tips": "用於身份驗證的 Azure 儲存的訪問金鑰。https://learn.microsoft.com/azure/storage/common/storage-account-keys-management",
+    "container_name": "容器名稱",
+    "container_name-tips": "Azure 儲存容器名稱（需在 Azure 門戶中建立，路徑：資料儲存 > 容器）。https://learn.microsoft.com/azure/storage/blobs/blob-containers-portal",
+    "endpoint": "端點",
+    "endpoint-tips": "例如：https://accountname.blob.core.windows.net/。Azure 儲存的完整端點 URL，包括唯一的儲存帳戶名稱（3~24 個數字和小寫字母）。",
+    "root_folder_path": "根資料夾路徑",
+    "sign_url_expire": "簽名連結有效期",
+    "sign_url_expire-tips": "SAS URLs 的到期時間，以小時為單位。"
+  },
+  "BaiduNetdisk": {
+    "api_url_address": "API 地址",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "custom_crack_ua": "自定義破解 UA",
+    "custom_upload_part_size": "自定義上傳分片大小",
+    "custom_upload_part_size-tips": "0 表示根據 VIP 等級對應大小",
+    "download_api": "下載介面",
+    "download_apis": {
+      "crack": "非官方",
+      "crack_video": "非官方影片專用介面",
+      "official": "官方"
+    },
+    "low_bandwith_upload_mode": "低頻寬上傳模式",
+    "only_list_video_file": "僅列出影片檔案",
+    "order_by": "排序依據",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "time": "時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_path": "根資料夾路徑",
+    "upload_api": "上傳 API",
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32",
+    "upload_timeout": "上傳超時",
+    "upload_timeout-tips": "每切片上傳超時的秒數",
+    "use_dynamic_upload_api": "使用動態的上傳API",
+    "use_dynamic_upload_api-tips": "動態獲取上傳API域名，啟用後 “上傳API”設定將作為備用",
+    "use_online_api": "使用線上 API"
+  },
+  "BaiduPhoto": {
+    "album_id": "相簿 ID",
+    "cookie": "Cookie",
+    "delete_origin": "刪除原始檔",
+    "show_type": "顯示型別",
+    "show_types": {
+      "root": "根資料夾",
+      "root_only_album": "僅根資料夾下相簿",
+      "root_only_file": "僅根資料夾下檔案"
+    },
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32"
+  },
+  "CNB Releases": {
+    "default_branch": "預設分支",
+    "default_branch-tips": "新發行版的預設分支",
+    "repo": "倉庫",
+    "root_folder_id": "根資料夾 ID",
+    "token": "令牌",
+    "use_tag_name": "使用 Tag 名稱",
+    "use_tag_name-tips": "使用原始的 Tag 名稱而不是 Release 名稱"
+  },
+  "ChaoXingGroupDrive": {
+    "bbsid": "BBSID",
+    "cookie": "Cookie",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "user_name": "使用者名稱"
+  },
+  "Chunk": {
+    "chunk_large_file_only": "僅對大檔案分塊",
+    "chunk_large_file_only-tips": "當檔案大小小於分片大小時以原始形式上傳檔案",
+    "chunk_prefix": "分塊字首",
+    "chunk_prefix-tips": "分塊資料夾的字首",
+    "custom_ext": "自定義副檔名",
+    "num_list_workers": "列舉分塊資料夾執行緒數",
+    "part_size": "分塊大小",
+    "part_size-tips": "單位：位元組",
+    "remote_path": "遠端儲存路徑",
+    "show_hidden": "顯示隱藏",
+    "show_hidden-tips": "顯示隱藏目錄和檔案",
+    "store_hash": "儲存雜湊值",
+    "thumbnail": "縮圖",
+    "thumbnail-tips": "啟用在.thumbnail資料夾中預生成的縮圖"
+  },
+  "Cloudreve": {
+    "address": "地址",
+    "cookie": "Cookie",
+    "custom_ua": "自定義 UA",
+    "enable_thumb_and_folder_size": "啟用縮圖和資料夾大小",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "username": "使用者名稱"
+  },
+  "Cloudreve V4": {
+    "access_token": "訪問令牌",
+    "address": "地址",
+    "custom_ua": "自定義 UA",
+    "enable_folder_size": "啟用資料夾大小",
+    "enable_thumb": "啟用縮圖",
+    "enable_version_upload": "啟用版本上傳",
+    "hide_uploading": "隱藏正在上傳中的檔案",
+    "order_by": "排序依據",
+    "order_bys": {
+      "created_at": "建立時間",
+      "name": "名稱",
+      "size": "大小",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "password": "密碼",
+    "refresh_token": "重新整理令牌",
+    "root_folder_path": "根資料夾路徑",
+    "username": "使用者名稱"
+  },
+  "Crypt": {
+    "directory_name_encryption": "資料夾名稱加密",
+    "directory_name_encryptions": {
+      "false": "否",
+      "true": "是"
+    },
+    "encrypted_suffix": "加密字尾",
+    "encrypted_suffix-tips": "高階選項！加密的檔案將使用此後綴",
+    "filename_encoding": "檔名編碼",
+    "filename_encoding-tips": "高階選項",
+    "filename_encodings": {
+      "base32": "Base32",
+      "base32768": "Base32768",
+      "base64": "Base64"
+    },
+    "filename_encryption": "檔名加密",
+    "filename_encryptions": {
+      "obfuscate": "混淆",
+      "off": "關閉",
+      "standard": "標準"
+    },
+    "password": "密碼",
+    "password-tips": "主密碼",
+    "remote_path": "加密後文件儲存路徑",
+    "remote_path-tips": "這是加密資料儲存的位置",
+    "salt": "加鹽",
+    "salt-tips": "如果您不知道什麼是加鹽，可以視為第二個密碼。可選，推薦。",
+    "show_hidden": "顯示隱藏",
+    "show_hidden-tips": "顯示隱藏目錄以及檔案",
+    "thumbnail": "縮圖",
+    "thumbnail-tips": "啟用在縮圖資料夾下預先生成的縮圖"
+  },
+  "Degoo": {
+    "access_token": "訪問令牌",
+    "access_token-tips": "Degoo API 訪問令牌，自動獲取",
+    "password": "密碼",
+    "password-tips": "您的 Degoo 帳戶密碼",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "用於自動更新令牌的重新整理令牌，自動獲取",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱",
+    "username-tips": "您的 Degoo 帳戶電子郵件"
+  },
+  "Doge": {
+    "access_key_id": "訪問金鑰 ID",
+    "add_filename_to_disposition": "新增 Filename 到 Disposition",
+    "add_filename_to_disposition-tips": "新增 Filename 到 Content-Disposition 頭中。",
+    "bucket": "儲存桶",
+    "custom_host": "自定義主機",
+    "direct_upload_host": "直傳主機",
+    "enable_custom_host_presign": "啟用自定義主機簽名",
+    "enable_direct_upload": "啟用前端直傳",
+    "endpoint": "端點",
+    "force_path_style": "強制路徑樣式",
+    "list_object_version": "列出物件版本",
+    "list_object_versions": {
+      "v1": "V1",
+      "v2": "V2"
+    },
+    "placeholder": "佔位檔名",
+    "region": "地區",
+    "remove_bucket": "移除儲存桶",
+    "remove_bucket-tips": "使用自定義主機時從路徑中刪除儲存桶名稱。",
+    "root_folder_path": "根資料夾路徑",
+    "secret_access_key": "訪問金鑰",
+    "session_token": "會話令牌",
+    "sign_url_expire": "簽名連結有效期"
+  },
+  "Doubao": {
+    "cookie": "Cookie",
+    "download_api": "下載介面",
+    "download_apis": {
+      "get_download_info": "獲取下載資訊",
+      "get_file_url": "獲取檔案連結"
+    },
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 請求率（[limit]r/1s）",
+    "root_folder_id": "根資料夾 ID",
+    "upload_thread": "上傳執行緒"
+  },
+  "DoubaoShare": {
+    "cookie": "Cookie",
+    "root_folder_path": "根資料夾路徑",
+    "share_ids": "分享 ID"
+  },
+  "Dropbox": {
+    "RootNamespaceId": "根名稱空間 ID",
+    "api_url_address": "API 地址",
+    "client_id": "客戶端 ID",
+    "client_id-tips": "如果你沒有，請留空",
+    "client_secret": "客戶端金鑰",
+    "client_secret-tips": "如果你沒有，請留空",
+    "refresh_token": "重新整理令牌",
+    "root_folder_path": "根資料夾路徑",
+    "use_online_api": "使用線上 API"
+  },
+  "FTP": {
+    "address": "地址",
+    "encoding": "編碼",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "username": "使用者名稱"
+  },
+  "FebBox": {
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "page_size": "分頁大小",
+    "page_size-tips": "FebBox 驅動程式的列表 API 的每頁大小",
+    "root_folder_id": "根資料夾 ID",
+    "sort_rule": "排序規則",
+    "sort_rules": {
+      "ext_asc": "副檔名正序",
+      "ext_desc": "副檔名倒序",
+      "name_asc": "名稱升序",
+      "name_desc": "名稱降序",
+      "size_asc": "大小升序",
+      "size_desc": "大小降序",
+      "update_asc": "修改時間正序",
+      "update_desc": "修改時間倒序"
+    },
+    "user_ip": "使用者 IP",
+    "user_ip-tips": "使用者 IP 地址用於下載連結，可以加快下載"
+  },
+  "FeijiPan": {
+    "ip": "IP",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱"
+  },
+  "GitHub API": {
+    "author_email": "提交作者電子郵件",
+    "author_name": "提交作者姓名",
+    "committer_email": "提交者電子郵件",
+    "committer_name": "提交者名稱",
+    "copy_commit_message": "複製操作提交訊息",
+    "delete_commit_message": "刪除操作提交訊息",
+    "gh_proxy": "Gh 代理",
+    "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/raw.githubusercontent.com 或 https://gh-proxy.com/raw.githubusercontent.com",
+    "gpg_key_passphrase": "GPG 金鑰密碼",
+    "gpg_private_key": "GPG 私鑰",
+    "mkdir_commit_message": "建立資料夾操作提交訊息",
+    "move_commit_message": "移動操作提交訊息",
+    "owner": "所有者",
+    "put_commit_message": "上傳操作提交訊息",
+    "ref": "Ref",
+    "ref-tips": "分支名、標籤或提交 SHA，不填寫使用預設主分支。",
+    "rename_commit_message": "重新命名操作提交訊息",
+    "repo": "倉庫",
+    "root_folder_path": "根資料夾路徑",
+    "token": "令牌"
+  },
+  "GitHub Releases": {
+    "gh_proxy": "Gh 代理",
+    "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
+    "repo_structure": "倉庫結構",
+    "repo_structure-tips": "結構：[path：]org/repo",
+    "root_folder_path": "根資料夾路徑",
+    "show_all_version": "顯示所有版本",
+    "show_all_version-tips": "顯示所有版本",
+    "show_readme": "顯示自述檔案",
+    "show_readme-tips": "顯示 README、LICENSE 檔案",
+    "show_source_code": "展示Source Code",
+    "show_source_code-tips": "展示Source Code(zip/tar.gz)",
+    "token": "令牌",
+    "token-tips": "GitHub 令牌，如果您想要訪問私有倉庫或提高費率限制"
+  },
+  "GoogleDrive": {
+    "api_url_address": "API 地址",
+    "chunk_size": "分片大小",
+    "chunk_size-tips": "上傳分塊大小 (單位：MB)",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "disable_disk_usage": "停用剩餘空間顯示",
+    "order_by": "排序依據",
+    "order_by-tips": "例如：folder, name, modifiedTime",
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "use_online_api": "使用線上 API"
+  },
+  "GooglePhoto": {
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "show_archive": "顯示檔案"
+  },
+  "HalalCloud": {
+    "app_id": "應用 ID",
+    "app_secret": "應用金鑰\n",
+    "app_version": "應用版本",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "登入型別是重新整理令牌，此為必填項",
+    "root_folder_path": "根資料夾路徑",
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32"
+  },
+  "HalalCloudOpen": {
+    "client_id": "客戶端ID",
+    "client_secret": "客戶端金鑰",
+    "host": "主機",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "如果使用個人API方式，則不需要重新整理令牌。",
+    "root_folder_path": "根資料夾路徑",
+    "timeout": "超時時間",
+    "timeout-tips": "以秒為單位的超時時間",
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒數 ≤ 32"
+  },
+  "ILanZou": {
+    "ip": "IP",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱"
+  },
+  "IPFS API": {
+    "endpoint": "端點",
+    "gateway": "閘道器",
+    "mode": "模式",
+    "modes": {
+      "ipfs": "IPFS",
+      "ipns": "IPNS",
+      "mfs": "MFS"
+    },
+    "root_folder_path": "根資料夾路徑"
+  },
+  "KodBox": {
+    "address": "地址",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "username": "使用者名稱"
+  },
+  "Lanzou": {
+    "account": "賬戶",
+    "baseUrl": "基礎 URL",
+    "baseUrl-tips": "進行檔案操作的基礎 URL",
+    "cookie": "Cookie",
+    "cookie-tips": "有效期約為 15 天，若使用分享連結則忽略",
+    "password": "密碼",
+    "repair_file_info": "修復檔案資訊",
+    "repair_file_info-tips": "要使用 WebDAV，您需要啟用它",
+    "root_folder_id": "根資料夾 ID",
+    "shareUrl": "分享連結",
+    "shareUrl-tips": "用於獲取分享頁面",
+    "share_password": "分享密碼",
+    "type": "型別",
+    "types": {
+      "account": "賬戶",
+      "cookie": "Cookie",
+      "url": "連結"
+    },
+    "user_agent": "使用者代理"
+  },
+  "LenovoNasShare": {
+    "host": "主機",
+    "host-tips": "你可以將它更改為你的區域網地址",
+    "root_folder_path": "根資料夾路徑",
+    "share_id": "分享 ID",
+    "share_id-tips": "最後一個 / 共享連結後的部分",
+    "share_pwd": "分享密碼",
+    "share_pwd-tips": "分享連結的密碼",
+    "show_root_folder": "顯示根資料夾"
+  },
+  "Local": {
+    "directory_size": "目錄大小",
+    "directory_size-tips": "這可能會影響主機的效能",
+    "mkdir_perm": "建立資料夾許可權",
+    "recycle_bin_path": "回收站路徑",
+    "recycle_bin_path-tips": "回收站的路徑，如果空或保留“永久刪除”則永久刪除",
+    "root_folder_path": "根資料夾路徑",
+    "show_hidden": "顯示隱藏",
+    "show_hidden-tips": "顯示隱藏目錄以及檔案",
+    "thumb_cache_folder": "縮圖快取資料夾",
+    "thumb_concurrency": "縮圖併發數",
+    "thumb_concurrency-tips": "同時生成縮圖的數量。這控制了可以並行生成多少縮圖。",
+    "thumbnail": "縮圖",
+    "thumbnail-tips": "啟用縮圖",
+    "video_thumb_pos": "影片縮圖",
+    "video_thumb_pos-tips": "影片縮圖的位置。如果該值是一個數字（整數點浮點），它代表幾秒鐘的時間。如果值以“%”結尾，則代表影片持續時間的百分比。"
+  },
+  "MediaFire": {
+    "chunk_size": "分片大小",
+    "cookie": "Cookie",
+    "cookie-tips": "必填",
+    "limit_rate": "限制速率",
+    "limit_rate-tips": "限制所有 API 請求速率（[limit]r/1s）",
+    "order_by": "排序依據",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "time": "時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "root_folder_path": "根資料夾路徑",
+    "session_token": "會話令牌",
+    "session_token-tips": "選填，可從 Cookie 中自動獲取",
+    "upload_threads": "上傳執行緒",
+    "upload_threads-tips": "上傳併發請求"
+  },
+  "MediaTrack": {
+    "access_token": "訪問令牌",
+    "order_by": "排序依據",
+    "order_bys": {
+      "size": "大小",
+      "title": "名稱",
+      "updated_at": "修改時間"
+    },
+    "order_desc": "降序排列",
+    "project_id": "專案 ID",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "Mega_nz": {
+    "email": "郵箱",
+    "move_to_trash": "移至回收站",
+    "move_to_trash-tips": "刪除檔案時移至回收站",
+    "password": "密碼",
+    "two_fa_code": "雙因素身份驗證碼",
+    "two_fa_code-tips": "雙因素身份驗證碼由 6 位數字組成，僅填寫雙因素身份驗證碼將不支援過載驅動程式",
+    "two_fa_secret": "雙因素身份驗證秘鑰",
+    "two_fa_secret-tips": "雙因素身份驗證秘鑰"
+  },
+  "Misskey": {
+    "access_token": "訪問令牌",
+    "endpoint": "端點",
+    "root_folder_path": "根資料夾路徑"
+  },
+  "MoPan": {
+    "cloud_id": "Cloud ID",
+    "device_info": "裝置資訊",
+    "order_by": "排序依據",
+    "order_bys": {
+      "filename": "檔名稱",
+      "filesize": "檔案大小",
+      "lastOpTime": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "password": "密碼",
+    "phone": "手機號碼",
+    "root_folder_id": "根資料夾 ID",
+    "sms_code": "簡訊驗證碼",
+    "sms_code-tips": "輸入“send”傳送簡訊 ",
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1 ≤ 執行緒 ≤ 32"
+  },
+  "NeteaseMusic": {
+    "cookie": "Cookie",
+    "song_limit": "歌曲獲取上限",
+    "song_limit-tips": "預設只獲取 200 首歌曲"
+  },
+  "Onedrive": {
+    "api_url_address": "API 地址",
+    "chunk_size": "分片大小",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "custom_host": "自定義主機",
+    "custom_host-tips": "自定義加速下載連結",
+    "disable_disk_usage": "停用剩餘空間顯示",
+    "enable_direct_upload": "啟用前端直傳",
+    "enable_direct_upload-tips": "允許不經OpenList直接上傳到OneDrive",
+    "is_sharepoint": "是否 SharePoint",
+    "redirect_uri": "重定向 URI",
+    "refresh_token": "重新整理令牌",
+    "region": "地區",
+    "regions": {
+      "cn": "世紀互聯",
+      "de": "德國版",
+      "global": "國際版",
+      "us": "美國版"
+    },
+    "root_folder_path": "根資料夾路徑",
+    "site_id": "站點 ID",
+    "use_online_api": "使用線上 API"
+  },
+  "Onedrive Sharelink": {
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "url": "連結"
+  },
+  "OnedriveAPP": {
+    "chunk_size": "分片大小",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "custom_host": "自定義主機",
+    "custom_host-tips": "自定義加速下載連結",
+    "disable_disk_usage": "停用剩餘空間顯示",
+    "email": "郵箱",
+    "enable_direct_upload": "啟用前端直傳",
+    "enable_direct_upload-tips": "允許不經OpenList直接上傳到OneDrive",
+    "region": "地區",
+    "regions": {
+      "cn": "世紀互聯",
+      "de": "德國版",
+      "global": "國際版",
+      "us": "美國版"
+    },
+    "root_folder_path": "根資料夾路徑",
+    "tenant_id": "租戶 ID"
+  },
+  "OpenList": {
+    "forward_archive_requests": "轉發壓縮檔案請求",
+    "meta_password": "元資訊密碼",
+    "pass_ip_to_upsteam": "傳遞 IP 至上游",
+    "pass_ua_to_upsteam": "傳遞 UA 至上游",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "token": "令牌",
+    "url": "連結",
+    "username": "使用者名稱"
+  },
+  "OpenListShare": {
+    "forward_archive_requests": "轉發壓縮檔案請求",
+    "pwd": "分享碼",
+    "root_folder_path": "根資料夾路徑",
+    "sid": "分享ID",
+    "url": "URL"
+  },
+  "PikPak": {
+    "captcha_token": "驗證碼",
+    "device_id": "裝置 ID",
+    "disable_media_link": "停用媒體連結",
+    "password": "密碼",
+    "platform": "平臺",
+    "platforms": {
+      "android": "安卓",
+      "pc": "PC 平臺",
+      "web": "網頁"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "username": "使用者名稱"
+  },
+  "PikPakShare": {
+    "device_id": "裝置 ID",
+    "platform": "平臺",
+    "platforms": {
+      "android": "安卓",
+      "pc": "PC 平臺",
+      "web": "網頁"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "share_id": "分享 ID",
+    "share_pwd": "分享密碼",
+    "use_transcoding_address": "使用轉碼地址"
+  },
+  "ProtonDrive": {
+    "chunk_size": "分片大小",
+    "email": "郵箱",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "two_fa_code": "2FA驗證碼",
+    "use_reusable_login": "使用可重用登入",
+    "use_reusable_login-tips": "使用可重用的登入憑據代替使用者名稱/密碼登入"
+  },
+  "Quark": {
+    "cookie": "Cookie",
+    "only_list_video_file": "僅列出影片檔案",
+    "order_by": "排序依據",
+    "order_bys": {
+      "file_name": "檔名稱",
+      "file_type": "檔案型別",
+      "none": "無",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "use_transcoding_address": "使用轉碼地址",
+    "use_transcoding_address-tips": "您可以觀看經過轉碼的影片，並支援 302 重定向"
+  },
+  "QuarkOpen": {
+    "access_token": "訪問令牌",
+    "api_url_address": "API URL 地址",
+    "app_id": "應用 ID",
+    "app_id-tips": "如果你沒有，請留空",
+    "order_by": "排序依據",
+    "order_bys": {
+      "created_at": "創建於",
+      "file_name": "檔名稱",
+      "file_type": "檔案型別",
+      "none": "無",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "sign_key": "簽名私鑰",
+    "sign_key-tips": "如果你沒有，請留空",
+    "use_online_api": "使用線上 API"
+  },
+  "QuarkTV": {
+    "device_id": "裝置 ID",
+    "link_method": "連結方法",
+    "link_methods": {
+      "download": "下載",
+      "streaming": "流式"
+    },
+    "order_by": "排序依據",
+    "order_bys": {
+      "file_name": "檔名稱",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "query_token": "查詢令牌",
+    "query_token-tips": "不要編輯",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "S3": {
+    "access_key_id": "訪問金鑰 ID",
+    "add_filename_to_disposition": "新增 Filename 到 Disposition",
+    "add_filename_to_disposition-tips": "新增 Filename 到 Content-Disposition 頭中。",
+    "bucket": "儲存桶",
+    "custom_host": "自定義主機",
+    "direct_upload_host": "直傳主機",
+    "enable_custom_host_presign": "啟用自定義主機預簽名",
+    "enable_direct_upload": "啟用前端直傳",
+    "endpoint": "端點",
+    "force_path_style": "強制路徑樣式",
+    "list_object_version": "列出物件版本",
+    "list_object_versions": {
+      "v1": "V1",
+      "v2": "V2"
+    },
+    "placeholder": "佔位檔名",
+    "region": "地區",
+    "remove_bucket": "移除儲存桶",
+    "remove_bucket-tips": "使用自定義主機時從路徑中刪除儲存桶名稱。",
+    "root_folder_path": "根資料夾路徑",
+    "secret_access_key": "訪問金鑰",
+    "session_token": "會話令牌",
+    "sign_url_expire": "簽名連結有效期"
+  },
+  "SFTP": {
+    "address": "地址",
+    "ignore_symlink_error": "忽略軟連結錯誤",
+    "passphrase": "密語",
+    "password": "密碼",
+    "private_key": "私鑰",
+    "root_folder_path": "根資料夾路徑",
+    "username": "使用者名稱"
+  },
+  "SMB": {
+    "address": "地址",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "share_name": "分享名稱",
+    "username": "使用者名稱"
+  },
+  "Seafile": {
+    "address": "地址",
+    "password": "密碼",
+    "repoId": "倉庫 ID",
+    "repoPwd": "倉庫密碼",
+    "root_folder_path": "根資料夾路徑",
+    "token": "令牌",
+    "username": "使用者名稱"
+  },
+  "Strm": {
+    "KeepLocalDownloadFile": "保留本地下載檔案",
+    "KeepLocalDownloadFile-tips": "保留本地下載檔案",
+    "PathPrefix": "路徑字首",
+    "PathPrefix-tips": "路徑字首",
+    "SaveLocalMode": "本地儲存模式",
+    "SaveLocalMode-tips": "儲存Strm到本地目錄的方式",
+    "SaveLocalModes": {
+      "insert": "新增",
+      "sync": "同步",
+      "update": "更新"
+    },
+    "SaveStrmLocalPath": "儲存Strm本地路徑",
+    "SaveStrmLocalPath-tips": "儲存Strm檔案本地路徑",
+    "SaveStrmToLocal": "儲存Strm到本地",
+    "SaveStrmToLocal-tips": "本地儲存Strm檔案",
+    "downloadFileTypes": "下載檔案型別",
+    "downloadFileTypes-tips": "需要使用 Strm 流下載的檔案（通常是字幕）",
+    "encodePath": "編碼路徑",
+    "encodePath-tips": "在 Strm 檔案中編碼路徑",
+    "filterFileTypes": "過濾檔案型別",
+    "filterFileTypes-tips": "支援 Strm 檔案的字尾名",
+    "paths": "路徑",
+    "siteUrl": "站點 URL",
+    "siteUrl-tips": "Strm 檔案的字首 URL",
+    "withSign": "攜帶簽名",
+    "withoutUrl": "除去URL",
+    "withoutUrl-tips": "去除Strm檔案中的URL字首"
+  },
+  "Teambition": {
+    "cookie": "Cookie",
+    "order_by": "排序依據",
+    "order_bys": {
+      "created": "建立時間",
+      "fileName": "檔名稱",
+      "fileSize": "檔案大小",
+      "updated": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "Asc": "升序",
+      "Desc": "降序"
+    },
+    "project_id": "專案 ID",
+    "region": "地區",
+    "regions": {
+      "china": "中國",
+      "international": "國際版"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "use_s3_upload_method": "使用 S3 上傳方法"
+  },
+  "Teldrive": {
+    "chunk_size": "分片大小",
+    "chunk_size-tips": "分片大小，單位 MiB",
+    "cookie": "Cookie",
+    "cookie-tips": "access_token=xxx",
+    "root_folder_path": "根資料夾路徑",
+    "upload_concurrency": "上傳併發數量",
+    "upload_concurrency-tips": "上傳併發請求",
+    "url": "URL",
+    "use_share_link": "使用分享連結",
+    "use_share_link-tips": "獲取連結時建立共享連結以支援 302 。如果停用，您就需要啟用 Web 代理。"
+  },
+  "Terabox": {
+    "cookie": "Cookie",
+    "download_api": "下載介面",
+    "download_apis": {
+      "crack": "非官方",
+      "official": "官方"
+    },
+    "order_by": "排序依據",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "time": "時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "root_folder_path": "根資料夾路徑"
+  },
+  "Thunder": {
+    "captcha_token": "驗證碼",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
+    "device_id": "裝置 ID",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "space": "空間",
+    "space-tips": "遠端裝置的裝置ID",
+    "username": "使用者名稱"
+  },
+  "ThunderBrowser": {
+    "captcha_token": "驗證碼",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
+    "device_id": "裝置 ID",
+    "password": "密碼",
+    "remove_way": "移除方式",
+    "remove_ways": {
+      "delete": "永久刪除",
+      "trash": "放入回收站"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "safe_password": "安全密碼",
+    "use_fluent_play": "使用流暢播介面",
+    "use_fluent_play-tips": "使用流暢播介面進行離線下載，只支援磁力連結",
+    "use_video_url": "使用影片 URL",
+    "username": "使用者名稱"
+  },
+  "ThunderBrowserExpert": {
+    "algorithms": "演算法",
+    "algorithms-tips": "簽名型別是使用者名稱，此為必填項",
+    "captcha_sign": "驗證碼簽名",
+    "captcha_sign-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "captcha_token": "驗證碼",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "client_version": "客戶端版本",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
+    "device_id": "裝置 ID",
+    "download_user_agent": "下載使用者代理",
+    "login_type": "登入型別",
+    "login_types": {
+      "refresh_token": "重新整理令牌",
+      "user": "使用者名稱"
+    },
+    "package_name": "包名",
+    "password": "密碼",
+    "password-tips": "登入型別是使用者名稱，此為必填項",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "登入型別是重新整理令牌，此為必填項",
+    "remove_way": "移除方式",
+    "remove_ways": {
+      "delete": "永久刪除",
+      "trash": "放入回收站"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "safe_password": "安全密碼",
+    "safe_password-tips": "超安全密碼",
+    "sign_type": "簽名型別",
+    "sign_types": {
+      "algorithms": "演算法",
+      "captcha_sign": "驗證碼簽名"
+    },
+    "timestamp": "時間戳",
+    "timestamp-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "use_fluent_play": "使用流暢播介面",
+    "use_fluent_play-tips": "使用流暢播介面進行離線下載，只支援磁力連結",
+    "use_video_url": "使用影片 URL",
+    "user_agent": "使用者代理",
+    "username": "使用者名稱",
+    "username-tips": "登入型別是使用者名稱，此為必填項"
+  },
+  "ThunderExpert": {
+    "algorithms": "演算法",
+    "algorithms-tips": "簽名型別是使用者名稱，此為必填項",
+    "captcha_sign": "驗證碼簽名",
+    "captcha_sign-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "captcha_token": "驗證碼",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "client_version": "客戶端版本",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
+    "device_id": "裝置 ID",
+    "download_user_agent": "下載使用者代理",
+    "login_type": "登入型別",
+    "login_types": {
+      "refresh_token": "重新整理令牌",
+      "user": "使用者名稱"
+    },
+    "package_name": "包名",
+    "password": "密碼",
+    "password-tips": "登入型別是使用者名稱，此為必填項",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "登入型別是重新整理令牌，此為必填項",
+    "root_folder_id": "根資料夾 ID",
+    "sign_type": "簽名型別",
+    "sign_types": {
+      "algorithms": "演算法",
+      "captcha_sign": "驗證碼簽名"
+    },
+    "space": "空間",
+    "space-tips": "遠端裝置的裝置ID",
+    "timestamp": "時間戳",
+    "timestamp-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "use_video_url": "使用影片 URL",
+    "user_agent": "使用者代理",
+    "username": "使用者名稱",
+    "username-tips": "登入型別是使用者名稱，此為必填項"
+  },
+  "ThunderX": {
+    "captcha_token": "驗證碼",
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "use_video_url": "使用影片 URL",
+    "username": "使用者名稱"
+  },
+  "ThunderXExpert": {
+    "algorithms": "演算法",
+    "algorithms-tips": "簽名型別是使用者名稱，此為必填項",
+    "captcha_sign": "驗證碼簽名",
+    "captcha_sign-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "captcha_token": "驗證碼",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "client_version": "客戶端版本",
+    "device_id": "裝置 ID",
+    "download_user_agent": "下載使用者代理",
+    "login_type": "登入型別",
+    "login_types": {
+      "refresh_token": "重新整理令牌",
+      "user": "使用者名稱"
+    },
+    "package_name": "包名",
+    "password": "密碼",
+    "password-tips": "登入型別是使用者名稱，此為必填項",
+    "refresh_token": "重新整理令牌",
+    "refresh_token-tips": "登入型別是重新整理令牌，此為必填項",
+    "root_folder_id": "根資料夾 ID",
+    "sign_type": "簽名型別",
+    "sign_types": {
+      "algorithms": "演算法",
+      "captcha_sign": "驗證碼簽名"
+    },
+    "timestamp": "時間戳",
+    "timestamp-tips": "簽名型別是驗證碼簽名，此為必填項",
+    "use_video_url": "使用影片 URL",
+    "user_agent": "使用者代理",
+    "username": "使用者名稱",
+    "username-tips": "登入型別是使用者名稱，此為必填項"
+  },
+  "UC": {
+    "cookie": "Cookie",
+    "only_list_video_file": "僅列出影片檔案",
+    "order_by": "排序依據",
+    "order_bys": {
+      "file_name": "檔名稱",
+      "file_type": "檔案型別",
+      "none": "無",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "use_transcoding_address": "使用轉碼地址",
+    "use_transcoding_address-tips": "您可以觀看經過轉碼的影片，並支援 302 重定向"
+  },
+  "UCTV": {
+    "device_id": "裝置 ID",
+    "link_method": "連結方法",
+    "link_methods": {
+      "download": "下載",
+      "streaming": "流式"
+    },
+    "order_by": "排序依據",
+    "order_bys": {
+      "file_name": "檔名稱",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "query_token": "查詢令牌",
+    "query_token-tips": "不要編輯",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID"
+  },
+  "USS": {
+    "anti_theft_chain_token": "反盜鏈令牌",
+    "bucket": "儲存桶",
+    "endpoint": "端點",
+    "operator_name": "操作員名稱",
+    "operator_password": "操作員密碼",
+    "root_folder_path": "根資料夾路徑",
+    "sign_url_expire": "簽名連結有效期"
+  },
+  "UrlTree": {
+    "head_size": "HEAD 大小",
+    "head_size-tips": "使用 HEAD 方法獲取檔案大小，但可能失敗。",
+    "url_structure": "URL 結構",
+    "url_structure-tips": "結構：\nFolderName:\n  [FileName:][FileSize:][Modified:]Url",
+    "writable": "可寫"
+  },
+  "Virtual": {
+    "max_file_size": "最大檔案大小",
+    "min_file_size": "最小檔案大小",
+    "num_file": "檔案數量",
+    "num_folder": "資料夾數量",
+    "root_folder_path": "根資料夾路徑"
+  },
+  "WPS": {
+    "cookie": "Cookie",
+    "mode": "型別",
+    "modes": {
+      "Business": "商業版",
+      "Personal": "個人版"
+    },
+    "root_folder_path": "根資料夾路徑"
+  },
+  "WebDav": {
+    "address": "地址",
+    "password": "密碼",
+    "root_folder_path": "根資料夾路徑",
+    "tls_insecure_skip_verify": "跳過 SSL 證書驗證",
+    "username": "使用者名稱",
+    "vendor": "供應商",
+    "vendors": {
+      "other": "其他",
+      "sharepoint": "SharePoint"
+    }
+  },
+  "WeiYun": {
+    "cookies": "Cookie",
+    "order_by": "排序依據",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "updated_at": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "root_folder_id": "根資料夾 ID",
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "4 ≤ 執行緒 ≤ 32"
+  },
+  "WoPan": {
+    "access_token": "訪問令牌",
+    "family_id": "家庭 ID",
+    "family_id-tips": "如果您想要使用您的個人空間，請保持為空",
+    "refresh_token": "重新整理令牌",
+    "root_folder_id": "根資料夾 ID",
+    "sort_rule": "排序規則",
+    "sort_rules": {
+      "name_asc": "名稱升序",
+      "name_desc": "名稱降序",
+      "size_asc": "大小升序",
+      "size_desc": "大小降序",
+      "time_asc": "時間升序",
+      "time_desc": "時間降序"
+    }
+  },
+  "YandexDisk": {
+    "api_url_address": "API 地址",
+    "client_id": "客戶端 ID",
+    "client_secret": "客戶端金鑰",
+    "order_by": "排序依據",
+    "order_bys": {
+      "created": "建立時間",
+      "modified": "修改時間",
+      "name": "名稱",
+      "path": "路徑",
+      "size": "大小"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "refresh_token": "重新整理令牌",
+    "root_folder_path": "根資料夾路徑",
+    "use_online_api": "使用線上 API"
+  },
+  "config": {
+    "115 Cloud": {},
+    "115 Open": {},
+    "115 Share": {},
+    "123 Open": {},
+    "123Pan": {},
+    "123PanLink": {},
+    "123PanShare": {},
+    "139Yun": {},
+    "189Cloud": {
+      "alert": "如果此驅動無法工作，你可以嘗試使用“天翼網盤客戶端”驅動。"
+    },
+    "189CloudPC": {},
+    "189CloudTV": {},
+    "AList V3": {},
+    "Alias": {},
+    "Aliyundrive": {
+      "alert": "在這個驅動中可能有一個死迴圈的錯誤。\n已廢棄，不再維護，並將在未來的版本中移除。\n我們建議使用官方支援的阿里雲盤 Open。"
+    },
+    "AliyundriveOpen": {},
+    "AliyundriveShare": {},
+    "AutoIndex": {},
+    "Azure Blob Storage": {},
+    "BaiduNetdisk": {},
+    "BaiduPhoto": {},
+    "CNB Releases": {},
+    "ChaoXingGroupDrive": {},
+    "Chunk": {},
+    "Cloudreve": {},
+    "Cloudreve V4": {},
+    "Crypt": {},
+    "Degoo": {},
+    "Doge": {},
+    "Doubao": {},
+    "DoubaoShare": {},
+    "Dropbox": {},
+    "FTP": {},
+    "FebBox": {},
+    "FeijiPan": {},
+    "GitHub API": {},
+    "GitHub Releases": {},
+    "GoogleDrive": {},
+    "GooglePhoto": {},
+    "HalalCloud": {},
+    "HalalCloudOpen": {},
+    "ILanZou": {},
+    "IPFS API": {},
+    "KodBox": {},
+    "Lanzou": {},
+    "LenovoNasShare": {},
+    "Local": {},
+    "MediaFire": {},
+    "MediaTrack": {},
+    "Mega_nz": {},
+    "Misskey": {},
+    "MoPan": {
+      "alert": "這個網盤可能將您的密碼以明文儲存，請小心設定您的密碼"
+    },
+    "NeteaseMusic": {},
+    "Onedrive": {},
+    "Onedrive Sharelink": {},
+    "OnedriveAPP": {},
+    "OpenList": {},
+    "OpenListShare": {},
+    "PikPak": {},
+    "PikPakShare": {},
+    "ProtonDrive": {},
+    "Quark": {},
+    "QuarkOpen": {},
+    "QuarkTV": {},
+    "S3": {},
+    "SFTP": {},
+    "SMB": {},
+    "Seafile": {},
+    "Strm": {},
+    "Teambition": {},
+    "Teldrive": {},
+    "Terabox": {},
+    "Thunder": {},
+    "ThunderBrowser": {},
+    "ThunderBrowserExpert": {},
+    "ThunderExpert": {},
+    "ThunderX": {},
+    "ThunderXExpert": {},
+    "UC": {},
+    "UCTV": {},
+    "USS": {},
+    "UrlTree": {},
+    "Virtual": {},
+    "WPS": {},
+    "WebDav": {},
+    "WeiYun": {},
+    "WoPan": {},
+    "YandexDisk": {}
+  },
+  "drivers": {
+    "115 Cloud": "115 網盤",
+    "115 Open": "115 網盤開放平臺",
+    "115 Share": "115 網盤分享",
+    "123 Open": "123 雲盤開放平臺",
+    "123Pan": "123 雲盤",
+    "123PanLink": "123 雲盤直鏈",
+    "123PanShare": "123 雲盤分享",
+    "139Yun": "中國移動雲盤",
+    "189Cloud": "天翼雲盤",
+    "189CloudPC": "天翼雲盤客戶端",
+    "189CloudTV": "天翼雲盤 TV",
+    "AList V3": "AList v3",
+    "Alias": "別名",
+    "Aliyundrive": "阿里雲盤",
+    "AliyundriveOpen": "阿里雲盤（Oauth2）",
+    "AliyundriveShare": "阿里雲盤分享",
+    "AutoIndex": "AutoIndex",
+    "Azure Blob Storage": "Azure Blob 儲存",
+    "BaiduNetdisk": "百度網盤",
+    "BaiduPhoto": "一刻相簿",
+    "CNB Releases": "CNB 發行版",
+    "ChaoXingGroupDrive": "超星小組盤",
+    "Chunk": "分塊",
+    "Cloudreve": "Cloudreve",
+    "Cloudreve V4": "Cloudreve V4",
+    "Crypt": "Crypt",
+    "Degoo": "Degoo",
+    "Doge": "多吉雲",
+    "Doubao": "豆包",
+    "DoubaoShare": "豆包分享",
+    "Dropbox": "Dropbox",
+    "FTP": "FTP",
+    "FebBox": "FebBox",
+    "FeijiPan": "飛機盤",
+    "GitHub API": "Github API",
+    "GitHub Releases": "GitHub 發行",
+    "GoogleDrive": "谷歌雲盤",
+    "GooglePhoto": "谷歌相簿",
+    "HalalCloud": "HalalCloud",
+    "HalalCloudOpen": "HalalCloudOpen",
+    "ILanZou": "藍奏雲優享版",
+    "IPFS API": "IPFS API",
+    "KodBox": "可道雲",
+    "Lanzou": "藍奏雲",
+    "LenovoNasShare": "聯想家庭儲存連結分享",
+    "Local": "本機儲存",
+    "MediaFire": "MediaFire",
+    "MediaTrack": "分秒幀",
+    "Mega_nz": "Mega 網盤",
+    "Misskey": "Misskey",
+    "MoPan": "魔盤",
+    "NeteaseMusic": "網易雲音樂",
+    "Onedrive": "OneDrive",
+    "Onedrive Sharelink": "OneDrive 分享連結",
+    "OnedriveAPP": "OneDrive APP",
+    "OpenList": "OpenList",
+    "OpenListShare": "OpenList 分享",
+    "PikPak": "PikPak",
+    "PikPakShare": "PikPak 分享",
+    "ProtonDrive": "ProtonDrive",
+    "Quark": "夸克",
+    "QuarkOpen": "夸克網盤 Open",
+    "QuarkTV": "Quark TV",
+    "S3": "物件儲存",
+    "SFTP": "SFTP",
+    "SMB": "SMB",
+    "Seafile": "Seafile",
+    "Strm": "Strm",
+    "Teambition": "Teambition 網盤",
+    "Teldrive": "Teldrive",
+    "Terabox": "Terabox",
+    "Thunder": "迅雷",
+    "ThunderBrowser": "迅雷瀏覽器",
+    "ThunderBrowserExpert": "迅雷瀏覽器專家版",
+    "ThunderExpert": "迅雷專家版",
+    "ThunderX": "迅雷 X",
+    "ThunderXExpert": "迅雷 X 專家版",
+    "UC": "UC 網盤",
+    "UCTV": "UC 網盤 TV",
+    "USS": "又拍雲端儲存",
+    "UrlTree": "地址樹",
+    "Virtual": "虛擬儲存",
+    "WPS": "WPS 雲文件",
+    "WebDav": "WebDAV",
+    "WeiYun": "騰訊微雲",
+    "WoPan": "聯通雲盤",
+    "YandexDisk": "Yandex 網盤"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "login_to": "登入到",
+  "username-tips": "輸入您的使用者名稱",
+  "password-tips": "輸入您的密碼",
+  "otp-tips": "輸入您的 OTP 驗證碼",
+  "remember": "記住賬號",
+  "forget": "忘記密碼？",
+  "forget_url": "https://doc.oplist.org/faq/howto#%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E",
+  "clear": "清除",
+  "login": "登入",
+  "use_guest": "以遊客身份瀏覽",
+  "success": "登入成功"
+}

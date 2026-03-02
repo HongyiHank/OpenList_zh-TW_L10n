@@ -1,0 +1,65 @@
+{
+  "common": {
+    "export": "Export",
+    "export_title": "Export Storage to JSON",
+    "export_tips": "Please copy the storage JSON above.",
+    "import": "Import",
+    "import_title": "Import Storage from JSON",
+    "import_success": "Imported successfully!",
+    "import_tips": "Paste the exported storage JSON to import.",
+    "mount_path": "掛載路徑",
+    "mount_path-tips": "要掛載的路徑，必須是唯一且不能重複",
+    "driver": "驅動",
+    "order": "序號",
+    "order-tips": "用於排序",
+    "usage": "使用情況",
+    "status": "狀態",
+    "remark": "備註",
+    "cache_expiration": "快取過期時間",
+    "cache_expiration-tips": "此儲存的快取過期時間（分鐘）",
+    "custom_cache_policies": "自定義快取策略",
+    "custom_cache_policies-tips": "此儲存的快取過期時間（分鐘）",
+    "down_proxy_url": "下載代理網址",
+    "disable_proxy_sign": "停用代理簽名",
+    "disable_proxy_sign-tips": "停用下載代理網址的簽名",
+    "web_proxy": "網頁代理",
+    "webdav_policy": "WebDAV 策略",
+    "proxy_range": "代理範圍",
+    "proxy_range-tips": "需要啟用代理",
+    "webdav_policys": {
+      "302_redirect": "302 重定向",
+      "use_proxy_url": "使用代理網址",
+      "native_proxy": "本機代理"
+    },
+    "order_by": "排序依據",
+    "order_bys": {
+      "name": "名稱",
+      "size": "大小",
+      "modified": "修改時間"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "extract_folder": "資料夾順序",
+    "extract_folders": {
+      "front": " 資料夾置頂",
+      "back": "資料夾置底"
+    },
+    "enable_sign": "啟用簽名",
+    "disable_index": "停用索引"
+  },
+  "table_fields": {
+    "status": {
+      "work": "工作中",
+      "disabled": "已停用"
+    }
+  },
+  "other": {
+    "start_load_success": "開始載入",
+    "load_all": "全部重新載入",
+    "filter_by_driver": "按驅動篩選",
+    "table_layout": "表格佈局"
+  }
+}

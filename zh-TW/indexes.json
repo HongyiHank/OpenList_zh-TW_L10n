@@ -1,0 +1,23 @@
+{
+  "index_header": "搜尋索引設定",
+  "search_index": "搜尋索引",
+  "current": "當前索引",
+  "build": "構建索引",
+  "rebuild": "重建索引",
+  "paths_to_update": "要更新索引的路徑",
+  "max_depth": "最大深度",
+  "update": "更新索引",
+  "obj_count": "物件計數",
+  "last_done_time": "上次完成時間",
+  "unknown": "未知",
+  "stop": "停止",
+  "clear": "清除",
+  "error": "錯誤",
+  "scan_header": "手動掃描",
+  "task_status": "任務狀態",
+  "running": "執行中",
+  "idle": "待命",
+  "path_to_scan": "掃描路徑",
+  "rate_limit": "限制速率",
+  "start": "開始"
+}
