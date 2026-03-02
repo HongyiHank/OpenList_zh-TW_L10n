@@ -1,0 +1,70 @@
+name: 翻譯
+
+on:
+  push:
+    branches: [main]
+    paths: ['zh-CN/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install OpenCC
+        run: sudo apt-get update && sudo apt-get install -y opencc
+
+      - name: Run Translation
+        env:
+          SOURCE_DIR: "zh-CN"
+          TARGET_DIR: "zh-TW"
+          FILE_EXT: "json"
+        run: |
+          set -euo pipefail
+          
+          # 判斷模式：Push 且有上一個 commit 則為增量，否則全量
+          if [[ "${{ github.event_name }}" == "push" ]] && git rev-parse HEAD~1 >/dev/null 2>&1; then
+            # 增量模式：處理刪除與變更
+            git diff --name-only --diff-filter=D HEAD~1 HEAD -- "$SOURCE_DIR" | while read -r f; do
+              rm -f "${f/#$SOURCE_DIR/$TARGET_DIR}"
+            done
+            FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- "$SOURCE_DIR" | grep "\.$FILE_EXT$" || true)
+          else
+            # 全量模式：清理孤立檔案
+            if [ -d "$TARGET_DIR" ]; then
+              find "$TARGET_DIR" -type f -name "*.$FILE_EXT" | while read -r f; do
+                [ ! -f "${f/#$TARGET_DIR/$SOURCE_DIR}" ] && rm -f "$f"
+              done
+            fi
+            FILES=$(find "$SOURCE_DIR" -type f -name "*.$FILE_EXT")
+          fi
+
+          [ -z "$FILES" ] && echo "No changes detected." && exit 0
+
+          echo "Starting translation ($(echo "$FILES" | grep -c '^') files)..."
+          
+          # 並行轉換 (含建立目錄)
+          export SOURCE_DIR TARGET_DIR
+          echo "$FILES" | xargs -d '\n' -I {} -P $(nproc) bash -c '
+            src="{}"
+            dest="${src/#$SOURCE_DIR/$TARGET_DIR}"
+            mkdir -p "$(dirname "$dest")"
+            opencc -i "$src" -o "$dest" -c s2twp.json
+          '
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(i18n): 翻譯 zh-CN 至 zh-TW"
+          file_pattern: zh-TW/
