@@ -1,0 +1,141 @@
+name: Build and Release
+on:
+  push:
+    branches: [main]
+    paths: ['zh-TW/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+env:
+  GO_VERSION: '1.25'
+  NODE_VERSION: '24'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    outputs:
+      backend_tag: ${{ steps.tags.outputs.backend_tag }}
+      frontend_tag: ${{ steps.tags.outputs.frontend_tag }}
+      frontend_ver: ${{ steps.tags.outputs.frontend_ver }}
+    steps:
+      # 解析上游最新 tag
+      - id: tags
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BE_TAG=$(gh api repos/OpenListTeam/OpenList/releases/latest --jq .tag_name)
+          FE_TAG=$(gh api repos/OpenListTeam/OpenList-Frontend/releases/latest --jq .tag_name)
+          echo "backend_tag=${BE_TAG}" >> $GITHUB_OUTPUT
+          echo "frontend_tag=${FE_TAG}" >> $GITHUB_OUTPUT
+          echo "frontend_ver=${FE_TAG#v}" >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v6
+        with:
+          repository: OpenListTeam/OpenList-Frontend
+          ref: ${{ steps.tags.outputs.frontend_tag }}
+      - uses: actions/checkout@v6
+        with:
+          path: lang-src
+          sparse-checkout: |
+            zh-TW
+            zh-CN
+      - run: corepack enable pnpm
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      # 安裝依賴 & 覆蓋翻譯
+      - name: Install & patch i18n
+        run: |
+          pnpm install --frozen-lockfile
+          FE_TAG="${{ steps.tags.outputs.frontend_tag }}"
+          curl -fsSL --retry 3 -o i18n.tar.gz \
+            "https://github.com/OpenListTeam/OpenList-Frontend/releases/download/${FE_TAG}/i18n.tar.gz" \
+            && tar -xzf i18n.tar.gz -C src/lang \
+            || echo "::warning::i18n.tar.gz not found, using local translations only"
+          mkdir -p src/lang/zh-TW src/lang/zh-CN
+          cp lang-src/zh-TW/*.json src/lang/zh-TW/
+          echo '{"lang":"繁體中文"}' > src/lang/zh-TW/index.json
+          cp lang-src/zh-CN/*.json src/lang/zh-CN/ 2>/dev/null \
+            || cp src/lang/en/*.json src/lang/zh-CN/
+          echo '{"lang":"简体中文"}' > src/lang/zh-CN/index.json
+      - name: Build
+        run: |
+          node scripts/i18n.mjs
+          pnpm build
+      - uses: actions/upload-artifact@v7
+        with:
+          name: frontend-dist
+          path: dist/
+          retention-days: 1
+  build:
+    needs: frontend
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [linux-amd64-musl, windows-amd64]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          repository: OpenListTeam/OpenList
+          ref: ${{ needs.frontend.outputs.backend_tag }}
+      - uses: actions/setup-go@v6
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache-dependency-path: go.sum
+      - id: goinfo
+        run: echo "go_version=$(go version | sed 's/go version //')" >> $GITHUB_OUTPUT
+      - uses: actions/download-artifact@v8
+        with:
+          name: frontend-dist
+          path: public/dist
+      - uses: OpenListTeam/cgo-actions@v1.2.2
+        with:
+          targets: ${{ matrix.target }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          out-dir: build
+          x-flags: |
+            github.com/OpenListTeam/OpenList/v4/internal/conf.BuiltAt=$built_at
+            github.com/OpenListTeam/OpenList/v4/internal/conf.GoVersion=${{ steps.goinfo.outputs.go_version }}
+            github.com/OpenListTeam/OpenList/v4/internal/conf.GitAuthor=GitHub Actions
+            github.com/OpenListTeam/OpenList/v4/internal/conf.GitCommit=$git_commit
+            github.com/OpenListTeam/OpenList/v4/internal/conf.Version=${{ needs.frontend.outputs.backend_tag }}
+            github.com/OpenListTeam/OpenList/v4/internal/conf.WebVersion=${{ needs.frontend.outputs.frontend_ver }}
+          output: openlist-$target$ext
+      - uses: actions/upload-artifact@v7
+        with:
+          name: openlist-${{ matrix.target }}
+          path: build/*
+          retention-days: 1
+  release:
+    needs: [frontend, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: release-assets
+          pattern: openlist-*
+          merge-multiple: true
+      - name: Compress & checksum
+        working-directory: release-assets
+        run: |
+          for f in *; do
+            case "$f" in
+              *.exe) zip "${f%.exe}.zip" "$f" && rm "$f" ;;
+              *)     tar -czf "${f}.tar.gz" "$f" && rm "$f" ;;
+            esac
+          done
+          sha256sum * > sha256sums.txt
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.frontend.outputs.backend_tag }}
+          name: OpenList ${{ needs.frontend.outputs.backend_tag }}
+          body: |
+            包含
+            - Linux (amd64)
+            - Windows (amd64)
+          files: release-assets/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
