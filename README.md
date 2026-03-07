@@ -1,37 +1,129 @@
 # OpenList 繁體中文本地化專案
-<mark>2025年08月05日 ~ 2025年08月07日 將進行伺服器維護，Weblate 服務暫時關閉</mark>
 
 ## 前言
 
 [OpenList](https://github.com/OpenListTeam/OpenList) 是一款強大且開源的檔案列表程式，支援多種儲存空間，是 [Alist](https://github.com/AlistGo/alist) 的一個社群驅動替代品。 
 
-目前 OpenList 的多國語言支援（i18n）尚在開發中<br>
+目前 OpenList 的多國語言支援（i18n）仍在開發中。<br>
 雖然官方已將其納入未來規劃，但我們相信社群的力量可以加速實現完整的繁體中文介面。
 
-為了讓更多台灣使用者能無障礙地使用這款優秀的工具<br>
-我們發起了這個繁體中文本地化專案，並希望能邀請您一同參與！
+本專案使用 OpenCC 搭配 GitHub Actions Workflow 進行自動化翻譯，<br>
+旨在為繁體中文使用者提供更友善、無障礙的使用體驗。
+
+---
+
+## 如何使用？
+
+前往本專案的 [Releases 頁面](https://github.com/HongyiHank/OpenList_zh-TW_L10n/releases/latest)下載符合您作業系統的可執行檔<br>
+解壓縮後替換您電腦中原有的執行檔（請記得重新命名）。
+
+目前本專案僅提供以下兩種系統架構的可執行檔：
+
+* Linux amd64 (musl)
+* Windows amd64
+
+若您需要其他系統或架構的版本，歡迎 Fork 本專案，並修改 `.github/workflows/build.yml` 中的 `target` 設定。
+
+結構如下：
+
+```
+jobs:
+  build:
+    strategy:
+      matrix:
+        └── target: [linux-amd64-musl, windows-amd64]
+              │
+              └── 💡 在此新增或修改您的目標平台（例如：linux-arm64-musl）
+```
+
+修改完成後，可前往 Actions 頁面重新編譯。
+
+<details>
+  <summary>支援的系統架構如下：</summary>
+  
+### 1. Linux(glibc)
+
+- `linux-386`
+- `linux-amd64`
+- `linux-arm-5`
+- `linux-arm-6`
+- `linux-arm-7`
+- `linux-arm64`
+- `linux-mips`
+- `linux-mipsle`
+- `linux-mips64`
+- `linux-mips64le`
+- `linux-ppc64le`
+- `linux-riscv64`
+- `linux-loong64`
+- `linux-loong64-abi1.0`
+- `linux-s390x`
+
+### 2. Linux(musl)
+
+- `linux-amd64-musl`
+- `linux-arm64-musl`
+- `linux-arm-musleabi`
+- `linux-arm-musleabihf`
+- `linux-armel-musleabi`
+- `linux-armel-musleabihf`
+- `linux-armv5l-musleabi`
+- `linux-armv5l-musleabihf`
+- `linux-armv6-musleabi`
+- `linux-armv6-musleabihf`
+- `linux-armv7l-musleabihf`
+- `linux-armv7m-musleabi`
+- `linux-armv7r-musleabihf`
+- `linux-mips-musl`
+- `linux-mips64-musl`
+- `linux-mips64le-musl`
+- `linux-mipsle-musl`
+- `linux-ppc64le-musl`
+- `linux-riscv64-musl`
+- `linux-s390x-musl`
+- `linux-loong64-musl`
+
+### 3. macOS(Darwin)
+
+- `darwin-amd64`
+- `darwin-arm64`
+
+### 4. Windows
+
+- `windows-386`
+- `windows-amd64`
+- `windows-arm64`
+- `windows7-386`
+- `windows7-amd64`
+
+### 5. Android
+
+- `android-386`
+- `android-amd64`
+- `android-arm`
+- `android-arm64`
+
+### 6. FreeBSD
+
+- `freebsd-386`
+- `freebsd-amd64`
+- `freebsd-arm64`
+
+</details>
+
+---
 
 ## 如何協助我們？
 
-我們使用自建的線上翻譯平台 [Weblate](https://weblate.org/) 來進行協作翻譯。<br>
-Weblate 提供了方便的介面，讓您可以輕鬆地貢獻您的語言長才。
+儘管本專案使用了強大的 OpenCC，但作為機器轉換工具，仍可能出現部分翻譯不自然或不準確的情況。<br>
+若您發現翻譯問題，歡迎提交 Pull Request 協助修正。
 
-**參與步驟：**
+此外，如果您發現 GitHub Actions Workflow 有可優化之處，也歡迎提出 Pull Request。
 
-1.  **前往我們的 Weblate 專案：** [點擊此處前往 Weblate 專案頁面](https://weblate.hhdoubleh.us.to)
-2.  **註冊帳號：** 為了啟用翻譯功能，您需要先註冊一個 Weblate 帳號。
-    * 註冊即表示您同意我方收集您的使用者名稱、電子郵件地址等必要資訊
-    * 我方承諾會保護您的個人資訊，絕不主動外洩
-3.  **開始翻譯！** 登入後，您就可以看到專案的翻譯進度，並開始進行翻譯或校對。
+---
 
-> **關於目前的翻譯：**
-> `v4.0.8` (含)以前的版本使用 `Google Gemini 2.5 pro` 進行初步翻譯<br>
-> 我們非常歡迎您協助修正，或提出更通順、更符合台灣使用者習慣的翻譯建議。
+## 使用到的專案
 
-## 聯絡我們
-
-如果您對於 Weblate 的使用有任何疑問，或是對專案有任何建議，歡迎隨時透過以下方式與我們聯繫：
-
-*   **Email:** admin@hhdoubleh.us.to
-
-感謝您的閱讀與支持，期待您的加入！
+- [OpenList](https://github.com/OpenListTeam/OpenList)
+- [OpenList-Frontend](https://github.com/OpenListTeam/OpenList-Frontend)
+- [OpenCC](https://github.com/BYVoid/OpenCC)
