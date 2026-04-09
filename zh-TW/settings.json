@@ -142,5 +142,5 @@
   "version": "後端版本",
   "video_autoplay": "自動播放影片",
   "video_types": "影片型別",
-  "webauthn_login_enabled": "啟用 Webauthn 登入"
+  "webauthn_login_enabled": "啟用 WebAuthn 登入"
 }
