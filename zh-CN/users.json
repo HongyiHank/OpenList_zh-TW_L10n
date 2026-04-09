@@ -3,7 +3,7 @@
     "see_hides": "隐藏可见",
     "access_without_password": "无需密码访问",
     "offline_download": "添加离线下载任务",
-    "write": "创建目录或上传",
+    "write_content": "写入内容（创建/上传/修改）",
     "rename": "重命名",
     "move": "移动",
     "copy": "复制",
