@@ -91,7 +91,7 @@ jobs:
         with:
           name: frontend-dist
           path: public/dist
-      - uses: OpenListTeam/cgo-actions@v1.2.2
+      - uses: OpenListTeam/cgo-actions@v1.2.4
         with:
           targets: ${{ matrix.target }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
