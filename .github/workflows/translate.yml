@@ -1,18 +1,14 @@
 name: 翻譯
-
 on:
   push:
     branches: [main]
     paths: ['zh-CN/**']
   workflow_dispatch:
-
 permissions:
   contents: write
-
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
-
 jobs:
   convert:
     runs-on: ubuntu-latest
@@ -21,10 +17,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-
+          token: ${{ secrets.PAT_TOKEN }}
       - name: Install OpenCC
         run: sudo apt-get update && sudo apt-get install -y opencc
-
       - name: Run Translation
         env:
           SOURCE_DIR: "zh-CN"
@@ -49,9 +44,7 @@ jobs:
             fi
             FILES=$(find "$SOURCE_DIR" -type f -name "*.$FILE_EXT")
           fi
-
           [ -z "$FILES" ] && echo "No changes detected." && exit 0
-
           echo "Starting translation ($(echo "$FILES" | grep -c '^') files)..."
           
           # 並行轉換 (含建立目錄)
@@ -62,7 +55,6 @@ jobs:
             mkdir -p "$(dirname "$dest")"
             opencc -i "$src" -o "$dest" -c s2twp.json
           '
-
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
