@@ -123,6 +123,10 @@ jobs:
       - uses: OpenListTeam/cgo-actions@v1.2.4
         with:
           targets: ${{ matrix.target }}
+          flags: ${{ contains(matrix.target, '-musl') && '-ldflags=-linkmode external -extldflags ''-static -fpic''' || '-ldflags=' }}
+          static-link-for-musl: true
+          musl-target-format: $os-$musl-$arch
+          musl-base-url: "https://github.com/OpenListTeam/musl-compilers/releases/latest/download/"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           out-dir: build
           x-flags: |
@@ -133,6 +137,18 @@ jobs:
             github.com/OpenListTeam/OpenList/v4/internal/conf.Version=${{ needs.frontend.outputs.backend_tag }}
             github.com/OpenListTeam/OpenList/v4/internal/conf.WebVersion=${{ needs.frontend.outputs.frontend_ver }}
           output: openlist-$target$ext
+      - name: Verify musl binary is static
+        if: contains(matrix.target, '-musl')
+        run: |
+          set -e
+          for f in build/openlist-*-musl-*; do
+            if readelf -l "$f" | grep -q "Requesting program interpreter"; then
+              echo "::error::Dynamic binary detected: $f"
+              readelf -l "$f" | grep "Requesting program interpreter" || true
+              exit 1
+            fi
+          done
+          echo "Static binary verification passed"
       - uses: actions/upload-artifact@v7
         with:
           name: openlist-${{ matrix.target }}
@@ -152,8 +168,16 @@ jobs:
         run: |
           for f in *; do
             case "$f" in
-              *.exe) zip "${f%.exe}.zip" "$f" && rm "$f" ;;
-              *)     tar -czf "${f}.tar.gz" "$f" && rm "$f" ;;
+              *.exe)
+                cp "$f" openlist.exe
+                zip "${f%.exe}.zip" openlist.exe
+                rm "$f" openlist.exe
+                ;;
+              *)
+                cp "$f" openlist
+                tar -czf "${f}.tar.gz" openlist
+                rm "$f" openlist
+                ;;
             esac
           done
           sha256sum * > sha256sums.txt
