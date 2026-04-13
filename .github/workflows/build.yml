@@ -2,7 +2,9 @@ name: Build and Release
 on:
   push:
     branches: [main]
-    paths: ['zh-TW/**']
+    paths:
+      - 'zh-TW/**'
+      - 'version.txt'
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,7 +15,34 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    outputs:
+      safe_to_build: ${{ steps.check.outputs.safe_to_build }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - id: check
+        run: |
+          # workflow_dispatch 手動觸發時，直接放行
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "safe_to_build=true" >> $GITHUB_OUTPUT
+            echo "Manual dispatch — skip zh-CN check"
+            exit 0
+          fi
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+          if git diff --name-only "$BEFORE" "$AFTER" | grep -q '^zh-CN/'; then
+            echo "safe_to_build=false" >> $GITHUB_OUTPUT
+            echo "::warning::zh-CN/ has changes in this push — upstream language files updated, skipping build to wait for translation"
+          else
+            echo "safe_to_build=true" >> $GITHUB_OUTPUT
+            echo "zh-CN/ unchanged — safe to build"
+          fi
   frontend:
+    needs: preflight
+    if: needs.preflight.outputs.safe_to_build == 'true'
     runs-on: ubuntu-latest
     outputs:
       backend_tag: ${{ steps.tags.outputs.backend_tag }}
