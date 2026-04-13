@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@v6
       with:
         token: ${{ secrets.PAT_TOKEN }}
-        fetch-depth: 0 
+        fetch-depth: 1
 
     - name: 2. 獲取最新版本
       id: get_version
@@ -139,32 +139,15 @@ jobs:
         
         echo "✅ 成功更新 $TARGET_DIR 資料夾"
 
-    - name: 5. 提交並推送變更
+    - name: 5. 寫入版本檔案
       if: steps.check_version.outputs.skip == 'false'
       run: |
         LATEST_VERSION="${{ steps.get_version.outputs.version }}"
-        
-        # 寫入新的版本檔案
         echo "$LATEST_VERSION" > "$VERSION_FILE"
-        
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # 將所有變更加入暫存區
-        git add "$TARGET_DIR/" "$VERSION_FILE"
 
-        # 檢查是否有檔案變更需要提交
-        if git diff --staged --quiet; then
-          echo "::notice::沒有檔案變更需要提交。"
-        else
-          echo "偵測到檔案變更，正在提交..."
-          git commit -m "ci: 同步語言檔至版本 $LATEST_VERSION"
-          
-          # 使用 pull --rebase 以減少衝突
-          git pull --rebase --autostash origin ${{ github.ref_name }}
-          
-          echo "正在推送變更..."
-          git push origin ${{ github.ref_name }}
-          
-          echo "::notice::已成功推送所有語言檔案變更到儲存庫。"
-        fi
+    - name: 6. 提交並推送變更
+      if: steps.check_version.outputs.skip == 'false'
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: "ci: 同步語言檔至版本 ${{ steps.get_version.outputs.version }}"
+        file_pattern: "${{ env.TARGET_DIR }}/ ${{ env.VERSION_FILE }}"
