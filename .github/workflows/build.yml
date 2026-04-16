@@ -181,7 +181,7 @@ jobs:
             esac
           done
           sha256sum * > sha256sums.txt
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ needs.frontend.outputs.backend_tag }}
           name: OpenList ${{ needs.frontend.outputs.backend_tag }}
