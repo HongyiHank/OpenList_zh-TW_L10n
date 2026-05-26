@@ -1,6 +1,7 @@
 {
   "expires": "过期时间",
   "id": "ID",
+  "id_placeholder": "自定义ID（可选，留空则随机生成）",
   "accessed": "访问次数",
   "max_accessed": "最大访问次数",
   "pwd": "分享码",
