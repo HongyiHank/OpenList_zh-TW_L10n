@@ -14,7 +14,8 @@
     "ftp_manage": "FTP 管理",
     "read_archives": "讀取壓縮檔案",
     "decompress": "解壓",
-    "share": "分享"
+    "share": "分享",
+    "customize_share_id": "Customize share ID"
   },
   "username": "使用者名稱",
   "password": "密碼",
