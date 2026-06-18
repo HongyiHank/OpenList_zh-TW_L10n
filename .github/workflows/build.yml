@@ -120,7 +120,7 @@ jobs:
         with:
           name: frontend-dist
           path: public/dist
-      - uses: OpenListTeam/cgo-actions@v1.2.4
+      - uses: OpenListTeam/cgo-actions@v1.2.5
         with:
           targets: ${{ matrix.target }}
           flags: ${{ contains(matrix.target, '-musl') && '-ldflags=-linkmode external -extldflags ''-static -fpic''' || '-ldflags=' }}
