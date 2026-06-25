@@ -20,7 +20,7 @@ jobs:
     outputs:
       safe_to_build: ${{ steps.check.outputs.safe_to_build }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - id: check
@@ -59,11 +59,11 @@ jobs:
           echo "backend_tag=${BE_TAG}" >> $GITHUB_OUTPUT
           echo "frontend_tag=${FE_TAG}" >> $GITHUB_OUTPUT
           echo "frontend_ver=${FE_TAG#v}" >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: OpenListTeam/OpenList-Frontend
           ref: ${{ steps.tags.outputs.frontend_tag }}
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: lang-src
           sparse-checkout: |
@@ -106,7 +106,7 @@ jobs:
       matrix:
         target: [linux-amd64-musl, windows-amd64]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: OpenListTeam/OpenList
           ref: ${{ needs.frontend.outputs.backend_tag }}
