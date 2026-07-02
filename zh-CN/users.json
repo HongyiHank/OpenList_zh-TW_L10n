@@ -15,7 +15,7 @@
     "read_archives": "读取压缩文件",
     "decompress": "解压",
     "share": "分享",
-    "customize_share_id": "Customize share ID"
+    "customize_share_id": "自定义分享 ID"
   },
   "username": "用户名",
   "password": "密码",
