@@ -140,8 +140,11 @@
     "username": "使用者名稱"
   },
   "189CloudPC": {
+    "access_token": "訪問令牌",
     "family_id": "家庭 ID",
     "family_transfer": "家庭傳輸",
+    "generate_torrent": "生成種子",
+    "generate_torrent-tips": "上傳後生成帶有 CAS 的 Torrent 檔案",
     "login_type": "登入型別",
     "login_types": {
       "password": "密碼",
@@ -214,6 +217,11 @@
     "token": "令牌",
     "url": "連結",
     "username": "使用者名稱"
+  },
+  "AliDoc": {
+    "cookie": "Cookie",
+    "cookie-tips": "釘釘文件網頁 Cookie",
+    "root_folder_id": "根資料夾 id"
   },
   "Alias": {
     "details_pass_through": "後端驅動詳細資訊穿透",
@@ -593,8 +601,23 @@
     "root_folder_path": "根資料夾路徑",
     "use_online_api": "使用線上 API"
   },
+  "Emby": {
+    "api_key": "API 金鑰",
+    "link_method": "連結方法",
+    "link_methods": {
+      "download": "下載",
+      "stream": "流式"
+    },
+    "password": "密碼",
+    "root_folder_id": "根資料夾 ID",
+    "url": "URL",
+    "user_id": "使用者 ID",
+    "username": "使用者名稱"
+  },
   "FTP": {
     "address": "地址",
+    "cwd_list": "使用 Cwd 列出",
+    "cwd_list-tips": "在列出前進入目錄",
     "encoding": "編碼",
     "password": "密碼",
     "root_folder_path": "根資料夾路徑",
@@ -883,6 +906,9 @@
     "use_online_api": "使用線上 API"
   },
   "Onedrive Sharelink": {
+    "disable_disk_usage": "停用剩餘空間顯示",
+    "enable_direct_upload": "啟用直接上傳",
+    "enable_direct_upload-tips": "允許直接上傳到 OneDrive 而不透過 OpenList",
     "password": "密碼",
     "root_folder_path": "根資料夾路徑",
     "url": "連結"
@@ -1383,7 +1409,7 @@
   },
   "WPS": {
     "cookie": "Cookie",
-    "custom_ua": "Custom ua",
+    "custom_ua": "自定義 UA",
     "mode": "型別",
     "modes": {
       "Business": "商業版",
@@ -1457,6 +1483,29 @@
     "root_folder_path": "根資料夾路徑",
     "use_online_api": "使用線上 API"
   },
+  "cloudflare_imgbed": {
+    "address": "地址",
+    "address-tips": "圖床服務的後端API地址，例如 https://img.example.com",
+    "largeChannelName": "大檔案渠道名稱",
+    "largeChannelName-tips": "大檔案的渠道名稱",
+    "largeChannelType": "大檔案渠道型別",
+    "largeChannelType-tips": "大檔案渠道型別：Hugging Face（直接上傳）校驗、Telegram/Cf R2/S3/Discord（分片上傳）",
+    "largeChannelTypes": {
+      "": "",
+      "cfr2": "Cloudflare R2",
+      "discord": "Discord",
+      "huggingface": "Hugging Face",
+      "s3": "S3",
+      "telegram": "Telegram"
+    },
+    "root_folder_path": "根資料夾路徑",
+    "smallChannelName": "普通檔案渠道名稱",
+    "smallChannelName-tips": "普通檔案的頻道名稱（通常<20MB）",
+    "token": "令牌",
+    "token-tips": "認證令牌",
+    "uploadThread": "上傳執行緒數",
+    "uploadThread-tips": "HuggingFace 分片直接的上傳執行緒數"
+  },
   "config": {
     "115 Cloud": {},
     "115 Open": {},
@@ -1472,6 +1521,9 @@
     "189CloudPC": {},
     "189CloudTV": {},
     "AList V3": {},
+    "AliDoc": {
+      "alert": "此驅動程式支援透過釘釘文件訪問釘盤，目前僅支援只讀。"
+    },
     "Alias": {},
     "Aliyundrive": {
       "alert": "在這個驅動中可能有一個死迴圈的錯誤。\n已廢棄，不再維護，並將在未來的版本中移除。\n我們建議使用官方支援的阿里雲盤 Open。"
@@ -1496,6 +1548,7 @@
     },
     "DoubaoShare": {},
     "Dropbox": {},
+    "Emby": {},
     "FTP": {},
     "FebBox": {},
     "FeijiPan": {},
@@ -1553,7 +1606,8 @@
     "WebDav": {},
     "WeiYun": {},
     "WoPan": {},
-    "YandexDisk": {}
+    "YandexDisk": {},
+    "cloudflare_imgbed": {}
   },
   "drivers": {
     "115 Cloud": "115 網盤",
@@ -1568,6 +1622,7 @@
     "189CloudPC": "天翼雲盤客戶端",
     "189CloudTV": "天翼雲盤 TV",
     "AList V3": "AList v3",
+    "AliDoc": "AliDoc",
     "Alias": "別名",
     "Aliyundrive": "阿里雲盤",
     "AliyundriveOpen": "阿里雲盤（Oauth2）",
@@ -1588,6 +1643,7 @@
     "DoubaoNew": "豆包雲盤 新",
     "DoubaoShare": "豆包分享",
     "Dropbox": "Dropbox",
+    "Emby": "Emby",
     "FTP": "FTP",
     "FebBox": "FebBox",
     "FeijiPan": "飛機盤",
@@ -1643,6 +1699,7 @@
     "WebDav": "WebDAV",
     "WeiYun": "騰訊微雲",
     "WoPan": "聯通雲盤",
-    "YandexDisk": "Yandex 網盤"
+    "YandexDisk": "Yandex 網盤",
+    "cloudflare_imgbed": "CloudFlare-ImgBed"
   }
 }
