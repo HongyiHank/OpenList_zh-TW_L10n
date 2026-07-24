@@ -113,6 +113,8 @@
     "cloud_id": "Cloud ID",
     "custom_upload_part_size": "自定義上傳分片大小",
     "custom_upload_part_size-tips": "0 為自動設定",
+    "link_id": "分享連結ID",
+    "link_id-tips": "多個分享用逗號或新行分隔。對受密碼保護的分享使用 link_id#password。",
     "mail_cookies": "郵箱 Cookie",
     "mail_cookies-tips": "mail.139.com 的 Cookie（用於登入認證）。",
     "password": "密碼",
@@ -124,10 +126,13 @@
       "family": "家庭雲",
       "group": "共享群",
       "personal": "個人雲",
-      "personal_new": "新的個人盤"
+      "personal_new": "新的個人盤",
+      "share": "分享"
     },
     "use_large_thumbnail": "使用大縮圖",
     "use_large_thumbnail-tips": "啟用圖片使用大縮圖",
+    "use_old_stream_upload": "使用舊的流式上傳",
+    "use_old_stream_upload-tips": "啟用以使用舊的流式上傳方法（不支援快傳）",
     "user_domain_id": "使用者域 ID",
     "user_domain_id-tips": "Cookie中的ud_id項，需要檢視空間使用情況則填寫",
     "username": "使用者名稱"
@@ -416,6 +421,22 @@
     "upload_thread": "上傳執行緒",
     "upload_thread-tips": "1 ≤ 執行緒 ≤ 32"
   },
+  "Bunny Storage": {
+    "access_key": "訪問金鑰",
+    "cdn_base_url": "CDN 基礎 URL",
+    "cdn_token_include_ip": "CDN 令牌包含 IP",
+    "cdn_token_key": "CDN 令牌金鑰",
+    "cdn_token_method": "CDN 令牌方法",
+    "cdn_token_methods": {
+      "hmac_sha256": "HMAC SHA256",
+      "sha256": "SHA256"
+    },
+    "endpoint": "端點",
+    "placeholder": "佔位檔名",
+    "root_folder_path": "根資料夾路徑",
+    "sign_url_expire": "簽名連結有效期",
+    "storage_zone_name": "儲存區域名稱"
+  },
   "CNB Releases": {
     "default_branch": "預設分支",
     "default_branch-tips": "新發行版的預設分支",
@@ -548,7 +569,9 @@
     "root_folder_path": "根資料夾路徑",
     "secret_access_key": "訪問金鑰",
     "session_token": "會話令牌",
-    "sign_url_expire": "簽名連結有效期"
+    "sign_url_expire": "簽名連結有效期",
+    "user_agent": "使用者代理",
+    "user_agent-tips": "自定義S3請求的使用者代理。"
   },
   "Doubao": {
     "cookie": "Cookie",
@@ -674,6 +697,10 @@
   "GitHub Releases": {
     "gh_proxy": "Gh 代理",
     "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
+    "max_page": "最大分頁數",
+    "max_page-tips": "要獲取的最大分頁數量 （0=無限制），僅在「顯示所有版本」時生效",
+    "per_page": "每頁結果數",
+    "per_page-tips": "每個頁面釋出版本的數量（最大100），僅在「顯示所有版本」時生效",
     "repo_structure": "倉庫結構",
     "repo_structure-tips": "結構：[path：]org/repo",
     "root_folder_path": "根資料夾路徑",
@@ -1077,7 +1104,9 @@
     "root_folder_path": "根資料夾路徑",
     "secret_access_key": "訪問金鑰",
     "session_token": "會話令牌",
-    "sign_url_expire": "簽名連結有效期"
+    "sign_url_expire": "簽名連結有效期",
+    "user_agent": "使用者代理",
+    "user_agent-tips": "自定義S3請求的使用者代理。"
   },
   "SFTP": {
     "address": "地址",
@@ -1534,6 +1563,7 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
+    "Bunny Storage": {},
     "CNB Releases": {},
     "ChaoXingGroupDrive": {},
     "Chunk": {},
@@ -1631,6 +1661,7 @@
     "Azure Blob Storage": "Azure Blob 儲存",
     "BaiduNetdisk": "百度網盤",
     "BaiduPhoto": "一刻相簿",
+    "Bunny Storage": "Bunny 儲存",
     "CNB Releases": "CNB 發行版",
     "ChaoXingGroupDrive": "超星小組盤",
     "Chunk": "分塊",

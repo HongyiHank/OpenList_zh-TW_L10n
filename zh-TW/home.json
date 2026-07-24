@@ -70,6 +70,7 @@
     "switch_lang": "切換語言",
     "toggle_markdown_toc": "是否顯示大綱",
     "toggle_checkbox": "開關複選框",
+    "open_with": "開啟方式 ...",
     "rename": "重新命名",
     "input_new_name": "輸入新名稱",
     "move": "移動",
@@ -228,6 +229,17 @@
       "direct": "直接開啟",
       "dblclick": "雙擊",
       "disable_while_checked": "選中時停用"
+    },
+    "editor_font_size": "編輯器字型大小",
+    "editor_word_wrap": "編輯器自動換行",
+    "editor_word_wrap_options": {
+      "false": "關閉",
+      "true": "開啟"
+    },
+    "editor_minimap": "編輯器小地圖",
+    "editor_minimap_options": {
+      "false": "關閉",
+      "true": "開啟"
     },
     "show_gallery_thumbnails": "顯示相簿縮圖",
     "show_gallery_thumbnails_options": {
