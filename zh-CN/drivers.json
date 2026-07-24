@@ -113,6 +113,8 @@
     "cloud_id": "Cloud ID",
     "custom_upload_part_size": "自定义上传分片大小",
     "custom_upload_part_size-tips": "0 为自动设置",
+    "link_id": "分享链接ID",
+    "link_id-tips": "多个分享用逗号或新行分隔。对受密码保护的分享使用 link_id#password。",
     "mail_cookies": "邮箱 Cookie",
     "mail_cookies-tips": "mail.139.com 的 Cookie（用于登录认证）。",
     "password": "密码",
@@ -124,10 +126,13 @@
       "family": "家庭云",
       "group": "共享群",
       "personal": "个人云",
-      "personal_new": "新的个人盘"
+      "personal_new": "新的个人盘",
+      "share": "分享"
     },
     "use_large_thumbnail": "使用大缩略图",
     "use_large_thumbnail-tips": "启用图片使用大缩略图",
+    "use_old_stream_upload": "使用旧的流式上传",
+    "use_old_stream_upload-tips": "启用以使用旧的流式上传方法（不支持快传）",
     "user_domain_id": "用户域 ID",
     "user_domain_id-tips": "Cookie中的ud_id项，需要查看空间使用情况则填写",
     "username": "用户名"
@@ -416,6 +421,22 @@
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32"
   },
+  "Bunny Storage": {
+    "access_key": "访问密钥",
+    "cdn_base_url": "CDN 基础 URL",
+    "cdn_token_include_ip": "CDN 令牌包含 IP",
+    "cdn_token_key": "CDN 令牌密钥",
+    "cdn_token_method": "CDN 令牌方法",
+    "cdn_token_methods": {
+      "hmac_sha256": "HMAC SHA256",
+      "sha256": "SHA256"
+    },
+    "endpoint": "端点",
+    "placeholder": "占位文件名",
+    "root_folder_path": "根文件夹路径",
+    "sign_url_expire": "签名链接有效期",
+    "storage_zone_name": "存储区域名称"
+  },
   "CNB Releases": {
     "default_branch": "默认分支",
     "default_branch-tips": "新发行版的默认分支",
@@ -548,7 +569,9 @@
     "root_folder_path": "根文件夹路径",
     "secret_access_key": "访问密钥",
     "session_token": "会话令牌",
-    "sign_url_expire": "签名链接有效期"
+    "sign_url_expire": "签名链接有效期",
+    "user_agent": "用户代理",
+    "user_agent-tips": "自定义S3请求的用户代理。"
   },
   "Doubao": {
     "cookie": "Cookie",
@@ -674,6 +697,10 @@
   "GitHub Releases": {
     "gh_proxy": "Gh 代理",
     "gh_proxy-tips": "GitHub 代理，例如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
+    "max_page": "最大分页数",
+    "max_page-tips": "要获取的最大分页数量 （0=无限制），仅在「显示所有版本」时生效",
+    "per_page": "每页结果数",
+    "per_page-tips": "每个页面发布版本的数量（最大100），仅在「显示所有版本」时生效",
     "repo_structure": "仓库结构",
     "repo_structure-tips": "结构：[path：]org/repo",
     "root_folder_path": "根文件夹路径",
@@ -1077,7 +1104,9 @@
     "root_folder_path": "根文件夹路径",
     "secret_access_key": "访问密钥",
     "session_token": "会话令牌",
-    "sign_url_expire": "签名链接有效期"
+    "sign_url_expire": "签名链接有效期",
+    "user_agent": "用户代理",
+    "user_agent-tips": "自定义S3请求的用户代理。"
   },
   "SFTP": {
     "address": "地址",
@@ -1534,6 +1563,7 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
+    "Bunny Storage": {},
     "CNB Releases": {},
     "ChaoXingGroupDrive": {},
     "Chunk": {},
@@ -1631,6 +1661,7 @@
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
     "BaiduPhoto": "一刻相册",
+    "Bunny Storage": "Bunny 存储",
     "CNB Releases": "CNB 发行版",
     "ChaoXingGroupDrive": "超星小组盘",
     "Chunk": "分块",

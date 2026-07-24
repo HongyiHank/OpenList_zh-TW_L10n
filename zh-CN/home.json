@@ -70,6 +70,7 @@
     "switch_lang": "切换语言",
     "toggle_markdown_toc": "是否显示大纲",
     "toggle_checkbox": "开关复选框",
+    "open_with": "打开方式 ...",
     "rename": "重命名",
     "input_new_name": "输入新名称",
     "move": "移动",
@@ -228,6 +229,17 @@
       "direct": "直接打开",
       "dblclick": "双击",
       "disable_while_checked": "选中时禁用"
+    },
+    "editor_font_size": "编辑器字体大小",
+    "editor_word_wrap": "编辑器自动换行",
+    "editor_word_wrap_options": {
+      "false": "关闭",
+      "true": "打开"
+    },
+    "editor_minimap": "编辑器小地图",
+    "editor_minimap_options": {
+      "false": "关闭",
+      "true": "打开"
     },
     "show_gallery_thumbnails": "显示图库缩略图",
     "show_gallery_thumbnails_options": {
