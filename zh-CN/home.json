@@ -183,7 +183,8 @@
     "success": "成功",
     "error": "出错",
     "back": "返回上传",
-    "clear_done": "清空完成"
+    "clear_done": "清空完成",
+    "retry": "Retry"
   },
   "local_settings": {
     "aria2_rpc_url": "Aria2 RPC 链接",
