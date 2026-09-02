@@ -184,7 +184,7 @@
     "error": "出錯",
     "back": "返回上傳",
     "clear_done": "清空完成",
-    "retry": "Retry"
+    "retry": "重試"
   },
   "local_settings": {
     "aria2_rpc_url": "Aria2 RPC 連結",
