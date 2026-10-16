@@ -27,7 +27,8 @@
     "ldap": "LDAP",
     "s3": "物件儲存",
     "ftp": "FTP",
-    "traffic": "傳輸"
+    "traffic": "傳輸",
+    "plugins": "外掛"
   },
   "title": "OpenList 管理",
   "not_admin": "您不是管理員使用者，請使用管理員賬戶登入。",

@@ -138,6 +138,7 @@
   },
   "sso_oidc_username_key": "OIDC 使用者名稱鍵",
   "sso_organization_name": "組織名稱",
+  "sso_postmessage_origin": "Sso postmessage origin",
   "text_types": "文字型別",
   "token": "令牌",
   "transmission_seedtime": "Transmission 做種時間",

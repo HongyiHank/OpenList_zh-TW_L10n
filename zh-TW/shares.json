@@ -37,6 +37,7 @@
     "back": "資料夾置底"
   },
   "input_password": "請輸入分享碼",
+  "share_gone": "此分享已過期或被取消",
   "copy_msg": "複製連結",
   "no_permission_tip": "建立分享需要啟用“分享”許可權。"
 }
