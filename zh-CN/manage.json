@@ -27,7 +27,8 @@
     "ldap": "LDAP",
     "s3": "对象存储",
     "ftp": "FTP",
-    "traffic": "传输"
+    "traffic": "传输",
+    "plugins": "插件"
   },
   "title": "OpenList 管理",
   "not_admin": "您不是管理员用户，请使用管理员账户登录。",

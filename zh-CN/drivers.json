@@ -151,10 +151,16 @@
   },
   "189CloudPC": {
     "access_token": "访问令牌",
+    "client_sn": "Client sn",
+    "client_sn-tips": "Device serial number captured from the official client, leave it empty if you do not have one",
+    "device_id": "Device id",
+    "device_id-tips": "DEVICEID cookie issued after the second device verification, keep it to avoid verifying again",
     "family_id": "家庭 ID",
     "family_transfer": "家庭传输",
     "generate_torrent": "生成种子",
     "generate_torrent-tips": "上传后生成带有 CAS 的 Torrent 文件",
+    "jg_open_id": "Jg open id",
+    "jg_open_id-tips": "Optional push id reported by the official client",
     "login_type": "登录类型",
     "login_types": {
       "password": "密码",
@@ -173,10 +179,13 @@
       "desc": "降序"
     },
     "password": "密码",
+    "password-tips": "Not needed when an access token or refresh token is provided",
     "rapid_upload": "秒传",
     "refresh_token": "刷新令牌",
     "refresh_token-tips": "如要切换帐户，请清除此字段",
     "root_folder_id": "根文件夹 ID",
+    "sms_code": "Sms code",
+    "sms_code-tips": "SMS code for the second device verification, fill it in and save again when login asks for it",
     "type": "类型",
     "types": {
       "family": "家庭云",
@@ -190,7 +199,10 @@
     },
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32",
+    "user_finger": "User finger",
+    "user_finger-tips": "Device fingerprint sent with login requests, generated and kept automatically when empty",
     "username": "用户名",
+    "username-tips": "Not needed when an access token or refresh token is provided",
     "validate_code": "验证码"
   },
   "189CloudTV": {
@@ -297,6 +309,8 @@
       "default": "默认"
     },
     "api_url_address": "API 地址",
+    "callback_concurrency": "Callback concurrency",
+    "callback_concurrency-tips": "Aliyun用户共享的最大有效下载",
     "client_id": "客户端 ID",
     "client_id-tips": "如果你没有，请留空",
     "client_secret": "客户端密钥",
@@ -854,6 +868,8 @@
     "directory_size": "目录大小",
     "directory_size-tips": "这可能会影响主机的性能",
     "mkdir_perm": "创建文件夹权限",
+    "pdf_thumbnail": "PDF 预览图",
+    "pdf_thumbnail-tips": "在 macOS 上使用 Quick Look 生成 PDF 第一页缩略图",
     "recycle_bin_path": "回收站路径",
     "recycle_bin_path-tips": "回收站的路径，如果空或保留“永久删除”则永久删除",
     "root_folder_path": "根文件夹路径",
@@ -1028,6 +1044,8 @@
     },
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹 ID",
+    "skip_verification": "跳过验证",
+    "skip_verification-tips": "忽略验证码返回的人类验证 URL 而不是失败；启用此选项可能触发PikPak 风控",
     "username": "用户名"
   },
   "PikPakShare": {
