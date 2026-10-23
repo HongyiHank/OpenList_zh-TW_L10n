@@ -1,5 +1,7 @@
 # OpenList 繁體中文本地化專案
 
+### <mark>由於官方繁體中文已趨於完善，故 v4.2.7 為此專案的最後一個版本</mark>
+
 ## 前言
 
 [OpenList](https://github.com/OpenListTeam/OpenList) 是一款強大且開源的檔案列表程式，支援多種儲存空間，是 [Alist](https://github.com/AlistGo/alist) 的一個社群驅動替代品。 
