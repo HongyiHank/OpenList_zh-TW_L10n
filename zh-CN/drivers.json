@@ -111,6 +111,12 @@
   "139Yun": {
     "authorization": "授权",
     "authorization-tips": "授权可以单独使用。为空则仅凭邮箱 Cookie 快速登录，或凭邮箱 Cookie+用户名+密码作为完整登录回退。",
+    "client_type": "客户端类型",
+    "client_type-tips": "向个人云 API 报告的客户端类型。web（9）允许上传最大 50 GB 的文件；pc（13）将单个文件的上传限制提高到 500 GB。",
+    "client_types": {
+      "pc": "电脑",
+      "web": "网页"
+    },
     "cloud_id": "Cloud ID",
     "custom_upload_part_size": "自定义上传分片大小",
     "custom_upload_part_size-tips": "0 为自动设置",
@@ -151,16 +157,16 @@
   },
   "189CloudPC": {
     "access_token": "访问令牌",
-    "client_sn": "Client sn",
-    "client_sn-tips": "Device serial number captured from the official client, leave it empty if you do not have one",
-    "device_id": "Device id",
-    "device_id-tips": "DEVICEID cookie issued after the second device verification, keep it to avoid verifying again",
+    "client_sn": "客户端序列号",
+    "client_sn-tips": "从官方客户端获取的设备序列号；如果没有，请留空",
+    "device_id": "设备 id",
+    "device_id-tips": "第二次设备验证后签发的 DEVICEID Cookie，请保留它以避免再次验证",
     "family_id": "家庭 ID",
     "family_transfer": "家庭传输",
     "generate_torrent": "生成种子",
     "generate_torrent-tips": "上传后生成带有 CAS 的 Torrent 文件",
-    "jg_open_id": "Jg open id",
-    "jg_open_id-tips": "Optional push id reported by the official client",
+    "jg_open_id": "Jg 开放 id",
+    "jg_open_id-tips": "官方客户端报告的可选推送 id",
     "login_type": "登录类型",
     "login_types": {
       "password": "密码",
@@ -179,13 +185,13 @@
       "desc": "降序"
     },
     "password": "密码",
-    "password-tips": "Not needed when an access token or refresh token is provided",
+    "password-tips": "提供访问令牌或刷新令牌时无需填写",
     "rapid_upload": "秒传",
     "refresh_token": "刷新令牌",
     "refresh_token-tips": "如要切换帐户，请清除此字段",
     "root_folder_id": "根文件夹 ID",
-    "sms_code": "Sms code",
-    "sms_code-tips": "SMS code for the second device verification, fill it in and save again when login asks for it",
+    "sms_code": "短信验证码",
+    "sms_code-tips": "用于第二次设备验证的短信验证码；登录要求输入时填写并再次保存",
     "type": "类型",
     "types": {
       "family": "家庭云",
@@ -199,10 +205,10 @@
     },
     "upload_thread": "上传线程",
     "upload_thread-tips": "1 ≤ 线程 ≤ 32",
-    "user_finger": "User finger",
-    "user_finger-tips": "Device fingerprint sent with login requests, generated and kept automatically when empty",
+    "user_finger": "用户指纹",
+    "user_finger-tips": "随登录请求发送的设备指纹；留空时会自动生成并保存",
     "username": "用户名",
-    "username-tips": "Not needed when an access token or refresh token is provided",
+    "username-tips": "提供访问令牌或刷新令牌时无需填写",
     "validate_code": "验证码"
   },
   "189CloudTV": {
@@ -309,7 +315,7 @@
       "default": "默认"
     },
     "api_url_address": "API 地址",
-    "callback_concurrency": "Callback concurrency",
+    "callback_concurrency": "回调同义词",
     "callback_concurrency-tips": "Aliyun用户共享的最大有效下载",
     "client_id": "客户端 ID",
     "client_id-tips": "如果你没有，请留空",
@@ -1533,9 +1539,11 @@
   },
   "WoPan": {
     "access_token": "访问令牌",
+    "access_token-tips": "提供刷新令牌时可选；缺失或过短时会自动刷新",
     "family_id": "家庭 ID",
     "family_id-tips": "如果您想要使用您的个人空间，请保持为空",
     "refresh_token": "刷新令牌",
+    "refresh_token-tips": "请提供刷新令牌或访问令牌（至少 16 个字符）",
     "root_folder_id": "根文件夹 ID",
     "sort_rule": "排序规则",
     "sort_rules": {
