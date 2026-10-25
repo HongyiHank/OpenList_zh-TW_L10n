@@ -1,0 +1,23 @@
+{
+  "site_config": "站點配置",
+  "site_url": "站點 URL",
+  "site_url_help": "生成分享連結時嵌入種子源的公共基礎 URL。留空則使用當前請求的源地址。",
+  "default_matrix": "預設雜湊矩陣",
+  "default_matrix_help": "從檔案列表生成種子時預先選中的雜湊。生成時，Torrent 強制使用 SHA-1，CAS 強制使用 MD5。",
+  "whole": "整個檔案",
+  "pieces": "分塊",
+  "default_format": "預設格式",
+  "default_format_help": "在種子生成對話方塊中預先選中的格式。",
+  "format_policies": "自動生成格式策略",
+  "format_policies_help": "自動生成的旁置檔案格式。每個儲存仍可覆蓋全域性策略。",
+  "oss_format": "OSS（.oss）",
+  "torrent_format": "Torrent（.torrent）",
+  "cas_format": "CAS（.cas）",
+  "other_options": "其他選項",
+  "auto_generate": "上傳時自動生成種子",
+  "auto_generate_help": "上傳時根據上述格式策略生成旁置種子檔案。",
+  "single_direct_preview": "單檔案種子直接預覽",
+  "single_direct_preview_help": "當種子恰好包含一個檔案時，直接開啟該檔案，而不是顯示種子詳情。",
+  "cas_direct_access": "CAS 直接訪問",
+  "cas_direct_access_help": "開啟單檔案 CAS 種子時，將檔案快速上傳到同一資料夾，並預覽還原後的檔案。"
+}
